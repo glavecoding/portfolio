@@ -1,0 +1,32 @@
+.side_icon-enter-active{
+    animation: fadeIn 0.3s infinite forwards;
+}
+.side_icon-leave-active{
+    animation: fadeOut 0.3s infinite forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+}
+
+.animate_fadeOutLeft{
+    transform: translateX(-20px);
+    opacity: 0;
+}

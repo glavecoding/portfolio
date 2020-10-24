@@ -1,8 +1,13 @@
-// General
+// General Page
     @import "./Universal";
+    @import "./Home";
 // Project
     @import"./Project/Muni";
-// Size
+    @import"./Icons";
+// General Setting
     @import "./Size";
-// Color
+    @import "./Fonts";
     @import "./Color";
+    @import "./Scroll_bar";
+    @import "./Fixed_comp";
+    @import "./Animation";

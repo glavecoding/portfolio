@@ -1,6 +1,10 @@
 <template>
     <video
         :src="src"
+        autoplay
+        loop
+        muted
+        playsinline
     >
         
     </video>

@@ -1,16 +1,17 @@
 <template>
   <div class="Opening">
+    <h1>test</h1>
   </div>
 </template>
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Open',
   components: {
    
   },
   mounted() {
-    this.router.push({path:'/home'})
+    this.$router.push({path:'/home'})
   },
 }
 </script>

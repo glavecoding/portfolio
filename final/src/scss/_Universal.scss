@@ -1,3 +1,7 @@
+
+@import "./Color";
+@import "./Size";
+
 *{
     margin: 0;
     padding: 0;
@@ -8,16 +12,24 @@ ul{
     list-style-type: none;
 }
 
-h1{}
-h2{}
-h3{}
-h4{}
-h5{}
-h6{}
-p{}
+body{
+    width: 100%;
+}
 
 #app{
-    
+    width: 100%;
+    .bg{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        pointer-events: none;
+    }
+    .icon{
+        width:24px;
+        height: 24px;
+        cursor: pointer;
+    }
 }
 
 footer{
