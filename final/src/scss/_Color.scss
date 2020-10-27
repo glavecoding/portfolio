@@ -1,3 +1,98 @@
+$color-pink:#E601A2;
+$color-purple:#5400d5;
+$dark-gradient:150deg,#26086C,#001421,#3E0A33;
+$light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
 // dark mode
+.dark_mode{
 
+    h1,h2,h3,h4,h5,p{
+        color:white;
+    }
+    .bg{
+        background: linear-gradient($dark-gradient);
+        transition:0.5s ease;
+        .strip_line_D{
+            fill: rgba($color: $color-purple, $alpha: 0.05);
+        }
+        .strip_line_L{
+            fill: rgba($color: $color-pink, $alpha: 0.05);
+        }
+    }
+    .scan{
+        &::after{
+            background: linear-gradient(rgba(255, 0, 98, 0.05) 50%, rgba(125, 11, 233, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        }
+    }
+    .fixed_home{
+        .panel_control{
+            .icon_animation_panel{
+                .icon_wrapper{
+                    div{
+                        background-color: white;
+                    }
+                    .icon_neon_bar{
+                        background-color:$color-pink;
+                        box-shadow: 0px 0px 4px $color-pink;
+                    }
+                }
+            }
+        }
+        
+            .icon_animation_about{
+                .icon_wrapper{
+                    div{
+                        background-color: white;
+                    }
+                    .icon_neon_bar{
+                        background-color:$color-pink;
+                        box-shadow: 0px 0px 4px $color-pink;
+                    }
+                }
+            }
+            &:hover{
+                .icon_animation_about{
+                    .icon_wrapper{
+                        .icon_neon_bar{
+                            background-color: transparent;
+                            border-left: 3px solid $color-pink;
+                            border-right: 3px solid $color-pink;
+                            border-bottom: 3px solid $color-pink;
+                        }
+                    }
+                }
+            }
+    }
+    .icon_animation_arrow_up,.icon_animation_arrow_down{
+        .icon_wrapper{
+            div{
+                background-color: white;
+            }
+            .icon_neon_bar{
+                background-color:$color-pink;
+                box-shadow: 0px 0px 4px $color-pink;
+            }
+        }
+    }
+    
+}
 // light mode
+.light_mode{
+    h1,h2,h3,h4,h5,p{
+        color:black;
+    }
+    .bg{
+        transition:0.5s ease;
+        background: linear-gradient($light-gradient);
+        .strip_line_D{
+            fill: rgba($color: $color-purple, $alpha: 0.05);
+        }
+        .strip_line_L{
+            fill: rgba($color: #ff008c, $alpha: 0.05);
+        }
+    }
+    .scan{
+        &::after{
+            background: linear-gradient(rgba(255, 170, 203, 0.2) 50%, rgba(255, 255, 255, 0.2) 50%), linear-gradient(90deg, rgba(245, 180, 180, 0.1), rgba(133, 252, 133, 0.2), rgba(122, 122, 255, 0.1));
+        }
+    }
+}

@@ -4,4 +4,26 @@
 .about{
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    .go_back{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+        .icon_animation_arrow_up{
+            transform: rotate(-90deg);
+            margin-right: 16px;
+        }
+    }
+    .text_area{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        h1{
+            font-size: 48px;
+        }
+    }
+    .image_area{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 }

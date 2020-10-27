@@ -1,23 +1,31 @@
 <template>
     <aside class="fixed_home side_left">
-        <div v-if="Rule == 'Project'">
-            <p @click="Go_home">Back Home</p>
+        <div v-if="Rule == 'Project'" class="back_home" @click="Go_home">
+            <icon_arrow_up/>
+            <p>Back Home</p>
         </div>
-        <div :class="Show_scroll_down?'scroll_down':'scroll_down animate_fadeOutLeft'">
-            <p>Scroll Down</p>
+        <div :class="Show_scroll_down?'scroll_down animate_fadeOutLeft':'scroll_down'">
+            
         </div>
         <div :class="Show_back_top?'back_top ':'back_top n animate_fadeOutLeft'" @click="Go_top">
+            <icon_arrow_up/>
             <p>Back Top</p>
         </div>
     </aside>
 </template>
 <script>
+import icon_arrow_up from '../icons/icon_arrow_up'
+import icon_arrow_down from '../icons/icon_arrow_down'
 export default {
     props:{
         Rule:String,
         Body_height:Number,
         Height:Number,
         Show_top:Boolean
+    },
+    components:{
+        icon_arrow_up,
+        icon_arrow_down
     },
     data() {
         return {
@@ -30,7 +38,7 @@ export default {
     },
     computed:{
         Show_scroll_down(){
-            return this.Body_height - this.Height == this.Screen_height?false:true 
+            return this.Height > (this.Body_height*2/3)?true:false 
         },
         Show_back_top(){
             return this.Height > (this.Body_height/3) ?true:false
@@ -41,7 +49,7 @@ export default {
             this.$router.push({path:'/home'})
         },
         Go_top(){
-
+            window.scrollTo(0,0)
         }
     },
 }
