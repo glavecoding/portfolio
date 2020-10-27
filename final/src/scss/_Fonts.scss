@@ -1,0 +1,53 @@
+@font-face{
+    font-family: HeadFont;
+    src:url('./fonts/OCRAStd.ttf')format('TrueType'),
+        url('./fonts/OCRAStd.ttf')format('OpenType');
+}
+@font-face{
+    font-family: TextFont;
+    src:url('./fonts/SourceCodePro-ExtraLight.ttf')format('TrueType'),
+        url('./fonts/SourceCodePro-ExtraLight.otf')format('OpenType');
+    font-weight: 200;
+}
+@font-face{
+    font-family: TextFont;
+    src:url('./fonts/SourceCodePro-Regular.ttf')format('TrueType'),
+        url('./fonts/SourceCodePro-Regular.otf')format('OpenType');
+    font-weight: 400;
+}
+@font-face{
+    font-family: TextFont;
+    src:url('./fonts/SourceCodePro-SemiBold.ttf')format('TrueType'),
+        url('./fonts/SourceCodePro-SemiBold.otf')format('OpenType');
+    font-weight: 600;
+}
+@font-face{
+    font-family: TextFont;
+    src:url('./fonts/SourceCodePro-Black.ttf')format('TrueType'),
+        url('./fonts/SourceCodePro-Black.otf')format('OpenType');
+    font-weight: 800;
+}
+
+h1,h2,h3,h4,h5,h6{
+     font-family: HeadFont;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 12px;
+}
+h5{
+    font-size: 8px;
+}
+
+p{
+    font-family: TextFont;
+    font-size: 12px;
+}
