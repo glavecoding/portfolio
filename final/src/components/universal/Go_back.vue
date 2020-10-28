@@ -1,15 +1,15 @@
 <template>
     <aside class="fixed_home go_back" @click="Go_back">
-        <icon_arrow_up/>
-        <h3>Go Back</h3>
+        <icon_arrow_down/>
+        <h4>Go Back</h4>
     </aside>
 </template>
 <script>
-import icon_arrow_up from '../icons/icon_arrow_up'
+import icon_arrow_down from '../icons/icon_arrow_down'
 export default {
     name:'Go_back',
     components:{
-        icon_arrow_up
+        icon_arrow_down
     },
     methods:{
         Go_back(){

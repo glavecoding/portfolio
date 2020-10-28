@@ -12,36 +12,38 @@
             />
             <h4>Panel</h4>
         </div>
-        <div class="wrapper_panel" v-if="Show">
-            <div class="list_project" v-if="show_list_project">
-                <ul>
-                    <li v-for="pjt in Projects" v-if="Projects" @click="Go_project(pjt.order)">
-                        <h4>{{pjt.order}}.{{pjt.name}}</h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="sperated neon_effect" v-if="show_list_project"></div>
-            <div class="list_control">
-                <ul>
-                    <li>
+        <transition enter-active-class="animate__animated animate__fadeInLeft animate__faster" leave-active-class="animate__animated animate__fadeOutLeft animate__faster">
+            <div class="wrapper_panel" v-if="Show">
+                <div class="list_project" v-if="show_list_project">
+                    <ul>
+                        <li v-for="pjt in Projects" v-if="Projects" @click="Go_project(pjt.order)">
+                            <h4>{{pjt.order}}.{{pjt.name}}</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sperated neon_effect" v-if="show_list_project"></div>
+                <div class="list_control">
+                    <ul>
+                        <li>
 
-                    </li>
-                    <li>
-                        <div @click="Switch_mode">
-                            <div :class="Panel.Mode?'actived':''"></div>
-                            <h4>{{Panel.Mode?'Day Mode':'Night Mode'}}</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div @click="Switch_language">
-                            <div :class="Panel.Language?'actived':''"></div>
-                            <h4>{{Panel.Language?'中文':'English'}}</h4>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <div @click="Switch_mode">
+                                <div :class="Panel.Mode?'actived':''"></div>
+                                <h4>{{Panel.Mode?'Day Mode':'Night Mode'}}</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div @click="Switch_language">
+                                <div :class="Panel.Language?'actived':''"></div>
+                                <h4>{{Panel.Language?'中文':'English'}}</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="preview_box" v-if="show_list_project"></div>
             </div>
-            <div class="preview_box" v-if="show_list_project"></div>
-        </div>
+        </transition>
     </aside>
 </template>
 <script>
