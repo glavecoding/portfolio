@@ -1,7 +1,7 @@
 .project_detail{
     display: grid;
     grid-template-columns: 1fr 840px 1fr;
-    .overview,.production{
+    .overview,.development,.users,.mockup{
         grid-column-start: 1;
         grid-column-end: 4;
         margin-top: 120px;
@@ -34,7 +34,7 @@
             }
         }
     }
-    .production{
+    .development{
         height: 400px;
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
@@ -61,7 +61,13 @@
         }
         
     }
-    .problem,.ideation,.optimization,.mockup,.prototyping,.planning,.issue{
+    .users{
+        height: 400px;
+    }
+    .mockup{
+        height:800px;
+    }
+    .problem,.ideation,.optimization,.prototyping,.planning,.issue{
         grid-column-start: 2;
         grid-column-end: 3;
         margin-top: 120px;
@@ -79,9 +85,6 @@
     .optimization{
         height:400px;
     }
-    .mockup{
-        height:400px;
-    }
     .prototyping{
         height:600px;
     }
@@ -94,14 +97,30 @@
     .reflection{
         grid-column-start: 2;
         grid-column-end: 3;
+        width: 100%;
         .learn,.next{
+            display: grid;
+            grid-template-columns: 60px 1fr 60px;
+            grid-template-rows: 60px 1fr 60px;
             width: 100%;
-            height: 320px;
+            height: 400px;
             margin-bottom: 10px;
             background-color: rgba($color: white, $alpha: 0.8);
+            .text_area{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                h2{
+                    color: #160C4E;
+                }
+            }
         }
-        .learn{}
-        .next{}
+        .learn{
+        }
+        .next{
+            
+        }
     }
     .end{
         grid-column-start: 2;
@@ -118,23 +137,24 @@
             margin-left: 40px;
             .icon_animation_arrow_down{
                 transform:rotate(-90deg);
+                margin-left: 16px;
                 .icon_wrapper{
                     div{
                         &:nth-child(odd){
                             background-color: #160C4E!important;
+                            animation:scrollDown 0.8s steps(8) infinite;
                         }
                     }
                 }
             }
             h4{
                 margin-top: 5px;
-                margin-left: 16px;
                 color:#160C4E;
             }
         }
         .go-to-project{
             margin-left: 80px;
-            h3{color:#160C4E;}
+            h4{color:#160C4E;}
         }
     }
 }

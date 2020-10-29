@@ -21,8 +21,51 @@
                 text-align: center;
                 font-size: 40px;
                 margin-bottom: 16px;
-                color:$color-pink;
-                
+                color:rgba($color: #160C4E, $alpha: 1);
+                position: relative;
+                animation: glitch-skew 1s infinite steps(20) alternate-reverse;
+                text-shadow: 0.5px -0.5px $color-pink,-0.5px 0.5px white;
+                &::before{
+                    @include glitchCopy;
+                    left: 1px;
+                    text-shadow: -2px 1px #ff00c1;
+                    clip: rect(44px, 450px, 56px, 0);
+                    animation: glitch-anim 3s infinite linear alternate-reverse;
+                }
+                &::after {
+                    @include glitchCopy;
+                    left: -1px;
+                    text-shadow: -2px 1px #00fff9, 1px 1px #ff00c1;
+                    animation: glitch-anim2 5s infinite linear alternate-reverse;
+                }
+                @keyframes glitch-anim {
+                    $steps: 20;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        clip: rect(random(100)+px, random(120) + px, (50 - random(100))+px, random(120) + px);
+                                transform: skew((random(360) - 180) + deg);
+                        }
+                    }
+                    }
+
+                    @keyframes glitch-anim2 {
+                    $steps: 20;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        clip: rect(random(100)+px, random(120) + px, (50 - random(100))+px, random(120) + px);
+                                transform: skew((180 - random(200)) + deg);
+                        }
+                    }
+                    }
+
+                    @keyframes glitch-skew {
+                    $steps: 10;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        transform: skew((random(10) - 5) + deg);
+                        }
+                    }
+                    }
             }
             .title-sub{
                 display:flex;
@@ -40,7 +83,6 @@
                     margin:0 16px;
                     width:54%;
                     font-size: 16px;
-                    // line-height: 40px;
                     color:rgba($color: $color-pink, $alpha: 0.9);
                     filter:blur(1px);
                 }

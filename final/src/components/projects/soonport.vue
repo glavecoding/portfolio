@@ -4,15 +4,25 @@
             <div class="text_area">
                 <h2>About Project...</h2>
                 <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
+                <img :src="Project.images.overview.logo" alt="">
             </div>
             <div class="text_area">
                 <h2>User's Problems...</h2>
-                <p>“Clients said that they find the specific product hardly on official, and they’d like to know the manufacturing.”
+                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
                     <br><br>—By Client’s Opinion & SOONPORT</p>
             </div>
         </div>
         <div class="problem" ref="problem">
-            <h1>Where’s the problem?</h1>
+            <h1>About the problems...</h1>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="users" ref="users">
+            <h1>Target Users & SOONPORT Staff</h1>
+            <ul>
+                <li></li>
+            </ul>
         </div>
         <div class="ideation" ref="ideation">
             <h1>How to make the Website fit user's needs more ?</h1>
@@ -26,12 +36,12 @@
         <div class="prototyping" ref="prototyping">
            <h1>Prototyping</h1>
         </div>
-        <div class="production" ref="production">
+        <div class="development" ref="development">
             <div class="text_area">
                 <div class="text">
-                    <h2>Website Production</h2>
+                    <h2>Website Development</h2>
                 </div>
-                <img :src="Project.images.production" alt="">
+                <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
         <div class="planning" ref="planning">
@@ -42,19 +52,19 @@
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <h2>What did I learn?</h2>
+                <div class="text_area"><h2>What did I learn ?</h2></div>
             </div>
             <div class="next">
-                <h2>What's next?</h2>
+                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
             </div>
         </div>
         <div class="end">
             <div class="go-to">
+                <h4>Go to next project</h4>
                 <icon_arrow_down/>
-                <h4>Go to next project:</h4>
             </div>
             <div class="go-to-project">
-                <h3>{{Next.name}}</h3>
+                <h4>{{Next.name}}</h4>
             </div>
         </div>
     </section>

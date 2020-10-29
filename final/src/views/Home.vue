@@ -3,10 +3,10 @@
         <section class="sec_home">
             <div></div>
             <div class="wrapper_heading" >
-                <h1 data-text="GLAVE YEN" :class="Glitch_control">GLAVE YEN</h1>
+                <h1 data-text="GLAVE YEN">GLAVE YEN</h1>
                 <div class="title-sub">
                     <h4 data-text="[" :class="Glitch_control">[</h4>
-                    <h4 class="title" :class="Glitch_control" :data-text="`Exploring the land unknown, Crafting the idea to the real world`">Exploring the land unknown, Crafting the idea to the real world</h4>
+                    <h4 class="title" :class="Glitch_control" :data-text="`Exploring the land unknown, Crafting more than enough`">Exploring the land unknown, Crafting more than enough</h4>
                     <h4 data-text="]"  :class="Glitch_control">]</h4>
                 </div>
             </div>

@@ -26,21 +26,27 @@ export default {
         structure: [
           "overview",
           "problem",
+          "users",
           "ideation",
           "optimization",
           "mockup",
           "prototyping",
-          "production",
+          "development",
           "planning",
           "issue",
           "reflection",
         ],
-        images:{
-          production:'./static/images/soonport/graphic_production.png'
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
         },
         next: {
           order: "02",
-          name: 'MUNI Mobile App Re-Design',
+          name: "MUNI Mobile App Re-Design",
         },
       },
       {
@@ -65,6 +71,31 @@ export default {
           ],
         },
         content: "soonport",
+        structure: [
+          "overview",
+          "problem",
+          "users",
+          "ideation",
+          "optimization",
+          "mockup",
+          "prototyping",
+          "development",
+          "planning",
+          "issue",
+          "reflection",
+        ],
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
+        },
+        next: {
+          order: "03",
+          name: "SUBARU Collaborative - 2030 Concept Car Proposal",
+        },
       },
       {
         order: "03",
@@ -88,6 +119,31 @@ export default {
           ],
         },
         content: "soonport",
+        structure: [
+          "overview",
+          "problem",
+          "users",
+          "ideation",
+          "optimization",
+          "mockup",
+          "prototyping",
+          "development",
+          "planning",
+          "issue",
+          "reflection",
+        ],
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
+        },
+        next: {
+          order: "02",
+          name: "MUNI Mobile App Re-Design",
+        },
       },
       {
         order: "04",
@@ -111,6 +167,31 @@ export default {
           ],
         },
         content: "soonport",
+        structure: [
+          "overview",
+          "problem",
+          "users",
+          "ideation",
+          "optimization",
+          "mockup",
+          "prototyping",
+          "development",
+          "planning",
+          "issue",
+          "reflection",
+        ],
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
+        },
+        next: {
+          order: "02",
+          name: "MUNI Mobile App Re-Design",
+        },
       },
       {
         order: "05",
@@ -134,6 +215,31 @@ export default {
           ],
         },
         content: "soonport",
+        structure: [
+          "overview",
+          "problem",
+          "users",
+          "ideation",
+          "optimization",
+          "mockup",
+          "prototyping",
+          "development",
+          "planning",
+          "issue",
+          "reflection",
+        ],
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
+        },
+        next: {
+          order: "02",
+          name: "MUNI Mobile App Re-Design",
+        },
       },
       {
         order: "06",
@@ -157,6 +263,31 @@ export default {
           ],
         },
         content: "soonport",
+        structure: [
+          "overview",
+          "problem",
+          "users",
+          "ideation",
+          "optimization",
+          "mockup",
+          "prototyping",
+          "development",
+          "planning",
+          "issue",
+          "reflection",
+        ],
+        images: {
+          overview: {
+            logo: "./static/images/soonport/logo.png",
+          },
+          development: {
+            graphic: "./static/images/soonport/graphic_production.png",
+          },
+        },
+        next: {
+          order: "02",
+          name: "MUNI Mobile App Re-Design",
+        },
       },
     ],
   },
