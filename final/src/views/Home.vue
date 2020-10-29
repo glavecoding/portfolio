@@ -3,15 +3,18 @@
         <section class="sec_home">
             <div></div>
             <div class="wrapper_heading" >
-                <h1 data-text="[" :class="Glitch_control">[</h1>
-                <h1 class="title" :class="Glitch_control" data-text="Exploring the land unknown, Crafting the idea to the real world">Exploring the land unknown, Crafting the idea to the real world</h1>
-                <h1 data-text="]"  :class="Glitch_control">]</h1>
+                <h1 data-text="GLAVE YEN" :class="Glitch_control">GLAVE YEN</h1>
+                <div class="title-sub">
+                    <h4 data-text="[" :class="Glitch_control">[</h4>
+                    <h4 class="title" :class="Glitch_control" :data-text="`Exploring the land unknown, Crafting the idea to the real world`">Exploring the land unknown, Crafting the idea to the real world</h4>
+                    <h4 data-text="]"  :class="Glitch_control">]</h4>
+                </div>
             </div>
         </section>
         <section class="sec_list" v-if="Projects">
             <ul>
                 <li v-for="(pjt,key) in Projects" :key="key">
-                    <img src="" alt="" class="project_image">
+                    <div :style="{'backgroundImage':'url('+pjt.banner+')'}" class="project_image"/>
                     <div class="wrapper_project_info">
                         <div class="wrapper_order">
                             <p data-text="[">[</p>
@@ -22,7 +25,7 @@
                         <h3>{{pjt.name}}</h3>
                         <ul>
                             <li v-for="tag in pjt.tags">
-                                <h5>{{tag}}</h5>
+                                <h4>{{tag}}</h4>
                             </li>
                         </ul>
                         <div class="see_more">
@@ -54,6 +57,9 @@ export default {
     computed: {
         ...mapState('project',[
             'Projects'
+        ]),
+        ...mapState('universal',[
+            'images'
         ]),
         Glitch_control(){
             return this.Glitch?'glitch':''

@@ -1,5 +1,6 @@
 @font-face{
     font-family: HeadFont;
+    font-weight: 100;
     src:url('./fonts/OCRAStd.ttf')format('TrueType'),
         url('./fonts/OCRAStd.ttf')format('OpenType');
 }
@@ -49,5 +50,5 @@ h5{
 
 p{
     font-family: TextFont;
-    font-size: 12px;
+    font-size: 10px;
 }

@@ -1,6 +1,6 @@
 <template>
     <aside class="fixed_home bottom_scroll">
-        <p>Scroll Down</p>
+        <h5>Scroll Down to See Projects</h5>
         <icon_arrow_down/>
     </aside>
 </template>

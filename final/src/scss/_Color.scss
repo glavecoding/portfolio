@@ -1,4 +1,4 @@
-$color-pink:#E601A2;
+$color-pink:#e601a2;
 $color-purple:#5400d5;
 $dark-gradient:150deg,#26086C,#001421,#3E0A33;
 $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
@@ -45,17 +45,41 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
                 }
             }
         }
+        .Open{
+                h4{
+                    color:rgba($color: #ffffff, $alpha: 1)!important;
+                }
+            }
         .wrapper_panel{
             .list_control{
                 li{
-                    background-color: rgba($color: $color-purple, $alpha: 0.6);
-                    box-shadow: 0px 0px 1px 1px $color-purple,0px 0px 10px rgba($color: $color-purple, $alpha: 0.8);
+                    background-color: rgba($color: $color-pink, $alpha: 0.7);
+                    box-shadow: 0px 0px 1px 1px $color-pink,0px 0px 10px rgba($color: $color-pink, $alpha: 0.8);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: rgba($color: $color-pink, $alpha: 1);
+                    }
+                    .button{
+                        box-shadow:0px 0px 2px 1px $color-pink;
+                        &::after{
+                            background-color: rgba($color: white, $alpha: 1);
+                            box-shadow:0px 0px 2px 1px rgba($color: white, $alpha: 0.6);
+                        }
+                    }
                 }
+                
             }
             .list_project{
                 li{
-                    background-color: rgba($color: $color-pink, $alpha: 0.6);
-                    box-shadow: 0px 0px 1px 1px $color-pink,0px 0px 10px rgba($color: $color-pink, $alpha: 0.8);
+                    background-color: rgba($color: $color-purple, $alpha: 0.7);
+                    box-shadow: 0px 0px 1px 1px $color-purple,0px 0px 10px rgba($color: $color-purple, $alpha: 0.8);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: rgba($color: $color-pink, $alpha: 1);
+                    }
+                }
+                .actived{
+                    background-color: rgba($color: $color-pink, $alpha: 0.8);
                 }
             }
         }

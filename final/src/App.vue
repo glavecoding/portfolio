@@ -2,7 +2,7 @@
   <div id="app" :class="Panel.Mode?'light_mode':'dark_mode'" v-scrolling="Handle_scroll">
     <BG
     />
-    <div class="scan" :style="{'opacity':Scanline_control}" v-if="$route.name !='Project'">
+    <div class="scan" :style="{'opacity':Scanline_control}">
 
     </div>
     <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate__faster">
@@ -10,7 +10,7 @@
     </transition>
     
     <Panel
-      v-if="Side_show_rule != 'About'"
+      v-if="Side_show_rule == 'Project'"
       @Switch_mode="Switch_mode"
       @Switch_language="Switch_language"
     />
@@ -29,7 +29,7 @@
     />
     <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
       <Bottom_scroll
-        v-if="Side_show_rule != 'About' && Hide_scroll"
+        v-if="Side_show_rule == 'Home' && Hide_scroll"
       />
     </transition>
 
@@ -97,7 +97,6 @@ export default {
     },
     Height:{
       handler(){
-        
         this.Hide_scroll = this.Height> 100 ? false:true
       }
     }

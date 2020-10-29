@@ -5,42 +5,48 @@
             @click="Show_panel"
             @mouseenter="Hover_icon"
             @mouseleave="Hover_icon"
+            :class="Show?'Open':''"
         >
             <icon_panel
                 :Active="Show"
                 :Hover="Hover"
             />
-            <h4>Panel</h4>
+            <h4>{{$route.name=='Project'?'':''}}Projects</h4>
         </div>
         <transition enter-active-class="animate__animated animate__fadeInLeft animate__faster" leave-active-class="animate__animated animate__fadeOutLeft animate__faster">
             <div class="wrapper_panel" v-if="Show">
-                <div class="list_project" v-if="show_list_project">
+                <div class="list_project">
                     <ul>
-                        <li v-for="pjt in Projects" v-if="Projects" @click="Go_project(pjt.order)">
+                        <li 
+                            v-for="pjt in Projects"
+                            v-if="Projects" 
+                            @click="Go_project(pjt.order)"
+                            :class="$route.query.project == pjt.order?'actived':''"
+                            >
                             <h4>{{pjt.order}}.{{pjt.name}}</h4>
                         </li>
                     </ul>
                 </div>
-                <div class="sperated neon_effect" v-if="show_list_project"></div>
-                <div class="list_control">
+                <!-- <div class="sperated neon_effect" v-if="show_list_project"></div> -->
+                <!-- <div class="list_control">
                     <ul>
                         <li>
 
                         </li>
                         <li>
                             <div @click="Switch_mode">
-                                <div :class="Panel.Mode?'actived':''"></div>
+                                <div class="button" :class="Panel.Mode?'actived':''"></div>
                                 <h4>{{Panel.Mode?'Day Mode':'Night Mode'}}</h4>
                             </div>
                         </li>
                         <li>
                             <div @click="Switch_language">
-                                <div :class="Panel.Language?'actived':''"></div>
+                                <div class="button" :class="Panel.Language?'actived':''"></div>
                                 <h4>{{Panel.Language?'中文':'English'}}</h4>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="preview_box" v-if="show_list_project"></div>
             </div>
         </transition>
@@ -92,7 +98,7 @@ export default {
         },
         Go_project(pjt){
             this.Show = false
-            this.$router.replace({query:{project:pjt}})
+            this.$router.push({path:'/project',query:{project:pjt}})
         }
     },
     watch: {

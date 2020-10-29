@@ -30,9 +30,12 @@
         <h3>FIND ME HERE</h3>
       </div>
       </div>
-      <img :src="images.about.profile" alt="">
-      <div class="mask">
-      </div>
+      <transition appear appear-active-class="animate__animated animate__fadeInRight animate__faster">
+        <img :src="images.about.profile" alt="">
+      </transition>
+      <transition appear appear-active-class="animate__animated animate__fadeInLeft animate__faster">
+         <div class="mask"/>
+      </transition>
       <h4 data-text="Exploring the land unknown, crafting the mind and idea to real">Exploring the land unknown, crafting the mind and idea to real</h4>
     </div>
     
