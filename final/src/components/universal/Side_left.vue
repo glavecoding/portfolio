@@ -5,9 +5,10 @@
             <p>Back Home</p>
         </div>
         <div :class="Show_scroll_down?'scroll_down animate_fadeOutLeft':'scroll_down'">
-            
+            <!-- <p>Scroll Down</p>
+            <icon_arrow_down/> -->
         </div>
-        <div :class="Show_back_top?'back_top ':'back_top n animate_fadeOutLeft'" @click="Go_top">
+        <div :class="Show_back_top?'back_top ':'back_top animate_fadeOutLeft'" @click="Go_top">
             <icon_arrow_up/>
             <p>Back Top</p>
         </div>

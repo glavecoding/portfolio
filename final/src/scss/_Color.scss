@@ -1,10 +1,9 @@
-$color-pink:#E601A2;
+$color-pink:#e601a2;
 $color-purple:#5400d5;
 $dark-gradient:150deg,#26086C,#001421,#3E0A33;
 $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
 // dark mode
 .dark_mode{
-
     h1,h2,h3,h4,h5,p{
         color:white;
     }
@@ -23,8 +22,17 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
             background: linear-gradient(rgba(255, 0, 98, 0.05) 50%, rgba(125, 11, 233, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
         }
     }
-    .fixed_home{
         .panel_control{
+            h4{
+                color:rgba($color: #ffffff, $alpha: 0.4);
+                transition: 0.3s ease-in-out;
+            }
+            
+            &:hover{
+                h4{
+                color:rgba($color: #ffffff, $alpha: 1);
+                }
+            }
             .icon_animation_panel{
                 .icon_wrapper{
                     div{
@@ -37,8 +45,45 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
                 }
             }
         }
-        
-            .icon_animation_about{
+        .Open{
+                h4{
+                    color:rgba($color: #ffffff, $alpha: 1)!important;
+                }
+            }
+        .wrapper_panel{
+            .list_control{
+                li{
+                    background-color: rgba($color: $color-pink, $alpha: 0.7);
+                    box-shadow: 0px 0px 1px 1px $color-pink,0px 0px 10px rgba($color: $color-pink, $alpha: 0.8);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: rgba($color: $color-pink, $alpha: 1);
+                    }
+                    .button{
+                        box-shadow:0px 0px 2px 1px $color-pink;
+                        &::after{
+                            background-color: rgba($color: white, $alpha: 1);
+                            box-shadow:0px 0px 2px 1px rgba($color: white, $alpha: 0.6);
+                        }
+                    }
+                }
+                
+            }
+            .list_project{
+                li{
+                    background-color: rgba($color: $color-purple, $alpha: 0.7);
+                    box-shadow: 0px 0px 1px 1px $color-purple,0px 0px 10px rgba($color: $color-purple, $alpha: 0.8);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: rgba($color: $color-pink, $alpha: 1);
+                    }
+                }
+                .actived{
+                    background-color: rgba($color: $color-pink, $alpha: 0.8);
+                }
+            }
+        }
+        .icon_animation_about{
                 .icon_wrapper{
                     div{
                         background-color: white;
@@ -48,19 +93,29 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
                         box-shadow: 0px 0px 4px $color-pink;
                     }
                 }
-            }
-            &:hover{
-                .icon_animation_about{
-                    .icon_wrapper{
-                        .icon_neon_bar{
-                            background-color: transparent;
-                            border-left: 3px solid $color-pink;
-                            border-right: 3px solid $color-pink;
-                            border-bottom: 3px solid $color-pink;
-                        }
+        }
+        &:hover{
+            .icon_animation_about{
+                .icon_wrapper{
+                    .icon_neon_bar{
+                        background-color: transparent;
+                        border-left: 4px solid $color-pink;
+                        border-right: 4px solid $color-pink;
+                        border-bottom: 4px solid $color-pink;
                     }
                 }
             }
+        }
+    .about_control{
+        &:hover{
+           h4{
+            color:rgba($color: #ffffff, $alpha: 1);     
+            }
+        }
+        h4{
+                color:rgba($color: #ffffff, $alpha: 0.4);  
+                transition: 0.3s ease-in-out;   
+        }
     }
     .icon_animation_arrow_up,.icon_animation_arrow_down{
         .icon_wrapper{
@@ -73,7 +128,24 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
             }
         }
     }
-    
+    .home{
+        .sec_list{
+            ul{
+                li{
+                    .wrapper_project_info{
+                        .wrapper_order{
+                            h1{
+                                color:$color-pink;
+                            }
+                            p{
+                                color:$color-purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 // light mode
 .light_mode{

@@ -1,18 +1,20 @@
+@import './Color';
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: rgba($color:#160C4E, $alpha: 1); 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: $color-pink; 
+  box-shadow: 0px 0px 8px $color-pink;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgba($color: $color-purple, $alpha: 0.2);
 }
