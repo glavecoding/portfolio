@@ -1,6 +1,5 @@
 <template>
     <div class="project" v-scrolling="Handle_scroll">
-
             <section
                 class="banner"
                 :style="{'background':'url('+Project_data.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 40%,rgba(230,1,162,0.6) 60%,#5400d5)'}">
@@ -35,13 +34,14 @@
                     </li>
                 </ul>
             </section>
-            <component
+                <component
                 :is="Project_data.content"
                 @ref_list="Handle_ref"
                 :Structure="Project_data.structure"
                 :Next="Project_data.next"
                 :Project="Project_data"
-            />
+                v-if="Transition"
+                />
             <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate_faster">
                 <Navigation
                     :Height="Height"
@@ -55,16 +55,27 @@
 import Navigation from '../components/universal/Navigation'
 import {mapState} from 'vuex'
 import soonport from '../components/projects/soonport'
+import muni from '../components/projects/muni'
+import subaru from '../components/projects/subaru'
+import foodie from '../components/projects/foodie'
+import metrix from '../components/projects/metrix'
+import drip from '../components/projects/drip'
 export default {
     name:'Project',
     components:{
         Navigation,
-        soonport
+        soonport,
+        muni,
+        subaru,
+        foodie,
+        metrix,
+        drip
     },
     data() {
         return {
             Height:0,
-            classList:null
+            classList:null,
+            Transition:true
         }
     },
     computed: {
@@ -84,7 +95,10 @@ export default {
         },
         Handle_ref(e){
             this.classList = [...e]
+        },
+        Transition_control(){
+            this.Transition = !this.Transition
         }
-    }
+    },
 }
 </script>

@@ -98,7 +98,7 @@ export default {
         },
         Go_project(pjt){
             this.Show = false
-            this.$router.push({path:'/project',query:{project:pjt}})
+            this.$router.replace({query:{project:pjt}})
         }
     },
     watch: {

@@ -121,6 +121,7 @@
                     }
                     .actived{
                         left:calc(100% - 24px);
+                        pointer-events: none;
                     }
                 }
             }
