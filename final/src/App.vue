@@ -1,22 +1,33 @@
 <template>
   <div id="app" :class="Panel.Mode?'light_mode':'dark_mode'" v-scrolling="Handle_scroll">
-    <BG
-    />
-    <div class="scan" :style="{'opacity':Scanline_control}">
+      <transition appear-active-class="animate__animated animate__fadeIn animate__faster">
+      <BG
+        v-if="$route"
+      />
+      </transition>
+      <div class="scan" :style="{'opacity':Scanline_control}">
 
-    </div>
+      </div>
     <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate__faster">
       <router-view/>
     </transition>
-    
+    <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
+      <Logo
+        v-if="Side_show_rule == 'Home' || Side_show_rule == 'Open'"
+      />
+    </transition>
+    <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
     <Panel
       v-if="Side_show_rule == 'Project'"
       @Switch_mode="Switch_mode"
       @Switch_language="Switch_language"
     />
+    </transition>
+    <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
     <About_control
-      v-if="Side_show_rule != 'About'"
-    /> 
+      v-if="Side_show_rule == 'Home' || Side_show_rule == 'Project'"
+    />
+    </transition>
     <Side_left
       :Rule="Side_show_rule"
       :Show_top=" Side_show_top"
@@ -24,9 +35,11 @@
       :Body_height="Body_height"
       v-if="Side_show_rule != 'About'"
     />
+    <transition enter-active-class="animate__animated animate__fadeInRight animate__faster" leave-active-class="animate__animated animate__fadeOutRight animate__faster">
     <Side_right
-      v-if="Side_show_rule != 'About'"
+      v-if="Side_show_rule == 'Home' || Side_show_rule == 'Project'"
     />
+    </transition>
     <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
       <Bottom_scroll
         v-if="Side_show_rule == 'Home' && Hide_scroll"
@@ -43,6 +56,7 @@ import Side_left from './components/universal/Side_left'
 import Side_right from './components/universal/Side_right'
 import BG from './components/universal/Back_texture'
 import Bottom_scroll from './components/universal/Bottom_scroll'
+import Logo from './components/universal/Logo'
 export default {
   name:'App',
   components:{
@@ -51,7 +65,8 @@ export default {
     Side_right,
     Side_left,
     BG,
-    Bottom_scroll
+    Bottom_scroll,
+    Logo
   },
   data() {
     return {
@@ -93,6 +108,9 @@ export default {
   watch: {
     $route:{
       handler(to,from){
+        if(this.$route.name == 'Open' && from.name == 'Home'){
+          window.location.reload();
+        }
       }
     },
     Height:{

@@ -28,6 +28,11 @@
         url('./fonts/SourceCodePro-Black.otf')format('OpenType');
     font-weight: 800;
 }
+@font-face{
+    font-family: orbitron;
+    src:url('./fonts/Orbitron-Medium.ttf')format('TrueType'),
+        url('./fonts/Orbitron-Medium.otf')format('OpenType');
+}
 
 h1,h2,h3,h4,h5,h6{
      font-family: HeadFont;

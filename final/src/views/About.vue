@@ -34,9 +34,15 @@
         <img :src="images.about.profile" alt="">
       </transition>
       <transition appear appear-active-class="animate__animated animate__fadeInLeft animate__faster">
-         <div class="mask"/>
+         <div class="mask">
+           <div>
+             <h1 data-text="顏">顏</h1>
+             <h1 data-text="欽">欽</h1>
+             <h1 data-text="賢">賢</h1>
+           </div>
+         </div>
       </transition>
-      <h4 data-text="Exploring the land unknown, crafting the mind and idea to real">Exploring the land unknown, crafting the mind and idea to real</h4>
+      <h4 data-text="Exploring the land unknown, crafting more than enough">Exploring the land unknown, crafting more than enough</h4>
     </div>
     
   </div>

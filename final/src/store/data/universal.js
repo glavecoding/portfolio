@@ -1,3 +1,4 @@
+import Lottie_logo from '../../assets/Logo.json'
 export default {
   state: {
     images: {
@@ -13,6 +14,7 @@ export default {
         github: "./static/icons/github-logo.svg",
       },
     },
+    Lottie:Lottie_logo
   },
   mutations: {},
   actions: {},
