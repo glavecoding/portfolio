@@ -6,7 +6,7 @@
                 <h1 data-text="GLAVE YEN">GLAVE YEN</h1>
                 <div class="title-sub">
                     <h4 data-text="[" :class="Glitch_control">[</h4>
-                    <h4 class="title" :class="Glitch_control" :data-text="`Exploring the land unknown, Crafting more than enough`">Exploring the land unknown, Crafting more than enough</h4>
+                    <h4 class="title" :class="Glitch_control" :data-text="`Hi, I'm Glave.`">Hi, I'm Glave.</h4>
                     <h4 data-text="]"  :class="Glitch_control">]</h4>
                 </div>
             </div>
@@ -14,8 +14,10 @@
         <section class="sec_list" v-if="Projects">
             <ul>
                 <li v-for="(pjt,key) in Projects" :key="key">
-                    <div :style="{'backgroundImage':'url('+pjt.banner+')'}" class="project_image"/>
-                    <div class="wrapper_project_info">
+                    <div :style="{'backgroundImage':'url('+pjt.banner+')'}" class="project_image"
+                    @click="Go_project(pjt.order,pjt.name)"
+                    />
+                    <div class="wrapper_project_info" @click="Go_project(pjt.order,pjt.name)">
                         <div class="wrapper_order">
                             <p data-text="[">[</p>
                             <h1 :data-text="pjt.order">{{pjt.order}}</h1>
@@ -29,7 +31,7 @@
                             </li>
                         </ul>
                         <div class="see_more">
-                            <h4 class="button" @click="Go_project(pjt.order)">See More</h4>
+                            <h4 class="button" @click="Go_project(pjt.order,pjt.name)">See More</h4>
                             <icon_arrow_down/>
                         </div>
                     </div>
@@ -66,8 +68,10 @@ export default {
         }
     },
     methods: {
-        Go_project(pjt){
-            this.$router.push({path:'/project',query:{project:pjt}})
+        Go_project(pjt_order,pjt_name){
+            const project = pjt_order
+            const name = pjt_name
+            this.$router.push({path:`/project/${project}/${name}`})
         },
         Handle_scroll(){
             this.Height = Math.floor(window.scrollY)

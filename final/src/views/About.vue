@@ -1,7 +1,5 @@
 <template>
   <div class="about">
-    <Go_back
-    />
     <div class="project_area">
       <div class="text_area">
       <div class="text">

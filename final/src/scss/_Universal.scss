@@ -73,64 +73,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        // .svg_logo{
-        //     width:144px;
-        //     position: absolute;
-        //     margin-left: 28px;
-        //     transform: scale(2);
-        //     filter: blur(2px);
-        //     opacity: 0.06;
-        //     animation: floating2 2s 3s ease-in-out infinite alternate;
-        //     .st0{
-        //         fill:#FCE9F2;
-        //         position: relative;
-        //         transform-origin:center;
-        //         // animation: core_move2 1s infinite alternate;
-        //     }
-        //     .st1{
-        //         fill: #E51C4E;
-        //         animation: core_move2 1s infinite alternate;
-        //     }
-        //     .st4{
-        //         fill:white;
-        //         // transform: translate(-4px,-4px)scale(1.02);
-        //         animation: core_move 1s infinite alternate;
-        //     }
-        //     @keyframes core_move {
-        //         $steps:20;
-        //         @for $i from 0 to $steps {
-        //             #{percentage($i*(1/$steps))}{
-        //                 transform: translate((random(2) - 1)+px,(random(2) - 1)+px)skew((random(2) - 1)+deg);
-        //             }
-        //         }
-        //     }
-        //     @keyframes core_move2 {
-        //         $steps:20;
-        //         @for $i from 0 to $steps {
-        //             #{percentage($i*(1/$steps))}{
-        //                 transform: translate((random(2) - 1)+px,(random(2) - 1)+px)skew((random(2) - 1)+deg);
-        //             }
-        //         }
-        //     }
-        //         @keyframes floating1{
-        //             0%{transform: translate(-1px,1px);}
-        //             25%{transform: translate(1px,-1px);}
-        //             50%{transform: translate(-1px,-1px);}
-        //             75%{transform: translate(1px,-1px);}
-        //             100%{transform: translate(1px,1px);}
-        //         }
-        //         @keyframes floating2{
-        //             0%{
-        //                 transform: translate(0px,0px)scale(2);
-        //             }
-        //             50%{
-        //                 transform: translate(0px,10px)scale(2);
-        //             }
-        //             100%{
-        //                 transform: translate(0px, 0px)scale(2);
-        //             }
-        //         }
-        // }
+        
         .lottie_class{
             animation: lottie_anim 0.4s steps(8) forwards;
             // animation-delay: .5s;

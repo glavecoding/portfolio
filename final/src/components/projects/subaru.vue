@@ -1,5 +1,39 @@
 <template>
     <section class="project_detail">
+        <div class="banner"
+                :style="{'background':'url('+Project.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 30%,rgba(230,1,162,0.6) 60%,#5400d5)'}">
+             <div class="show_case"></div>
+                <div class="wrapper-title">
+                    <h1>{{Project.name}}</h1>
+                    <ul>
+                        <li v-for="tag in Project.tags"><h4>{{tag}}</h4></li>
+                    </ul>
+                </div>
+                
+        </div>
+        <div class="info">
+                <ul>
+                    <li>
+                        <h3>Roles</h3>
+                        <div>
+                            <p v-for="text in Project.info.role">{{text}}</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Time & Duration</h3>
+                        <div>
+                            <p v-for="text in Project.info.time">{{text}}</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Skills</h3>
+                        <div>
+                            <p v-for="text in Project.info.skills">{{text}}</p>
+                            
+                        </div>
+                    </li>
+                </ul>
+        </div>
         <div class="overview" ref="overview">
             <div class="text_area">
                 <h2>About Project...</h2>
@@ -72,7 +106,7 @@
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
 export default {
-    name:'soonport',
+    name:'subaru',
     props:{
         Structure:Array,
         Next:Object,

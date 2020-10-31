@@ -53,7 +53,7 @@ export default {
         order: "02",
         tags: ["UI Design", "UX Design"],
         name: "MUNI Mobile App Re-Design",
-        banner: "",
+        banner: "./static/images/muni/Graphics_banner_muni.png",
         info: {
           role: ["UI/UX Designer"],
           time: ["4 Months", "Sep, 2018 - Dec, 2019"],
@@ -75,8 +75,6 @@ export default {
           "mockup",
           "prototyping",
           "development",
-          "planning",
-          "issue",
           "reflection",
         ],
         images: {
@@ -101,7 +99,7 @@ export default {
           "Programming",
         ],
         name: "SUBARU Collaborative - 2030 Concept Car Proposal",
-        banner: "",
+        banner: "./static/images/subaru/Graphics_banner_subaru.png",
         info: {
           role: ["UI/UX Designer", "Programmer"],
           time: ["4 Months", "Feb, 2019 - May, 2019"],
@@ -131,6 +129,7 @@ export default {
           "reflection",
         ],
         images: {
+          info:"./static/images/subaru/icon_subaruxaau.svg",
           overview: {
             logo: "./static/images/soonport/logo.png",
           },

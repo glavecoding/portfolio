@@ -1,5 +1,39 @@
 <template>
     <section class="project_detail">
+        <div class="banner"
+                :style="{'background':'url('+Project.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 30%,rgba(230,1,162,0.6) 60%,#5400d5)'}">
+             <div class="show_case"></div>
+                <div class="wrapper-title">
+                    <h1>{{Project.name}}</h1>
+                    <ul>
+                        <li v-for="tag in Project.tags"><h4>{{tag}}</h4></li>
+                    </ul>
+                </div>
+                
+        </div>
+        <div class="info">
+                <ul>
+                    <li>
+                        <h3>Roles</h3>
+                        <div>
+                            <p v-for="text in Project.info.role">{{text}}</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Time & Duration</h3>
+                        <div>
+                            <p v-for="text in Project.info.time">{{text}}</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Skills</h3>
+                        <div>
+                            <p v-for="text in Project.info.skills">{{text}}</p>
+                            
+                        </div>
+                    </li>
+                </ul>
+        </div>
         <div class="overview" ref="overview">
             <div class="text_area">
                 <h2>About Project...</h2>
@@ -44,12 +78,6 @@
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
-        <div class="planning" ref="planning">
-            <h1>Planning</h1>
-        </div>
-        <div class="issue" ref="issue">
-            <h1>Issue</h1>
-        </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
                 <div class="text_area"><h2>What did I learn ?</h2></div>
@@ -72,7 +100,7 @@
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
 export default {
-    name:'soonport',
+    name:'muni',
     props:{
         Structure:Array,
         Next:Object,
@@ -87,6 +115,7 @@ export default {
     },
     mounted() {
         const ref_arr = this.Structure.map(item=>{
+            console.log(document.querySelector('.'+item).offsetTop)
             return {
                 name:item,
                 height:this.$refs[item].offsetTop
@@ -94,5 +123,8 @@ export default {
         })
         this.$emit('ref_list',ref_arr)
     },
+    beforeDestroy(){
+        this.$emit('reload','')
+    }
 }
 </script>

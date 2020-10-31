@@ -1,18 +1,5 @@
 <template>
-    <aside class="fixed_home panel">
-        <div
-            class="panel_control"
-            @click="Show_panel"
-            @mouseenter="Hover_icon"
-            @mouseleave="Hover_icon"
-            :class="Show?'Open':''"
-        >
-            <icon_panel
-                :Active="Show"
-                :Hover="Hover"
-            />
-            <h4>{{$route.name=='Project'?'':''}}Projects</h4>
-        </div>
+    <aside class="fixed_home panel" @mouseleave="Show_panel(false)">
         <transition enter-active-class="animate__animated animate__fadeInLeft animate__faster" leave-active-class="animate__animated animate__fadeOutLeft animate__faster">
             <div class="wrapper_panel" v-if="Show">
                 <div class="list_project">
@@ -20,8 +7,8 @@
                         <li 
                             v-for="pjt in Projects"
                             v-if="Projects" 
-                            @click="Go_project(pjt.order)"
-                            :class="$route.query.project == pjt.order?'actived':''"
+                            @click="Go_project(pjt.order,pjt.name)"
+                            :class="$route.params.order == pjt.order?'actived':''"
                             >
                             <h4>{{pjt.order}}.{{pjt.name}}</h4>
                         </li>
@@ -50,6 +37,19 @@
                 <div class="preview_box" v-if="show_list_project"></div>
             </div>
         </transition>
+        <div
+            class="panel_control"
+            @click="Show?Show_panel(false):Show_panel(true)"
+            @mouseenter="Hover_icon"
+            @mouseleave="Hover_icon"
+            :class="Show?'Open':''"
+        >
+            <icon_panel
+                :Active="Show"
+                :Hover="Hover"
+            />
+            <h4 :style="Hover || Show?{}:{'opacity':'0.4'}">Project list</h4>
+        </div>
     </aside>
 </template>
 <script>
@@ -82,8 +82,8 @@ export default {
         }
     },
     methods: {
-        Show_panel(){
-            this.Show = !this.Show
+        Show_panel(boo){
+            this.Show = boo
         },
         Hover_icon(){
             this.Hover = !this.Hover
@@ -96,9 +96,9 @@ export default {
             this.Panel.Language = !this.Panel.Language
             this.$emit('Switch_language',this.Panel.Language)
         },
-        Go_project(pjt){
-            this.Show = false
-            this.$router.replace({query:{project:pjt}})
+        Go_project(pjt_order,pjt_name){
+            // this.Show = false
+            this.$router.push({path:`/project/${pjt_order}/${pjt_name}`})
         }
     },
     watch: {

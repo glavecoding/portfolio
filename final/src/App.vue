@@ -8,8 +8,10 @@
       <div class="scan" :style="{'opacity':Scanline_control}">
 
       </div>
+
     <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate__faster">
-      <router-view/>
+      <router-view>
+      </router-view>
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
       <Logo
@@ -17,6 +19,11 @@
       />
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
+    <Go_back
+      v-if="Side_show_rule == 'Project' || Side_show_rule == 'About'"
+    />
+    </transition>
+    <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
     <Panel
       v-if="Side_show_rule == 'Project'"
       @Switch_mode="Switch_mode"
@@ -29,11 +36,10 @@
     />
     </transition>
     <Side_left
-      :Rule="Side_show_rule"
       :Show_top=" Side_show_top"
       :Height="Height"
       :Body_height="Body_height"
-      v-if="Side_show_rule != 'About'"
+      v-if="Side_show_rule == 'Home'"
     />
     <transition enter-active-class="animate__animated animate__fadeInRight animate__faster" leave-active-class="animate__animated animate__fadeOutRight animate__faster">
     <Side_right
@@ -57,6 +63,8 @@ import Side_right from './components/universal/Side_right'
 import BG from './components/universal/Back_texture'
 import Bottom_scroll from './components/universal/Bottom_scroll'
 import Logo from './components/universal/Logo'
+import Go_back from './components/universal/Go_back'
+import {mapState} from 'vuex'
 export default {
   name:'App',
   components:{
@@ -66,7 +74,8 @@ export default {
     Side_left,
     BG,
     Bottom_scroll,
-    Logo
+    Logo,
+    Go_back
   },
   data() {
     return {
