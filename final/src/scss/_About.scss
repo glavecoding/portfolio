@@ -29,6 +29,17 @@
                 h1{
                     font-size: 36px;
                 }
+                .flicking{
+                    animation: flick_right 0.35s infinite;
+                }
+                @keyframes flick_right{
+                    from{
+                        border-right: 2px solid white;
+                    }
+                    to{
+                        border-right: 2px solid transparent;
+                    }
+                }
                 p{
                 width:60%;
                 margin-top: 20px;
@@ -101,6 +112,7 @@
             backdrop-filter: blur(4px);
             transform: translate(-24px,-24px);
             filter: blur(2px);
+            animation:fade_in 0.3s ease-out forwards;
             &:hover{
                 animation: scan_anim2 2s ease alternate infinite;
             }
@@ -124,6 +136,14 @@
                                 
                                 background-position:0% 0%;
                             }
+            }
+            @keyframes fade_in{
+                from{
+                    opacity:0;
+                }
+                to{
+                    opacity:0.4;
+                }
             }
             div{
                 position: absolute;

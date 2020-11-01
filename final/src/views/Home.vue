@@ -4,11 +4,13 @@
             <div></div>
             <div class="wrapper_heading" >
                 <h1 data-text="GLAVE YEN">GLAVE YEN</h1>
-                <div class="title-sub">
-                    <h4 data-text="[" :class="Glitch_control">[</h4>
-                    <h4 class="title" :class="Glitch_control" :data-text="`Hi, I'm Glave.`">Hi, I'm Glave.</h4>
-                    <h4 data-text="]"  :class="Glitch_control">]</h4>
-                </div>
+                    <div class="title-sub">
+                        <h4 data-text="[" :class="Glitch_control">[</h4>
+                        <div class="flick_right" :class="typing.length != origin.length + origin2.length ? 'flicking':''">
+                            <h4 class="title" :class="Glitch_control" :data-text="typing">{{typing}}</h4>
+                        </div>
+                        <h4 data-text="]"  :class="Glitch_control">]</h4>
+                    </div>
             </div>
         </section>
         <section class="sec_list" v-if="Projects">
@@ -49,11 +51,18 @@ export default {
         icon_arrow_down
     },
     mounted(){
+        this.origin = this.origin.split("")
+        this.origin2 = this.origin2.split("")
     },
     data() {
         return {
             Height:0,
-            Glitch:true
+            Glitch:true,
+            origin:"Hi, I'm Glave.",
+            origin2:" I focus on web development & UI/UX Design.",
+            typing:"",
+            target:0,
+            timer:null
         }
     },
     computed: {
@@ -65,6 +74,9 @@ export default {
         ]),
         Glitch_control(){
             return this.Glitch?'glitch':''
+        },
+        Type_change(){
+            return typeof origin == String && typeof origin2 == String? false:true
         }
     },
     methods: {
@@ -81,6 +93,55 @@ export default {
         }
     },
     watch: {
+        typing:{
+            handler(){
+                const Time_out = this.origin.length,
+                    Time_out2 = this.origin.length + this.origin2.length;
+
+                if(this.typing.length == Time_out){
+                    clearInterval(this.timer)
+                    this.timer = null
+                    this.target = 0
+                    setTimeout(()=>{
+                        this.timer = setInterval(()=>{
+                            this.typing += this.origin2[this.target]
+                            this.target += 1
+                        },Math.random(1)*100 + 40)
+                    },1000)
+                }else if(this.typing.length == Time_out2){
+                    clearInterval(this.timer)
+                    this.timer = null
+                    this.target = 0
+
+                    setTimeout(()=>{
+                        this.typing = ""
+                        this.timer = setInterval(()=>{
+                            this.typing += this.origin[this.target]
+                            this.target += 1
+                        },Math.random(1)*100 + 40)
+                    },10000)
+                }
+            },
+            deep:true
+        },
+        origin:{
+            handler(){
+                if(typeof this.origin != String){
+                    setTimeout(()=>{
+                        this.timer = setInterval(()=>{
+                            this.typing += this.origin[this.target]
+                            this.target += 1
+                        },Math.random(1)*100 + 40)
+                    },1200)
+                }
+            }
+        }
     },
+    beforeDestroy(){
+        clearInterval(this.timer)
+        this.timer = null
+        this.target = 0
+        this.typing = ""
+    }
 }
 </script>

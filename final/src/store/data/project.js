@@ -52,7 +52,7 @@ export default {
       {
         order: "02",
         tags: ["UI Design", "UX Design"],
-        name: "MUNI Mobile App Re-Design",
+        name: "MUNI Mobile Application Re-Design",
         banner: "./static/images/muni/Graphics_banner_muni.png",
         info: {
           role: ["UI/UX Designer"],
