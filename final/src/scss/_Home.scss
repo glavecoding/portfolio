@@ -10,19 +10,65 @@
         height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
         .wrapper_heading{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction:column;
+            // margin-top: 160px;
             h1{
                 width:100%;
                 text-align: center;
-                font-size: 40px;
+                font-size: 100px;
                 margin-bottom: 16px;
-                color:$color-pink;
-                
+                color:transparent;
+                position: relative;
+                font-family: orbitron;
+                font-weight: bolder;
+                animation: glitch-skew 1.5s infinite steps(20) alternate-reverse;
+                // text-shadow:-0.5px 0.5px white;
+                &::before{
+                    @include glitchCopy;
+                    left: 1px;
+                    text-shadow: -2px 1px #ff00c1;
+                    clip: rect(44px, 450px, 56px, 0);
+                    animation: glitch-anim 3s infinite linear alternate-reverse;
+                }
+                &::after {
+                    @include glitchCopy;
+                    left: -1px;
+                    text-shadow: -2px 1px #00fff9, 1px 1px #ff00c1;
+                    animation: glitch-anim2 1.5s infinite linear alternate-reverse;
+                }
+                @keyframes glitch-anim {
+                    $steps: 20;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        clip: rect(random(100)+px, random(120) + px, (100 - random(200))+px, random(120) + px);
+                                transform: skew((random(360) - 180) + deg);
+                        }
+                    }
+                    }
+
+                    @keyframes glitch-anim2 {
+                    $steps: 20;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        clip: rect(random(100)+px, random(120) + px, (100 - random(1200))+px, random(120) + px);
+                                transform: skew((180 - random(200)) + deg);
+                        }
+                    }
+                    }
+
+                    @keyframes glitch-skew {
+                    $steps: 20;
+                    @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                        transform: skew((random(2) - 1) + deg)translate((random(4) - 2)+px,(random(4) - 2)+px);
+                        }
+                    }
+                    }
             }
             .title-sub{
                 display:flex;
@@ -30,6 +76,7 @@
                 align-items: center;
                 h4{
                 text-align: center;
+                white-space: nowrap;
                 &:nth-child(odd){
                     line-height: 32px;
                     filter:blur(1px);
@@ -37,10 +84,10 @@
                 }
             }
                 .title{
-                    margin:0 16px;
-                    width:54%;
+                    margin:0 32px;
+                    width:90%;
                     font-size: 16px;
-                    // line-height: 40px;
+                    line-height: 24px;
                     color:rgba($color: $color-pink, $alpha: 0.9);
                     filter:blur(1px);
                 }
@@ -105,33 +152,8 @@
                 }
                 &:hover{
                     .project_image{
-                         animation: scan_anim3 2s ease alternate-reverse infinite;
-                        &::before{
-                            animation: scan_anim2 2s ease alternate-reverse infinite;
-                        }
                         &::after{
                             animation: scan_anim 2s ease alternate infinite;
-                        }
-                        @keyframes scan_anim3{
-                            $steps: 60;
-                            @for $i from 0 through $steps {
-                                #{percentage($i*(1/$steps))} {
-                                    outline:1px solid rgba($color: $color-purple, $alpha: 0.8);
-                                    outline-offset: random(3)+px;
-                                    box-shadow: ((1 - random(2))+px) ((1 - random(2))+px) 0 (random(1)+px) rgba($color: rgb(0, 255, 242), $alpha: 0.8);
-                                }
-                            }
-                        }
-                        @keyframes scan_anim2{
-                            $steps: 60;
-                            @for $i from 0 through $steps {
-                                #{percentage($i*(1/$steps))} {
-                                background-image: linear-gradient(90deg,rgba($color: $color-pink, $alpha: 0.1),rgba($color: $color-purple, $alpha: 0.1));
-                                background-position: 0% 100%;
-                                box-shadow: 0px 0px 2px 1px rgba($color: $color-pink, $alpha: 1);
-                                transform: skew((random(100) / 100) + deg)translate((5 - random(10))+px,(5 - random(10))+px);
-                                }
-                            }
                         }
                         @keyframes scan_anim {
                             0%{

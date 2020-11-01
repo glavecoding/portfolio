@@ -1,7 +1,6 @@
 <template>
-    <aside class="fixed_home side_right" @mouseenter="Show_contact" @mouseleave="Show_contact">
-        <transition enter-active-class="animate__animated animate__fadeInRight animate__faster" leave-active-class="animate__animated animate__fadeOutRight animate__faster"> 
-            <ul v-if="Fold">
+    <aside class="fixed_home side_right">
+            <ul>
                 <li>
                     <img :src="images.home.linkedin" alt="">
                 </li>
@@ -12,14 +11,6 @@
                     <img :src="images.home.github" alt="">
                 </li>
             </ul>
-        </transition>
-        <icon_arrow_up
-            :Hover="false"
-            :Active="false"
-        />
-        <p>
-            contact
-        </p>
     </aside>
 </template>
 <script>

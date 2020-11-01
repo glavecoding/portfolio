@@ -106,17 +106,7 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
                 }
             }
         }
-    .about_control{
-        &:hover{
-           h4{
-            color:rgba($color: #ffffff, $alpha: 1);     
-            }
-        }
-        h4{
-                color:rgba($color: #ffffff, $alpha: 0.4);  
-                transition: 0.3s ease-in-out;   
-        }
-    }
+
     .icon_animation_arrow_up,.icon_animation_arrow_down{
         .icon_wrapper{
             div{

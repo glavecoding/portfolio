@@ -42,7 +42,7 @@ export default {
             return this.Height > (this.Body_height*2/3)?true:false 
         },
         Show_back_top(){
-            return this.Height > (this.Body_height/3) ?true:false
+            return this.Height > window.innerHeight*1.5 ?true:false
         }
     },
     methods: {

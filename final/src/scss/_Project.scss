@@ -28,7 +28,7 @@
                     }
                 }
                 .active-only{
-                    padding:10px 40px 14px 10px; 
+                    padding:14px 40px 14px 10px; 
                     border-right:0px;
                     margin:10px 0;
                     width:100px;
@@ -72,10 +72,9 @@
                     border:none;
                     margin-bottom: 16px;
                     pointer-events: none;
-
                     h4{
                         color:$color-pink;
-                        font-size: 12px;
+                        font-size: 13px;
                         position: relative;
                         animation: glitch-skew 1s infinite steps(40) alternate-reverse;
                         &::before{
@@ -101,23 +100,31 @@
                     }
                 }
                 .active-only{
-                    padding:10px 36px 14px 10px; 
+                    padding:14px 36px 14px 10px; 
                 }
             }
         }
     }
-    section{
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    .banner{
+
+    .project_detail{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        .banner,.info{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-left: calc(50vw - 500px);
+        }
+        .banner{
+        width:1000px;
         margin-top: 80px;
         height: 480px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        background-size: cover;
-        background-blend-mode: darken;
+        background-size: cover!important;
+        background-blend-mode:darken;
+        position: relative;
+        overflow: hidden;
         .wrapper-title{
             width:calc(100% - 160px);
             height:320px;
@@ -126,19 +133,21 @@
             align-items: flex-start;
             flex-direction: column;
             margin-bottom: 80px;
-            .order{
-                font-size: 48px;
-                margin-bottom: 16px;
-                color:$color-pink;
-                filter: blur(1px);
+            z-index: 10;
+            
+            .subaru_aau{
+                width:180px;
+                margin-left: 8px;
+                margin-bottom: 32px;
             }
             h1{
-
+                width:55%;
+                line-height: 40px;
+                color:$color-pink;
             }
             ul{
-                margin-top: 8px;
+                margin-top: 24px;
                 display: flex;
-                
                 li{
                     padding:6px 14px;
                     background-color: rgba($color: $color-purple, $alpha: 0.8);
@@ -150,6 +159,19 @@
                     }
                 }
             }
+            
+        }
+        .show_case{
+            position: absolute;
+            width:45%;
+            height: 100%;
+            background-color: white;
+            right:-45%;
+            top:0;
+            transition: 0.4s ease-in-out;
+        }
+        .slide_in{
+            right:0%;
         }
     }
     .info{
@@ -186,8 +208,6 @@
             }
         }
     }
-    .project_detail{
-        grid-column-start: 1;
-        grid-column-end: 4;
     }
+
 }
