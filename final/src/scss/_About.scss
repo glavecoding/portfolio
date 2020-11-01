@@ -175,13 +175,14 @@
         }
         h4{
             position: absolute;
-            right:24px;
+            right:0px;
             bottom:40px;
             color:$color-pink;
-            line-height: 20px;
+            line-height: 24px;
             z-index: 99;
-            font-size: calc(10px + 0.5vw);
+            font-size: calc(11px + 0.5vw);
             filter:blur(1px);
+            pointer-events: none;
             width:45%;
             &::before{
                 @include glitchCopy;

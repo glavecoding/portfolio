@@ -44,30 +44,104 @@
             </div>
             <div class="text_area">
                 <h2>User's Problems...</h2>
-                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
+                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the content about <strong>manufacturing more</strong>.”
                     <br><br>—By Client’s Opinion & SOONPORT</p>
             </div>
         </div>
         <div class="problem" ref="problem">
-            <h1>About the problems...</h1>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="title_area">
+                <h1>About the problems...</h1>
+            </div>
+            
+            <div class="text_area">
+                <h3>User's frustrations</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="text_area">
+                <h3>Business requests from SOONPORT</h3>
+                <ul>
+                    <li>
+                        <h4>
+                            Update content on website without developer's help
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            Show more products
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div class="users" ref="users">
-            <h1>Target Users & SOONPORT Staff</h1>
+            <div class="title_area">
+                <h2>Target Users & SOONPORT Staff</h2>
+            </div>
             <ul>
+                <li></li>
                 <li></li>
             </ul>
         </div>
         <div class="ideation" ref="ideation">
-            <h1>How to make the Website fit user's needs more ?</h1>
+            <div class="title_area">
+                <h1>How to make the Website fit user's needs more ?</h1>
+                <p></p>
+            </div>
+            <ul>
+                <li>
+                    <h4>Search, Not Find</h4>
+                    
+                </li>
+                <li>
+                    <h4>CMS System</h4>
+                    
+                </li>
+                <li>
+                    <h4>PDF Reader</h4>
+                    
+                </li>
+                <li>
+                    <h4>Contact Functions</h4>
+                    
+                </li>
+            </ul>
         </div>
         <div class="optimization" ref="optimization">
             <h1>Optimizing Website...</h1>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+            </div>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+            </div>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+            </div>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+            </div>
+            <div class="text_area">
+                <h3>After analyzed competitors...</h3>
+            </div>
         </div>
         <div class="mockup" ref="mockup">
-            <h1>Mockup</h1>
+            <div class="title_area" v-if="Showcase">
+                <h2>Website Mockup - {{Showcase.page}}</h2>
+                <p>{{Showcase.content}}</p>
+            </div>
+            <show_case
+                @Switch="Show_case_switch"
+            />
         </div>
         <div class="prototyping" ref="prototyping">
            <h1>Prototyping</h1>
@@ -107,6 +181,7 @@
 </template>
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
+import show_case from '../projects/soonport_showcase'
 export default {
     name:'soonport',
     props:{
@@ -115,10 +190,12 @@ export default {
         Project:Object
     },
     components:{
-        icon_arrow_down
+        icon_arrow_down,
+        show_case
     },
     data() {
         return {
+            Showcase:null
         }
     },
     mounted() {
@@ -131,8 +208,10 @@ export default {
         })
         this.$emit('ref_list',ref_arr)
     },
-    beforeDestroy(){
-        this.$emit('reload','')
-    }
+    methods: {
+        Show_case_switch(e){
+            this.Showcase = e
+        }
+    },
 }
 </script>

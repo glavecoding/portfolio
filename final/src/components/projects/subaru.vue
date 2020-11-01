@@ -4,6 +4,7 @@
                 :style="{'background':'url('+Project.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 30%,rgba(230,1,162,0.6) 60%,#5400d5)'}">
              <div class="show_case"></div>
                 <div class="wrapper-title">
+                    <img :src="Project.images.info" alt="" class="subaru_aau">
                     <h1>{{Project.name}}</h1>
                     <ul>
                         <li v-for="tag in Project.tags"><h4>{{tag}}</h4></li>

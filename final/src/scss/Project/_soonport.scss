@@ -1,3 +1,4 @@
+@import '../Color';
 .project_detail{
     display: grid;
     grid-template-columns: 1fr 840px 1fr;
@@ -12,9 +13,13 @@
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
         grid-template-rows: 80px 1fr 80px 1fr 40px;
+
         .text_area{
             grid-column-start: 2;
             grid-column-end: 3;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
             h2,p{
                 color:  #160C4E;
             }
@@ -27,6 +32,10 @@
             &:first-child{
                 grid-row-start: 2;
                 grid-row-end: 3;
+                img{
+                    align-self: flex-end;
+                    width:180px;
+                }
             }
             &:last-child{
                 grid-row-start: 4;
@@ -62,10 +71,144 @@
         
     }
     .users{
-        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 840px 1fr;
+        grid-template-rows: 80px auto auto 80px;
+        ul,.title_area{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .title_area{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height:180px;
+            h2{
+                color:#160C4E;
+            }
+        }
+        ul{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            height: 320px;
+            li{
+                height: 100%;
+                position: relative;
+                .content{
+                    top:0;
+                    right: 0;
+                    position: absolute;
+                    width:80%;
+                    height: 100%;
+                }
+            }
+        }
     }
     .mockup{
         height:800px;
+        display: grid;
+        grid-template-columns: 1fr 840px 1fr;
+        grid-template-rows: 80px auto auto 80px;
+        .title_area,.show_case{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .title_area{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            h2{
+                color:  #160C4E;
+            }
+        }
+        
+        .show_case{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+            ul{
+            display: flex;
+            margin-bottom: 2px;
+            position: relative;
+                li{
+                    clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 0 100%, 0 4px);
+                    background-color: rgba($color: $color-purple, $alpha: 0.3);
+                    padding:8px 16px;
+                    margin-right: 2px;
+                    h4{
+                        color:$color-purple;
+                        margin-top: 2px;
+                    }
+                    transition: 0.3s ease;
+                    &:hover{
+                        background-color: rgba($color: $color-purple, $alpha: 1);
+                        h4{
+                            color:rgba($color: white, $alpha: 0.6);
+                        }
+                    }
+                }
+                .actived{
+                    background-color: rgba($color: $color-purple, $alpha: 1);
+                   h4{
+                        color:white;
+                   }
+                }
+                .last_dot{
+                    position: absolute;
+                    right:0;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width:80px;
+                    background-color: transparent;
+                    justify-self: flex-end;
+                    pointer-events: none;
+                    div{
+                        width:12px;
+                        height:12px;
+                        background-color: $color-purple;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+            .monitor{
+                width:100%;
+                height:472px;
+                background-color: red;
+                position: relative;
+                overflow-y: auto;
+                cursor: ns-resize;
+                .monitor_content{
+                    width:100%;
+                    height:300%;
+                    background:linear-gradient(180deg, black,white);
+                    
+                }
+            }
+            .scroll_box{
+                        position: absolute;
+                        top:34px;
+                        left:-40px;
+                        width:32px;
+                        height: 472px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        h5{
+                            text-orientation: mixed;
+                        writing-mode: vertical-rl;
+                        margin:16px 0;
+                        color: #160C4E;
+                        transition: 0.4s ease-in-out;
+                        }
+                        &:hover{
+                            h5{
+                                margin:32px 0;
+                            }
+                        }
+                }
+        }
     }
     .problem,.ideation,.optimization,.prototyping,.planning,.issue{
         grid-column-start: 2;
@@ -77,7 +220,17 @@
         }
     }
     .problem{
-        height:400px;
+        .title_area{
+            height: 100px;
+        }
+        .text_area{
+            margin-top: 80px;
+            ul{
+                li{
+                    margin-top: 40px;
+                }
+            }
+        }
     }
     .ideation{
         height:400px;
@@ -86,7 +239,7 @@
         height:400px;
     }
     .prototyping{
-        height:600px;
+        height:720px;
     }
     .planning{
         height:600px;
