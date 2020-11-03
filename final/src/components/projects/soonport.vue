@@ -1,5 +1,5 @@
 <template>
-    <section class="project_detail">
+    <section class="project_detail" :class="Project.content">
         <div class="banner"
             :style="{'background':'url('+Project.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 30%,rgba(230,1,162,0.6) 60%,#5400d5)'}"
             ref="project info"
@@ -10,8 +10,10 @@
                     <ul>
                         <li v-for="tag in Project.tags"><h4>{{tag}}</h4></li>
                     </ul>
+            </div>
+                <div class="slide_case" v-if="isMounted">
+                    <img :src="Project.images.info.info_case" alt="">
                 </div>
-                
         </div>
         <div class="info">
                 <ul>
@@ -38,7 +40,7 @@
         </div>
         <div class="overview" ref="overview">
             <div class="text_area">
-                <h2>About Project...</h2>
+                <h2>About Project Background</h2>
                 <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
                 <img :src="Project.images.overview.logo" alt="">
             </div>
@@ -50,88 +52,195 @@
         </div>
         <div class="problem" ref="problem">
             <div class="title_area">
-                <h1>About the problems...</h1>
-            </div>
-            
-            <div class="text_area">
-                <h3>User's frustrations</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <h1>User's frustrations</h1>
             </div>
             <div class="text_area">
-                <h3>Business requests from SOONPORT</h3>
                 <ul>
                     <li>
-                        <h4>
-                            Update content on website without developer's help
-                        </h4>
+                        <div class="time_waste">
+                            <div v-for="rec in Problem_time_waste">{{rec}}</div>
+                        </div>
+                        <h3>Finding the product in 100+ products hardly</h3>
+                        <p>It's HARD to find special one from 100+ products sea</p>
                     </li>
                     <li>
-                        <h4>
-                            Show more products
-                        </h4>
+                        <div class="manufacturing">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div>
+                                <h4>Need More<br>Manufacturing</h4>
+                            </div>
+                        </div>
+                        <h3>Need more manufacturing content</h3>
+                        <p>Not just product, user'd like to know more about manufacturing</p>
                     </li>
                 </ul>
             </div>
+            <div class="title_area">
+                <h1>Business requests</h1>
+            </div>
             <div class="text_area">
-                <h3>After analyzed competitors...</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                       <img :src="Project.images.problems.logo" alt="" class="problems_logo">
+                        <h3>
+                            Update content by SOONPORT-SELF
+                        </h3>
+                        <p>
+                            SOONPORT Staffs'd like to update content on website without development support.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <div class="touching">
+                            <div class="left"></div>
+                            <div class="center"></div>
+                            <div class="right"></div>
+                        </div>
+                        <h3>
+                            More paths to touch clients
+                        </h3>
+                        <p>
+                            SOONPORT want other ways to get client's opinion, not only phone call or email traditionally.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            Show more products to clients
+                        </h3>
+                        <p>
+                            Not just the new or seasonal products, SOONPORT will show more products including old serials or other products on website.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h1>What are competitors doing ?</h1>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <img :src="Project.images.problems.competitor" alt="" class="competitor_search">
+                        <h3>Searching product</h3>
+                        <p>On competitor's website, if there are too many products to show, it will offer the search function.</p>
+                    </li>
+                    <li>
+                        <div class="competitor_content">
+                            <h1>90%<span> of Product</span></h1>
+                        </div>
+                        <h3>Show more products and less other content</h3>
+                        <p>On competitors website, over 90% of content is products or products concerning, </p>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="users" ref="users">
-            <div class="title_area">
-                <h2>Target Users & SOONPORT Staff</h2>
+            <div class="user_info">
+                   <h2>Target Audience Information</h2>
+                   <ul>
+                       <li>
+                            <div>
+                                <h2>42-46</h2>
+                                <h2>Years</h2>
+                            </div>
+                            <div>
+                                <p>Users are old generation people</p>
+                            </div>
+                        </li>
+                       <li>
+                       <div>
+                                <h2>Purchasing</h2>
+                                <h2> Agents</h2>
+                            </div>
+                            <div>
+                                <p>Users are old generation people</p>
+                            </div></li>
+                       <li>
+                            <div>
+                                <h2>Laptop</h2>
+                            </div>
+                            <div>
+                                <p>Users are old generation people</p>
+                            </div>
+                        </li>
+                        <li>
+                        <div>
+                                <h2>5 sec - 3 mins</h2>
+                            
+                            </div>
+                            <div>
+                                <p>Users are old generation people</p>
+                            </div></li>
+                   </ul>
+
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+            <slider
+            :Control="Slider.control"
+            :Thumbs_num="Slider.content.length"
+            @Control_number="Slider_control"
+            >
+                <template v-slot:thumbnails>
+                    <ul>
+                        <li v-for="(thumb,key) in Slider.content" :key="key" :style="{'left':(key*100 - Slider.control*(100)) + '%'}">
+                            <div class="left">
+                                <h1>{{thumb.name}}</h1>
+                                <h4>{{thumb.title}}</h4>
+                            </div>
+                            <div class="right">
+                                
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </template>
+            </slider>
         </div>
         <div class="ideation" ref="ideation">
             <div class="title_area">
-                <h1>How to make the Website fit user's needs more ?</h1>
+                <h1>Features to fit user's need</h1>
                 <p></p>
             </div>
-            <ul>
-                <li>
-                    <h4>Search, Not Find</h4>
-                    
-                </li>
-                <li>
-                    <h4>CMS System</h4>
-                    
-                </li>
-                <li>
-                    <h4>PDF Reader</h4>
-                    
-                </li>
-                <li>
-                    <h4>Contact Functions</h4>
-                    
-                </li>
-            </ul>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <h3>Search, Not Find - Real Time Searching</h3>
+                        <p>Searching the specific product by real-time multiple keywords comparing and chategories switch can save user's time and life.</p>
+                        
+                    </li>
+                    <li>
+                        <h3>Self-Maintainess - <br> Authority Management & CMS System</h3>
+                        <p>With authority management & CMS system, SOONPORT staffs can maintain the content on the website anytime without the developer's help.</p>
+                    </li>
+                    <li>
+                        <h3>Show more - PDF Reader</h3>
+                        <p>Not just PDF download, clients can see many old products and more information on DM by the online PDF reader.</p>
+                    </li>
+                    <li>
+                        <h3>Contact Directly - Conctact board</h3>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="optimization" ref="optimization">
-            <h1>Optimizing Website...</h1>
-            <div class="text_area">
-                <h3>After analyzed competitors...</h3>
+            <div class="title_area gapping">
+                <h1>Optimizations in Website</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Save <span>86.6%</span> of time to find user want</h3>
+                <p>In old flow, user has to take up to 15 mins to find what they want. Now, with real-time searching funciton, user can save up to 13 mins to get what they want.</p>
             </div>
             <div class="text_area">
-                <h3>After analyzed competitors...</h3>
+                <img :src="Project.images.optimization.search" alt="">
             </div>
+            <div class="title_area"><h3>CMS System based on authority management</h3></div>
             <div class="text_area">
-                <h3>After analyzed competitors...</h3>
-            </div>
-            <div class="text_area">
-                <h3>After analyzed competitors...</h3>
-            </div>
-            <div class="text_area">
-                <h3>After analyzed competitors...</h3>
+                
             </div>
         </div>
         <div class="mockup" ref="mockup">
@@ -140,32 +249,61 @@
                 <p>{{Showcase.content}}</p>
             </div>
             <show_case
+                :Image_list="Project.images.mockup"
                 @Switch="Show_case_switch"
             />
         </div>
         <div class="prototyping" ref="prototyping">
-           <h1>Prototyping</h1>
+           <div class="title_area">
+               <h1>Prototyping & MVP testing</h1>
+           </div>
+           <div class="text_area">
+                <ul>
+                    <li><h3>Minimum Product to testing</h3></li>
+                </ul>
+           </div>
+           <div class="title_area">
+               <h1>Findings</h1>
+           </div>
+           <div class="text_area">
+                <ul>
+                    <li><h3>Minimum Product to testing</h3></li>
+                </ul>
+           </div>
         </div>
         <div class="development" ref="development">
             <div class="text_area">
                 <div class="text">
                     <h2>Website Development</h2>
+                    <p>After the design and</p>
                 </div>
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
         <div class="planning" ref="planning">
-            <h1>Planning</h1>
+            <div class="title_area">
+                <h1>Planning Before Production</h1>
+            </div>
+            <div class="text_area"></div>
         </div>
         <div class="issue" ref="issue">
-            <h1>Issue</h1>
+            <div class="title_area">
+                <h1>Issue We Met</h1>
+            </div>
+            <div class="text_area"></div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+                <div class="title_area"><h2>What did I learn ?</h2></div>
+                <div class="text_area">
+
+                </div>
             </div>
             <div class="next">
-                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
+                <div class="title_area"><h2>Keep optimizing</h2></div>
+                <div class="text_area">
+
+                </div>
             </div>
         </div>
         <div class="end">
@@ -182,6 +320,7 @@
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
 import show_case from '../projects/soonport_showcase'
+import slider from '../projects/slider'
 export default {
     name:'soonport',
     props:{
@@ -191,16 +330,37 @@ export default {
     },
     components:{
         icon_arrow_down,
-        show_case
+        show_case,
+        slider
     },
     data() {
         return {
-            Showcase:null
+            Showcase:null,
+            isMounted:false,
+            Slider:{
+                control:0,
+                content:[
+                    {
+                    name:'Steven',
+                    title:'Target User - Fasteners Purchasing Agent'
+                    },
+                    {
+                        name:'Sarah',
+                        title:'SOONPORT Manager'
+                    }
+                ]
+            }
+        }
+    },
+    computed:{
+        Problem_time_waste(){
+            const newArr = new Array(100)
+            return newArr
         }
     },
     mounted() {
+        this.isMounted = true
         const ref_arr = this.Structure.map(item=>{
-            console.log(document.querySelector('.'+item).offsetTop)
             return {
                 name:item,
                 height:this.$refs[item].offsetTop
@@ -211,7 +371,13 @@ export default {
     methods: {
         Show_case_switch(e){
             this.Showcase = e
+        },
+        Slider_control(e){
+            this.Slider.control += e
         }
     },
+    beforeDestroy(){
+        this.isMounted = false
+    }
 }
 </script>

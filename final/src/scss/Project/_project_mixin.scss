@@ -1,0 +1,12 @@
+@mixin slide_case {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width:55%;
+    height:100%;
+    display: flex;
+    img{
+                width:auto;
+                height: 100%;
+            }
+}

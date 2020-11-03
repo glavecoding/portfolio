@@ -1,0 +1,305 @@
+@import '../Color';
+@import './project_mixin';
+.project_detail{
+    display: grid;
+    grid-template-columns: 1fr 840px 1fr;
+    .banner{
+        position: absolute;
+        .slide_case{
+            @include slide_case;
+            justify-content:flex-end;
+            align-items: flex-end;
+            animation: case_slide_in 1s ease-in-out forwards;
+            img{
+                width:auto;
+                height: 100%;
+            }
+            @keyframes case_slide_in {
+                from{
+                    right:-55%;
+                }
+                to{
+                    right:0;
+                }
+            }
+        }
+    }
+}
+.muni{
+    .overview,.users,.mockup{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 120px;
+        background-color: rgba($color: white, $alpha: 0.72);
+    }
+    .overview{
+        height: 640px;
+        display: grid;
+        grid-template-columns: 1fr 840px 1fr;
+        grid-template-rows: 80px 1fr 80px 1fr 40px;
+
+        .text_area{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            h2,p{
+                color:  #160C4E;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 24px;
+                line-height: 20px;
+                width: 60%;
+            }
+            &:first-child{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                img{
+                    align-self: flex-end;
+                    width:180px;
+                }
+            }
+            &:last-child{
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+        }
+    }
+    .users{
+        display: grid;
+        grid-template-columns: 1fr 840px 1fr;
+        grid-template-rows: 80px auto auto 80px;
+        ul,.title_area{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .title_area{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height:180px;
+            h2{
+                color:#160C4E;
+            }
+        }
+        ul{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            height: 320px;
+            li{
+                height: 100%;
+                position: relative;
+                .content{
+                    top:0;
+                    right: 0;
+                    position: absolute;
+                    width:80%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .mockup{
+        height:800px;
+        display: grid;
+        grid-template-columns: 1fr 840px 1fr;
+        grid-template-rows: 80px auto auto 80px;
+        .title_area,.show_case{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .title_area{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            h2{
+                color:  #160C4E;
+            }
+        }
+        
+        .show_case{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            position: relative;
+            ul{
+            display: flex;
+            margin-bottom: 2px;
+            position: relative;
+                li{
+                    clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 0 100%, 0 4px);
+                    background-color: rgba($color: $color-purple, $alpha: 0.3);
+                    padding:8px 16px;
+                    margin-right: 2px;
+                    h4{
+                        color:$color-purple;
+                        margin-top: 2px;
+                    }
+                    transition: 0.3s ease;
+                    &:hover{
+                        background-color: rgba($color: $color-purple, $alpha: 1);
+                        h4{
+                            color:rgba($color: white, $alpha: 0.6);
+                        }
+                    }
+                }
+                .actived{
+                    background-color: rgba($color: $color-purple, $alpha: 1);
+                   h4{
+                        color:white;
+                   }
+                }
+                .last_dot{
+                    position: absolute;
+                    right:0;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width:80px;
+                    background-color: transparent;
+                    justify-self: flex-end;
+                    pointer-events: none;
+                    div{
+                        width:12px;
+                        height:12px;
+                        background-color: $color-purple;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+            .monitor{
+                width:100%;
+                height:472px;
+                background-color: red;
+                position: relative;
+                overflow-y: auto;
+                cursor: ns-resize;
+                .monitor_content{
+                    width:100%;
+                    height:300%;
+                    background:linear-gradient(180deg, black,white);
+                    
+                }
+            }
+            .scroll_box{
+                        position: absolute;
+                        top:34px;
+                        left:-40px;
+                        width:32px;
+                        height: 472px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        h5{
+                            text-orientation: mixed;
+                        writing-mode: vertical-rl;
+                        margin:16px 0;
+                        color: #160C4E;
+                        transition: 0.4s ease-in-out;
+                        }
+                        &:hover{
+                            h5{
+                                margin:32px 0;
+                            }
+                        }
+                }
+        }
+    }
+    .problem,.ideation,.optimization,.prototyping,.planning,.issue,.development{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 120px;
+        h1{
+            width:40%;
+            line-height: 40px;
+        }
+    }
+
+    .problem{
+        .title_area{
+            height: 100px;
+        }
+        .text_area{
+            margin-top: 80px;
+            ul{
+                li{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .ideation{
+        height:400px;
+    }
+    .optimization{
+        height:400px;
+    }
+    .prototyping{
+        height:720px;
+    }
+    .reflection{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+        .learn,.next{
+            display: grid;
+            grid-template-columns: 60px 1fr 60px;
+            grid-template-rows: 60px 1fr 60px;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 10px;
+            background-color: rgba($color: white, $alpha: 0.8);
+            .text_area{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                h2{
+                    color: #160C4E;
+                }
+            }
+        }
+        .learn{
+        }
+        .next{
+            
+        }
+    }
+    .end{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba($color: white, $alpha: 0.8);
+        height: 80px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color:#160C4E;
+        .go-to{
+            display: flex;
+            margin-left: 40px;
+            .icon_animation_arrow_down{
+                transform:rotate(-90deg);
+                margin-left: 16px;
+                .icon_wrapper{
+                    div{
+                        &:nth-child(odd){
+                            background-color: #160C4E!important;
+                            animation:scrollDown 0.8s steps(8) infinite;
+                        }
+                    }
+                }
+            }
+            h4{
+                margin-top: 5px;
+                color:#160C4E;
+            }
+        }
+        .go-to-project{
+            margin-left: 80px;
+            h4{color:#160C4E;}
+        }
+    }
+}

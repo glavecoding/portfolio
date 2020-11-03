@@ -21,7 +21,7 @@
         </div>
         <div class="monitor" v-scrolling="Handle_scroll">
             <div class="monitor_content">
-
+                <img :src="Image_list[Show.page]" alt="">
             </div>
         </div>
     </div>
@@ -35,6 +35,9 @@ export default {
         icon_arrow_down,
         icon_arrow_up
     },
+    props:{
+        Image_list:Object
+    },
     data() {
         return {
             Show:{page:'Home',content:'Something'},
@@ -43,7 +46,7 @@ export default {
                 {page:'Products',content:'Something about product'},
                 {page:'Manufacturing & Quality',content:'something about manufacturing'},
                 {page:'PDF Reader',content:'PDF Reader'},
-                {page:'Contact',content:'About contact'}
+                {page:'Popup Page',content:'About contact'}
             ]
         }
     },
@@ -54,6 +57,9 @@ export default {
         Switch(page){
             this.Show = page
             this.$emit('Switch',{...page})
+        },
+        Handle_scroll(){
+            
         }
     },
 }

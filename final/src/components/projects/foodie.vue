@@ -1,5 +1,5 @@
 <template>
-    <section class="project_detail">
+    <section class="project_detail" :class="Project.content">
         <div class="overview" ref="overview">
             <div class="text_area">
                 <h2>About Project...</h2>

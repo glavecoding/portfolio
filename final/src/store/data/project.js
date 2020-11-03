@@ -37,8 +37,25 @@ export default {
           "reflection",
         ],
         images: {
+          info: {
+            info_case: "./static/images/soonport/info_case.png",
+          },
           overview: {
             logo: "./static/images/soonport/logo.png",
+          },
+          problems: {
+            logo: "./static/images/soonport/logo_w.png",
+            competitor: "./static/images/soonport/problems_search.svg",
+          },
+          mockup: {
+            Home: "./static/images/soonport/mockup_home.png",
+            Products: "./static/images/soonport/mockup_products.png",
+            "Manufacturing & Quality": "",
+            "PDF Reader": "",
+            "Popup Page": "",
+          },
+          optimization:{
+            search:"./static/images/soonport/search_flow.svg"
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
@@ -74,10 +91,12 @@ export default {
           "optimization",
           "mockup",
           "prototyping",
-          "development",
           "reflection",
         ],
         images: {
+          info: {
+            info_case: "./static/images/muni/info_case.png",
+          },
           overview: {
             logo: "./static/images/soonport/logo.png",
           },
@@ -129,7 +148,10 @@ export default {
           "reflection",
         ],
         images: {
-          info:"./static/images/subaru/icon_subaruxaau.svg",
+          info: {
+            show_case: "./static/images/subaru/info_case.png",
+            logo: "./static/images/subaru/icon_subaruxaau.svg",
+          },
           overview: {
             logo: "./static/images/soonport/logo.png",
           },

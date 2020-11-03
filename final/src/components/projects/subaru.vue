@@ -1,5 +1,5 @@
 <template>
-    <section class="project_detail">
+    <section class="project_detail" :class="Project.content">
         <div class="banner"
                 :style="{'background':'url('+Project.banner+'),linear-gradient(180deg,rgba(230,1,162,0) 30%,rgba(230,1,162,0.6) 60%,#5400d5)'}">
              <div class="show_case"></div>

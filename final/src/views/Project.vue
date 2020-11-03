@@ -56,7 +56,7 @@ export default {
         }
     },
     methods:{
-        Handle_scroll(){
+        Handle_scroll(e){
             this.Height = window.scrollY
         },
         Handle_ref(e){
