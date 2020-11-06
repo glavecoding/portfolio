@@ -1,14 +1,14 @@
 <template>
     <div class="slider">
-        <div :class="Control > 0 ?'':'vanish'" class="left_control">
+        <!-- <div :class="Control > 0 ?'':'vanish'" class="left_control">
             <h3 @click="Slider_control(-1)"><<<</h3>
-        </div>
+        </div> -->
         <slot name="thumbnails">
             
         </slot>
-        <div class="right_control" :class="Control != (Thumbs_num -1)?'':'vanish'">
+        <!-- <div class="right_control" :class="Control != (Thumbs_num -1)?'':'vanish'">
             <h3 @click="Slider_control(1)">>>></h3>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>

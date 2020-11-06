@@ -148,7 +148,7 @@
                                 <h2>Years</h2>
                             </div>
                             <div>
-                                <p>Users are old generation people</p>
+                                <p>Users are belong to Gen.X, working in traditional way like Email & phone call contact.</p>
                             </div>
                         </li>
                        <li>
@@ -157,14 +157,15 @@
                                 <h2> Agents</h2>
                             </div>
                             <div>
-                                <p>Users are old generation people</p>
+                                <p>Users are professional purchasing agents in construction & fasteners field.</p>
                             </div></li>
                        <li>
                             <div>
-                                <h2>Laptop</h2>
+                                <h2>On Desktop</h2>
+                                <h2>Viewport</h2>
                             </div>
                             <div>
-                                <p>Users are old generation people</p>
+                                <p>User uses the desktop view in their working time mostly.</p>
                             </div>
                         </li>
                         <li>
@@ -173,10 +174,10 @@
                             
                             </div>
                             <div>
-                                <p>Users are old generation people</p>
+                                <p>User has really short time to check the content on website to find what they want.</p>
                             </div></li>
                    </ul>
-
+                <h2 class="persona_title">Persona - Steven & Sarah</h2>
             </div>
             <slider
             :Control="Slider.control"
@@ -187,11 +188,18 @@
                     <ul>
                         <li v-for="(thumb,key) in Slider.content" :key="key" :style="{'left':(key*100 - Slider.control*(100)) + '%'}">
                             <div class="left">
-                                <h1>{{thumb.name}}</h1>
-                                <h4>{{thumb.title}}</h4>
+
+                                <img :src="thumb.persona" alt="">
+                                <div class="text2">
+                                    <p>{{thumb.story}}</p>
+                                </div>
+                                <div class="text">
+                                    <h2>{{thumb.name}}</h2>
+                                    <h5>"{{thumb.title}}"</h5>
+                                </div>
                             </div>
                             <div class="right">
-                                
+                                <img :src="thumb.persona_content" alt="">
                             </div>
                             
                         </li>
@@ -207,11 +215,19 @@
             <div class="text_area">
                 <ul>
                     <li>
+                        <div class="ideation_search">
+                            <search_bar
+                                :Icon="Project.images.ideation.search_icon"
+                            />
+                        </div>
                         <h3>Search, Not Find - Real Time Searching</h3>
                         <p>Searching the specific product by real-time multiple keywords comparing and chategories switch can save user's time and life.</p>
                         
                     </li>
                     <li>
+                        <div class="ideation_CMS">
+                            <img :src="Project.images.ideation.cms" alt="">
+                        </div>
                         <h3>Self-Maintainess - <br> Authority Management & CMS System</h3>
                         <p>With authority management & CMS system, SOONPORT staffs can maintain the content on the website anytime without the developer's help.</p>
                     </li>
@@ -221,7 +237,7 @@
                     </li>
                     <li>
                         <h3>Contact Directly - Conctact board</h3>
-                        <p></p>
+                        <p>Contact function</p>
                     </li>
                 </ul>
             </div>
@@ -235,15 +251,72 @@
                 <h3>Save <span>86.6%</span> of time to find user want</h3>
                 <p>In old flow, user has to take up to 15 mins to find what they want. Now, with real-time searching funciton, user can save up to 13 mins to get what they want.</p>
             </div>
-            <div class="text_area">
+            <div class="text_area searching">
                 <img :src="Project.images.optimization.search" alt="">
             </div>
             <div class="title_area"><h3>CMS System based on authority management</h3></div>
-            <div class="text_area">
-                
+            <div class="text_area cms">
+                <img :src="Project.images.optimization.cms" alt="">
             </div>
         </div>
-        <div class="mockup" ref="mockup">
+       
+        <div class="prototyping" ref="prototyping">
+           <div class="title_area">
+               <h1>MVP Prototype<br>Testing </h1>
+           </div>
+           <div class="text_area">
+                <ul>
+                    <li class="mvp">
+                        <img :src="Project.images.prototyping.mvp_chart" alt="">
+                        <img :src="Project.images.prototyping.mvp_chart2" alt="">
+                        <div class="slide_box">
+                            <ul>
+                                <li><h5>http://www.soonport.com</h5></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div :style="{'backgroundImage':'url('+Project.images.prototyping.mvp_photo+')'}">
+
+                            </div>
+                        </div>
+                        <div class="instruction">
+                            <h4>Minimum Production Site-Map</h4>
+                            <h4>MVP Test Prototype</h4>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+           <div class="title_area">
+               <h1>Findings & Changes</h1>
+           </div>
+           <div class="text_area">
+               <ul>
+                   <li>
+                       <div class="page_to_sec">
+                           <div class="anim">
+                               <div></div>
+                               <div></div>
+                           </div>
+                           <img :src="Project.images.prototyping.arrow" alt="">
+                           <div class="merge">
+                               <div></div>
+                           </div>
+                       </div>
+                   </li>
+                    <li>
+                         <h3>Change the user <br>non-interested content</h3>
+                        <p>User didn't get interested in the content "about", they care more on product and manufacturing page, so we decided to change the about from page to a section of home</p>
+                    </li>
+                    <li>
+                        <h3>Change the Product Filter functions</h3>
+                        <p>User got confused while they switched the repeated categories, they preferred use it with searching function.</p>
+                    </li>
+                </ul>
+           </div>
+        </div>
+         <div class="mockup" ref="mockup">
             <div class="title_area" v-if="Showcase">
                 <h2>Website Mockup - {{Showcase.page}}</h2>
                 <p>{{Showcase.content}}</p>
@@ -252,45 +325,71 @@
                 :Image_list="Project.images.mockup"
                 @Switch="Show_case_switch"
             />
-        </div>
-        <div class="prototyping" ref="prototyping">
-           <div class="title_area">
-               <h1>Prototyping & MVP testing</h1>
-           </div>
-           <div class="text_area">
-                <ul>
-                    <li><h3>Minimum Product to testing</h3></li>
-                </ul>
-           </div>
-           <div class="title_area">
-               <h1>Findings</h1>
-           </div>
-           <div class="text_area">
-                <ul>
-                    <li><h3>Minimum Product to testing</h3></li>
-                </ul>
-           </div>
+            <div class="final">
+                <h2>Final Design</h2>
+                <div class="show_case">
+                    <video :src="Project.images.prototyping.final_video" autoplay loop playsinline></video>
+                </div>
+            </div>
         </div>
         <div class="development" ref="development">
             <div class="text_area">
                 <div class="text">
-                    <h2>Website Development</h2>
-                    <p>After the design and</p>
+                    <h2>Start Developing Website</h2>
+                    <p>During the design process, we started the development preparation already. Before</p>
                 </div>
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
         <div class="planning" ref="planning">
-            <div class="title_area">
+            <div class="title_area gapping">
                 <h1>Planning Before Production</h1>
             </div>
             <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Techniques</h3>
+                <p></p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Debouncing & UX</h3>
+                <p></p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Management</h3>
+                <p></p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div class="issue" ref="issue">
             <div class="title_area">
                 <h1>Issue We Met</h1>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <h3>User vs Business</h3>
+                        <p></p>
+                    </li>
+                    <li>
+                        <h3>Design & Development</h3>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
@@ -321,6 +420,7 @@
 import icon_arrow_down from '../icons/icon_arrow_down'
 import show_case from '../projects/soonport_showcase'
 import slider from '../projects/slider'
+import search_bar from '../universal/searching_anim'
 export default {
     name:'soonport',
     props:{
@@ -331,7 +431,8 @@ export default {
     components:{
         icon_arrow_down,
         show_case,
-        slider
+        slider,
+        search_bar
     },
     data() {
         return {
@@ -342,12 +443,17 @@ export default {
                 content:[
                     {
                     name:'Steven',
-                    title:'Target User - Fasteners Purchasing Agent'
+                    title:"I'd find the product I need ASAP.",
+                    persona:this.Project.images.users.persona_1,
+                    persona_content:this.Project.images.users.persona_content_2,
+                    story:"Steven is a senior purchasing agent iof the fastners warehouse industry.Every day he has to take hours and hours to visit many potential vendor’s site to find the one or two product fit the company’s request, then contacting the vendor with call and mail, or waiting for call and mail."
                     },
-                    {
-                        name:'Sarah',
-                        title:'SOONPORT Manager'
-                    }
+                    // {
+                    //     name:'Sarah',
+                    //     title:'SOONPORT Manager',
+                    //     persona:this.Project.images.users.persona_2,
+                    //     persona_content:this.Project.images.users.persona_content_2
+                    // }
                 ]
             }
         }
@@ -356,7 +462,7 @@ export default {
         Problem_time_waste(){
             const newArr = new Array(100)
             return newArr
-        }
+        },
     },
     mounted() {
         this.isMounted = true

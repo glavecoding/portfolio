@@ -29,8 +29,8 @@ export default {
           "users",
           "ideation",
           "optimization",
-          "mockup",
           "prototyping",
+          "mockup",
           "development",
           "planning",
           "issue",
@@ -47,6 +47,11 @@ export default {
             logo: "./static/images/soonport/logo_w.png",
             competitor: "./static/images/soonport/problems_search.svg",
           },
+          users: {
+            persona_1: "./static/images/soonport/persona_1.png",
+            persona_2: "./static/images/soonport/persona_2.png",
+            persona_content_2: "./static/images/soonport/persona_2_content.svg",
+          },
           mockup: {
             Home: "./static/images/soonport/mockup_home.png",
             Products: "./static/images/soonport/mockup_products.png",
@@ -54,8 +59,22 @@ export default {
             "PDF Reader": "",
             "Popup Page": "",
           },
-          optimization:{
-            search:"./static/images/soonport/search_flow.svg"
+          ideation:{
+            search_icon:'./static/images/soonport/search_icon.svg',
+            cms:'./static/images/soonport/CMS.svg',
+            pdf:'',
+            contact:''
+          },
+          prototyping: {
+            mvp_chart: "./static/images/soonport/mvp_1.svg",
+            mvp_chart2: "./static/images/soonport/mvp_2.svg",
+            mvp_photo: "./static/images/soonport/mvp_3.jpg",
+            arrow:'./static/images/soonport/findings_arrow.svg',
+            final_video:'./static/images/soonport/final_b.mp4'
+          },
+          optimization: {
+            search: "./static/images/soonport/search_flow.svg",
+            cms: "./static/images/soonport/cms_flow.svg",
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
@@ -136,15 +155,13 @@ export default {
         content: "subaru",
         structure: [
           "overview",
-          "problem",
+          "research",
           "users",
-          "ideation",
-          "optimization",
+          "explore",
+          "ideations",
           "mockup",
           "prototyping",
-          "development",
-          "planning",
-          "issue",
+          "trade Show",
           "reflection",
         ],
         images: {

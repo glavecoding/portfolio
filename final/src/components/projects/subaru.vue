@@ -47,43 +47,35 @@
                     <br><br>—By Client’s Opinion & SOONPORT</p>
             </div>
         </div>
-        <div class="problem" ref="problem">
+        
+        <div class="research" ref="research">
             <h1>About the problems...</h1>
             <ul>
                 <li></li>
             </ul>
         </div>
+        
         <div class="users" ref="users">
             <h1>Target Users & SOONPORT Staff</h1>
             <ul>
                 <li></li>
             </ul>
         </div>
-        <div class="ideation" ref="ideation">
+          <div class="explore" ref="explore">
             <h1>How to make the Website fit user's needs more ?</h1>
         </div>
-        <div class="optimization" ref="optimization">
-            <h1>Optimizing Website...</h1>
+        <div class="ideation" ref="ideation">
+            <h1>How to make the Website fit user's needs more ?</h1>
         </div>
         <div class="mockup" ref="mockup">
             <h1>Mockup</h1>
         </div>
+        
         <div class="prototyping" ref="prototyping">
            <h1>Prototyping</h1>
         </div>
-        <div class="development" ref="development">
-            <div class="text_area">
-                <div class="text">
-                    <h2>Website Development</h2>
-                </div>
-                <img :src="Project.images.development.graphic" alt="">
-            </div>
-        </div>
-        <div class="planning" ref="planning">
-            <h1>Planning</h1>
-        </div>
-        <div class="issue" ref="issue">
-            <h1>Issue</h1>
+        <div class="tradeshow" ref="trade show">
+            <h1>About Trade Show</h1>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">

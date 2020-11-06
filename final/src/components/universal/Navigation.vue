@@ -50,7 +50,7 @@ export default {
             handler(){
                 if(this.List && this.List.length>0){
                     const Arr = [...this.List]
-                    const test = Arr.filter(item=>this.Height + 80>item.height)
+                    const test = Arr.filter(item=>this.Height>item.height)
                     const name = test.length>0?test.pop()['name']:'overview'
                     this.List_now = name
                 }
