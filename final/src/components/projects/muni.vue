@@ -38,24 +38,78 @@
         </div>
         <div class="overview" ref="overview">
             <div class="text_area">
-                <h2>About Project...</h2>
-                <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
+                <h3>“MUNI is the biggest public transportation in Bay Area. The MUNI Mobile App is the service to offer tickets buying, trip planner and schedule app to help MUNI rider using MUNI, but <span>the App on App store is 3 star rating and have some complaints</span> on it... ”</h3>
                 <img :src="Project.images.overview.logo" alt="">
-            </div>
-            <div class="text_area">
-                <h2>User's Problems...</h2>
-                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
-                    <br><br>—By Client’s Opinion & SOONPORT</p>
             </div>
         </div>
         <div class="problem" ref="problem">
-            <h1>About the problems...</h1>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="title_area gapping">
+                <h1>Finding problems in original App</h1>
+            </div>
+            <div class="title_area">
+                <ul>
+                    <li>
+                        <img :src="Project.images.problem.origin_01" alt="">
+                    </li>
+                    <li>
+                        <div class="test_link"></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.problem.origin_02" alt="">
+                    </li>    
+                </ul>
+                <h3>User Testing &  Findings</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li><h3>Pro</h3></li>
+                    <li>
+                        <h4>User like the cheaper ticket purchasing on the application.</h4>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        <h3>Con</h3>
+                    </li>
+                    <li>
+                        <h4>User got confused or stuck on ticket purchasing flow.</h4>
+                    </li>
+                    <li>
+                        <h4>User don't know how to <br>use ticket / trip planner / find schedule.</h4>
+                    </li>
+                    <li>
+                        <h4>It takes many unnecessory steps to use/buy tickets.</h4>
+                    </li>
+                    <li>
+                        <h4>User has to find the route by memerizing and typing both stop & route name</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <ul class="competitor">
+                    <li>
+                        <img :src="Project.images.problem.competitor_01" alt="">
+                    </li>
+                    <li>
+                        <img :src="Project.images.problem.competitor_02" alt="">
+                    </li>
+                    <li>
+                        <img :src="Project.images.problem.competitor_03" alt="">
+                    </li>
+                </ul>
+                <h3>Competitors Analysis</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li><h3>Features</h3></li>
+                    <li><h4>There is the map view in competitor's service to show the route and direction.</h4></li>
+                    <li><h4>Instead of typing stop or route name, competitor's service uses search function to help user.</h4></li>
+                </ul>
+            </div>
         </div>
         <div class="users" ref="users">
-            <h1>Target Users & SOONPORT Staff</h1>
+            <h1>Target Users</h1>
             <ul>
                 <li></li>
             </ul>

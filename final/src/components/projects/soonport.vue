@@ -144,6 +144,7 @@
                    <ul>
                        <li>
                             <div>
+                                <img :src="Project.images.users.icon_age" alt="">
                                 <h2>42-46</h2>
                                 <h2>Years</h2>
                             </div>
@@ -153,6 +154,7 @@
                         </li>
                        <li>
                        <div>
+                           <img :src="Project.images.users.icon_job" alt="">
                                 <h2>Purchasing</h2>
                                 <h2> Agents</h2>
                             </div>
@@ -161,15 +163,18 @@
                             </div></li>
                        <li>
                             <div>
+                                <img :src="Project.images.users.icon_desktop" alt="">
                                 <h2>On Desktop</h2>
                                 <h2>Viewport</h2>
                             </div>
                             <div>
+                               
                                 <p>User uses the desktop view in their working time mostly.</p>
                             </div>
                         </li>
                         <li>
                         <div>
+                             <img :src="Project.images.users.icon_time" alt="">
                                 <h2>5 sec - 3 mins</h2>
                             
                             </div>
@@ -232,12 +237,18 @@
                         <p>With authority management & CMS system, SOONPORT staffs can maintain the content on the website anytime without the developer's help.</p>
                     </li>
                     <li>
+                        <div class="ideation_PDF">
+                            <img :src="Project.images.ideation.pdf" alt="">
+                        </div>
                         <h3>Show more - PDF Reader</h3>
                         <p>Not just PDF download, clients can see many old products and more information on DM by the online PDF reader.</p>
                     </li>
                     <li>
+                        <div class="ideation_contact">
+                            <img :src="Project.images.ideation.contact" alt="">
+                        </div>
                         <h3>Contact Directly - Conctact board</h3>
-                        <p>Contact function</p>
+                        <p>Clients can get contacting with SOONPORT by contact board, and SOONPORT can get the feedback or request then process it.</p>
                     </li>
                 </ul>
             </div>
@@ -336,57 +347,50 @@
             <div class="text_area">
                 <div class="text">
                     <h2>Start Developing Website</h2>
-                    <p>During the design process, we started the development preparation already. Before</p>
+                    <p>During the design process, we started the development preparation already to avoid some conflicts between design & development. We discussed with SOONPORT Staffs about technical limitation and possible solution, to fit their requests and make the project go through smoothly.</p>
                 </div>
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
-        <div class="planning" ref="planning">
+        <div class="planning" ref="techniques">
             <div class="title_area gapping">
                 <h1>Planning Before Production</h1>
             </div>
             <div class="text_area"></div>
             <div class="title_area">
                 <h3>Techniques</h3>
-                <p></p>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="title_area">
-                <h3>Debouncing & UX</h3>
-                <p></p>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="title_area">
-                <h3>Management</h3>
-                <p></p>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-        <div class="issue" ref="issue">
-            <div class="title_area">
-                <h1>Issue We Met</h1>
+                <p>We choose Vue.js as our main developing system, and use Firebase & PHP to manage our data and images.</p>
             </div>
             <div class="text_area">
                 <ul>
                     <li>
-                        <h3>User vs Business</h3>
-                        <p></p>
+                        <img :src="Project.images.development.technique" alt="" class="techniques">
                     </li>
+                </ul>
+            </div>
+            <div class="title_area gapping">
+                <h3>Limitation of <br> images CRUD</h3>
+                <p>SOONPORT request that some sensitive images have to save in the local server, so we made the easy API with PHP to get and upload these content. The general images save and manage in the Firestorage.</p>
+            </div>
+            <div class="text_area">
+                <ul>
                     <li>
-                        <h3>Design & Development</h3>
-                        <p></p>
+                        <img :src="Project.images.development.image_manage" alt="" class="image_manage">
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area debounce gapping">
+                <h3>Debouncing & UX</h3>
+                <p>We made the debounce in the search function to lower the frequncy of the request to server. Also, we use the average delay time of human's typing to make the demonstration of result naturally. </p>
+                 <img :src="Project.images.development.debounce" alt="" class="debounce_img">
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                       
+                        <search_bar
+                            :Icon="Project.images.ideation.search_icon"
+                        />
                     </li>
                 </ul>
             </div>
@@ -395,13 +399,24 @@
             <div class="learn">
                 <div class="title_area"><h2>What did I learn ?</h2></div>
                 <div class="text_area">
-
+                    <h3>Difference between B2B & B2C</h3>
+                    <p>Users are different between B2B B2C business. In SOONPORT case, users are professional mostly, they can even know more then us, so we have to show the content smartly and the most efficiently.</p>
+                    <h3>Development in real world</h3>
+                    <p>Developing production</p>
                 </div>
             </div>
             <div class="next">
-                <div class="title_area"><h2>Keep optimizing</h2></div>
+                <div class="title_area">
+                    <h2>Keep optimizing</h2>
+                    <p>The project will keep going in the 
+  future, base on the tracking of Google 
+  Analytics, feeback from client, we will 
+  keep modifying the website and making it 
+  better and better.
+</p>
+                </div>
                 <div class="text_area">
-
+                    <img :src="Project.images.end.future" alt="">
                 </div>
             </div>
         </div>
@@ -448,12 +463,6 @@ export default {
                     persona_content:this.Project.images.users.persona_content_2,
                     story:"Steven is a senior purchasing agent iof the fastners warehouse industry.Every day he has to take hours and hours to visit many potential vendor’s site to find the one or two product fit the company’s request, then contacting the vendor with call and mail, or waiting for call and mail."
                     },
-                    // {
-                    //     name:'Sarah',
-                    //     title:'SOONPORT Manager',
-                    //     persona:this.Project.images.users.persona_2,
-                    //     persona_content:this.Project.images.users.persona_content_2
-                    // }
                 ]
             }
         }

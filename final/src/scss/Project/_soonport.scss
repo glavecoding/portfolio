@@ -93,6 +93,12 @@
                 h2,p{
                     color:  #160C4E;
                 }
+                h2{
+                    margin-bottom: 24px;
+                }
+                p{
+                    width:320px;
+                }
             }
             img{
                 width:360px;
@@ -132,6 +138,11 @@
                     transition: 0.4s steps(20);
                     position: relative;
                     overflow: hidden;
+                    img{
+                        width:100px;
+                        height:100px;
+                        margin-bottom: 10px;
+                    }
                     &::before{
                         content:'';
                         background-color: rgba($color: $color-pink, $alpha: 0.2);
@@ -154,7 +165,8 @@
                             height: 180px;
                             h2{
                                 text-align: center;
-                                color:white;
+                                color:$color-pink;
+                                font-size: 16px;
                             }
                         }
                         &:last-child{
@@ -224,14 +236,14 @@
                             bottom:124px;
                             right:0;
                             width:240px;
-                            height:200px;
+                            height:240px;
                             background-color:rgba($color: $color-purple, $alpha: 0.08);
                             backdrop-filter: blur(10px);
                             clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
                             p{
-                                width:224px;
-                                margin-left: 8px;
-                                margin-top: 8px;
+                                width:208px;
+                                margin-left: 16px;
+                                margin-top: 16px;
                                 color:#160C4E;
                             }
                         }
@@ -300,11 +312,9 @@
         }
     }
     .mockup{
-        // height:800px;
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
-        grid-template-rows: 80px auto auto 720px 40px;
-        background-color: rgba($color: white, $alpha: 0.8);
+        grid-template-rows: 80px auto auto 720px 0px;
         .title_area,.show_case{
             grid-column-start: 2;
             grid-column-end: 3;
@@ -314,6 +324,13 @@
             grid-row-end: 3;
             h2{
                 color:  #160C4E;
+                margin-bottom: 16px;
+            }
+            p{
+                color:#160C4E;
+                margin-bottom: 32px;
+                height: 80px;
+                width:440px;
             }
         }
         
@@ -376,7 +393,7 @@
             .monitor{
                 width:100%;
                 height:472px;
-                background-color: red;
+                background-color: $color-purple;
                 position: relative;
                 overflow-y: auto;
                 cursor: ns-resize;
@@ -420,7 +437,7 @@
             grid-row-end: 5;
             position: relative;
             h2{
-                margin-top: 40px;
+                margin-top: 80px;
                 margin-bottom: 24px;
                 color:#160C4E;
             }
@@ -700,7 +717,6 @@
                     .ideation_search{
                         margin-bottom: 24px;
                         .searching_anim{
-                            
                             .search_bar{
                                 border:1px solid $color-pink;
                                 width:180px;
@@ -736,17 +752,11 @@
                             }
                         }
                     }
-                    .ideation_CMS{
+                    .ideation_CMS,.ideation_PDF,.ideation_contact{
                         margin-bottom: 24px;
                         img{
                             width:120px;
                         }
-                    }
-                    .ideation_PDF{
-
-                    }
-                    .ideation_contact{
-
                     }
                 }
             }
@@ -961,10 +971,78 @@
         }
     }
     .planning{
-        height:600px;
-    }
-    .issue{
-        height:600px;
+        .title_area{
+            h3{
+                color: $color-pink;
+                margin-bottom: 16px;
+            }
+            img{
+                width:160px;
+                margin-top: 40px;
+            }
+        }
+        .gapping{
+            margin-bottom: 140px;
+        }
+        .debounce{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            img{
+                align-self: center;
+            }
+        }
+        .php{
+            margin-bottom: 80px;
+        }
+        .text_area{
+            ul{
+                li{
+                    .techniques{
+                        width:600px;
+                    }
+                    .image_manage{
+                        width:400px;
+                        margin-left: 100px;
+                    }
+                    .searching_anim{
+                            .search_bar{
+                                border:1px solid $color-pink;
+                                width:240px;
+                                height:40px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    width:28px;
+                                    height:28px;
+                                    margin:0 4px;
+                                }
+                                h4{
+                                    font-size:11px;
+                                    margin-left: 4px;
+                                }
+                            }
+                            .search_result{
+                                width:360px;
+                                margin-top: 8px;
+                                height:60px;
+                                ul{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    li{
+                                        width:80px;
+                                        height:40px;
+                                        background-color: white;
+                                        margin-right: 4px;
+                                        margin-bottom: 4px;
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
     }
     .reflection{
         grid-column-start: 2;
@@ -984,7 +1062,7 @@
                 grid-row-start: 2;
                 grid-row-end: 3;
                 h2{
-                    color: #160C4E;
+                    color: $small-title;
                 }
             }
             .text_area{
@@ -996,9 +1074,37 @@
             }
         }
         .learn{
+            h3{
+                color:$color-pink;
+                margin-bottom: 16px;
+            }
+            p{
+                color:#160C4E;
+                margin-bottom: 60px;
+                width:400px;
+            }
         }
         .next{
-            
+            grid-template-columns: 60px 400px 1fr 60px;
+            .title_area{
+                h2{
+                    margin-bottom: 24px;
+                }
+                p{
+                    color:#160C4E;
+                    width: 300px;
+                }
+            }
+            .text_area{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width:320px;
+                    height:auto;
+                }
+            }
+
         }
     }
     .end{

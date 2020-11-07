@@ -18,7 +18,9 @@
                 <li v-for="(pjt,key) in Projects" :key="key">
                     <div :style="{'backgroundImage':'url('+pjt.banner+')'}" class="project_image"
                     @click="Go_project(pjt.order,pjt.name)"
-                    />
+                    >
+                    <img :src="pjt.list_image" alt="">
+                    </div>
                     <div class="wrapper_project_info" @click="Go_project(pjt.order,pjt.name)">
                         <div class="wrapper_order">
                             <p data-text="[">[</p>

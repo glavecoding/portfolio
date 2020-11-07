@@ -32,10 +32,10 @@ export default {
           "prototyping",
           "mockup",
           "development",
-          "planning",
-          "issue",
+          "techniques",
           "reflection",
         ],
+        list_image: "./static/images/soonport/info_case.png",
         images: {
           info: {
             info_case: "./static/images/soonport/info_case.png",
@@ -51,26 +51,31 @@ export default {
             persona_1: "./static/images/soonport/persona_1.png",
             persona_2: "./static/images/soonport/persona_2.png",
             persona_content_2: "./static/images/soonport/persona_2_content.svg",
+            icon_age: "./static/images/soonport/user_icon_age.svg",
+            icon_job: "./static/images/soonport/user_icon_job.svg",
+            icon_desktop: "./static/images/soonport/user_icon_desktop.svg",
+            icon_time: "./static/images/soonport/user_icon_time.svg",
           },
           mockup: {
             Home: "./static/images/soonport/mockup_home.png",
             Products: "./static/images/soonport/mockup_products.png",
-            "Manufacturing & Quality": "",
-            "PDF Reader": "",
-            "Popup Page": "",
+            "Manufacturing & Quality":
+              "./static/images/soonport/mockup_manufacture.png",
+            "PDF Reader": "./static/images/soonport/mockup_pdf.png",
+            "Popup Page": "./static/images/soonport/mockup_contact.png",
           },
-          ideation:{
-            search_icon:'./static/images/soonport/search_icon.svg',
-            cms:'./static/images/soonport/CMS.svg',
-            pdf:'',
-            contact:''
+          ideation: {
+            search_icon: "./static/images/soonport/search_icon.svg",
+            cms: "./static/images/soonport/CMS.svg",
+            pdf: "./static/images/soonport/PDF_reader.svg",
+            contact: "./static/images/soonport/Contact_board.svg",
           },
           prototyping: {
             mvp_chart: "./static/images/soonport/mvp_1.svg",
             mvp_chart2: "./static/images/soonport/mvp_2.svg",
             mvp_photo: "./static/images/soonport/mvp_3.jpg",
-            arrow:'./static/images/soonport/findings_arrow.svg',
-            final_video:'./static/images/soonport/final_b.mp4'
+            arrow: "./static/images/soonport/findings_arrow.svg",
+            final_video: "./static/images/soonport/final_b.mp4",
           },
           optimization: {
             search: "./static/images/soonport/search_flow.svg",
@@ -78,6 +83,12 @@ export default {
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
+            technique: "./static/images/soonport/techniques.svg",
+            image_manage: "./static/images/soonport/image_manage.svg",
+            debounce: "./static/images/soonport/debounce.svg",
+          },
+          end: {
+            future: "./static/images/soonport/future.png",
           },
         },
         next: {
@@ -112,12 +123,20 @@ export default {
           "prototyping",
           "reflection",
         ],
+        list_image: "./static/images/muni/info_case.png",
         images: {
           info: {
             info_case: "./static/images/muni/info_case.png",
           },
           overview: {
-            logo: "./static/images/soonport/logo.png",
+            logo: "./static/images/muni/logo.png",
+          },
+          problem: {
+            origin_01: "./static/images/muni/origin01.gif",
+            origin_02: "./static/images/muni/origin02.gif",
+            competitor_01: "./static/images/muni/competitors-01.png",
+            competitor_02: "./static/images/muni/competitors-02.png",
+            competitor_03: "./static/images/muni/competitors-03.png",
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
@@ -164,6 +183,7 @@ export default {
           "trade Show",
           "reflection",
         ],
+        list_image: "./static/images/soonport/info_case.png",
         images: {
           info: {
             show_case: "./static/images/subaru/info_case.png",
@@ -216,6 +236,7 @@ export default {
           "issue",
           "reflection",
         ],
+        list_image: "./static/images/soonport/info_case.png",
         images: {
           overview: {
             logo: "./static/images/soonport/logo.png",
@@ -264,6 +285,7 @@ export default {
           "issue",
           "reflection",
         ],
+        list_image: "./static/images/soonport/info_case.png",
         images: {
           overview: {
             logo: "./static/images/soonport/logo.png",
@@ -312,6 +334,7 @@ export default {
           "issue",
           "reflection",
         ],
+        list_image: "./static/images/soonport/info_case.png",
         images: {
           overview: {
             logo: "./static/images/soonport/logo.png",

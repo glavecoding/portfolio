@@ -40,13 +40,13 @@ export default {
     },
     data() {
         return {
-            Show:{page:'Home',content:'Something'},
+            Show:{page:'Home',content:'Home page contains real-time search function, exhibition news and history of SOONPORT. As the landing page, history section can navigate user to manufacturing page, the searching function will navigate to product page and show the detail of product.'},
             Pages:[
-                {page:'Home',content:'Something'},
-                {page:'Products',content:'Something about product'},
-                {page:'Manufacturing & Quality',content:'something about manufacturing'},
-                {page:'PDF Reader',content:'PDF Reader'},
-                {page:'Popup Page',content:'About contact'}
+                {page:'Home',content:'Home page contains real-time search function, exhibition news and history of SOONPORT. As the landing page, history section can navigate user to manufacturing page, the searching function will navigate to product page and show the detail of product.'},
+                {page:'Products',content:'In Product page, user can do the search and switch category to see all products SOONPORT have now. Also, the PDF reader shows the old serial of the product. '},
+                {page:'Manufacturing & Quality',content:'In manufacturing page, user can switch the manufacturing section to see wire & screw manufacture details, and check the certifications & equipment here.'},
+                {page:'PDF Reader',content:'In PDF Reader, user can see the DM online or download the PDF directly.'},
+                {page:'Popup Page',content:'Pop section contains "Language Switch" and "Contact Board", user can switch the language with i18N function or contact SOONPORt directly.'}
             ]
         }
     },
