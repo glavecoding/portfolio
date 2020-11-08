@@ -138,6 +138,9 @@ export default {
             competitor_02: "./static/images/muni/competitors-02.png",
             competitor_03: "./static/images/muni/competitors-03.png",
           },
+          users:{
+            persona:"./static/images/muni/persona.png"
+          },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
           },
