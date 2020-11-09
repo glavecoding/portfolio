@@ -109,7 +109,7 @@ export default {
                             this.typing += this.origin2[this.target]
                             this.target += 1
                         },Math.random(1)*100 + 40)
-                    },1000)
+                    },500)
                 }else if(this.typing.length == Time_out2){
                     clearInterval(this.timer)
                     this.timer = null

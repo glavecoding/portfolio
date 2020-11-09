@@ -138,8 +138,18 @@ export default {
             competitor_02: "./static/images/muni/competitors-02.png",
             competitor_03: "./static/images/muni/competitors-03.png",
           },
-          users:{
-            persona:"./static/images/muni/persona.png"
+          users: {
+            icon_age: "./static/images/muni/user_age.svg",
+            icon_commute: "./static/images/muni/user_commute.svg",
+            icon_switch: "./static/images/muni/user_switch.svg",
+            icon_journey: "./static/images/muni/user_journey.svg",
+            persona: "./static/images/muni/persona.png",
+            persona_info: "./static/images/muni/persona_info.svg",
+          },
+          ideations: {
+            goal_ticket: "./static/images/muni/goal_ticket.svg",
+            goal_time: "./static/images/muni/goal_time.svg",
+            goal_ui: "./static/images/muni/goal_ui.svg",
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",

@@ -9,7 +9,7 @@
 
       </div>
 
-    <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate__faster">
+    <transition enter-active-class="animate__animated animate__fadeIn animate__faster" :leave-active-class="$route.path == '/'?'animate__animated animate__fadeOutDown animate__fast':'animate__animated animate__fadeOut animate__faster'">
       <router-view>
       </router-view>
     </transition>

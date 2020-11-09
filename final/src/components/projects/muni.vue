@@ -75,9 +75,9 @@
                     <li>
                         <h4>User got confused or stuck on ticket purchasing flow.</h4>
                     </li>
-                    <li>
+                    <!-- <li>
                         <h4>User don't know how to <br>use ticket / trip planner / find schedule.</h4>
-                    </li>
+                    </li> -->
                     <li>
                         <h4>It takes many unnecessory steps to use/buy tickets.</h4>
                     </li>
@@ -119,28 +119,28 @@
                 <div class="text_area">
                     <ul>
                         <li>
-                            <img src="" alt="">
+                            <img :src="Project.images.users.icon_age" alt="">
                             <div>
-                                <h3>Age 25-34</h3>
+                                <h3>Age<br>25-34</h3>
                                 <p></p>
                             </div>
                         </li>
                         <li>
-                            <img src="" alt="">
+                            <img :src="Project.images.users.icon_commute" alt="">
                             <div>
                                 <h3>Commuting purpose</h3>
                                 <p></p>
                             </div>
                         </li>
                         <li>
-                            <img src="" alt="">
+                            <img :src="Project.images.users.icon_switch" alt="">
                         <div>
-                            <h3>2-3 times in Journey</h3>
+                            <h3>Switch 2-3 times in Journey</h3>
                             <p></p>
                         </div>
                         </li>
                         <li>
-                            <img src="" alt="">
+                            <img :src="Project.images.users.icon_journey" alt="">
                             <div>
                                 <h3>1 person only in Journey</h3>
                                 <p></p>
@@ -171,48 +171,34 @@
                     </ul>
                 </div>
                 <div class="right">
-                    <img src="" alt="">
+                    <img :src="Project.images.users.persona_info" alt="">
                 </div>
             </div>
         </div>
         <div class="ideation" ref="ideation">
-            <div class="title_area gapping">
+            <div class="title_area">
                 <h1>Goal - Making MUNI App better</h1>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h3>Smarter Ticket Using/Buying</h3>
-                <p>Making the core function - ticket using smarter and faster is important for user while they meet the rush hour.</p>
-            </div>
             <div class="text_area">
                 <ul>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.ideations.goal_ticket" alt="">
+                        <h3>Smarter Ticket Using/Buying</h3>
+                        <p>Making the core function - ticket using smarter and faster is important for user while they meet the rush hour.</p>
                     </li>
-                </ul>
-            </div>
-            <div class="title_area">
-                <h3>Optimizing<br> Trip Planner & Schedule</h3>
-                <p>Never find the route or stop by name in user's brain. Doing the route/stop searching and check the time at the same time is the better idea.</p>
-            </div>
-            <div class="text_area">
-                <ul>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.ideations.goal_time" alt="">
+                        <h3>Optimizing<br> Trip Planner & Schedule</h3>
+                        <p>Never find the route or stop by name in user's brain. Doing the route/stop searching and check the time at the same time is the better idea.</p> 
                     </li>
-                </ul>
-            </div>
-            <div class="title_area">
-                <h3>Simpler usage/UI in rush hour</h3>
-                <p>In rush hour, user need clear and simple click-and-use serive to save their life, not the multiple layer or finding funciton in sidebar</p>
-            </div>
-            <div class="text_area">
-                <ul>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.ideations.goal_ui" alt="">
+                        <h3>Simpler usage/UI in rush hour</h3>
+                        <p>In rush hour, user need clear and simple click-and-use serive to save their life, not the multiple layer or finding funciton in sidebar</p>
                     </li>
                 </ul>
             </div>
+            
         </div>
         <div class="optimization" ref="optimization">
             <div class="title_area gapping">
@@ -220,11 +206,11 @@
             </div>
             <div class="text_area"></div>
             <div class="title_area">
-                <h3>Optimizing ticket purchasement</h3>
+                <h3>Save <span>53%</span> time to buy & use ticket</h3>
             </div>
             <div class="text_area"></div>
             <div class="title_area">
-                <h3>New Trip Planner/Schedule</h3>
+                <h3>Searching direction & time immediately</h3>
             </div>
             <div class="text_area"></div>
             <div class="title_area">
