@@ -217,67 +217,101 @@
                 <h3>More Clear & Affordable Information</h3>
             </div>
             <div class="text_area"></div>
-            <div class="title_area gapping">
+            <div class="title_area pop_test gapping">
                 <h1>POP Testing & Findings</h1>
-                <p>Wireframe and POP</p>
             </div>
-            <div class="text_area">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div class="title_area">
-                <h3>Ticket Flow</h3>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li><h3>Can be better</h3></li>
+            <div class="title_area pop_wrapper">
+                <ul class="pop_testing">
+                    <li></li>
+                    <li>
+                        <img :src="Project.images.optimization.pop_1" alt="">
+                    </li>
+                    <li class="link"></li>
+                    <li>
+                        <img :src="Project.images.optimization.pop_2" alt="">
+                    </li>
+                    <li class="link"></li>
+                    <li>
+                        <img :src="Project.images.optimization.pop_3" alt="">
+                    </li>
+                    <li></li>
                 </ul>
             </div>
-            <div class="title_area">
-                <h3>Trip/Schedule Flow</h3>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li> <h3>Can be better</h3></li>
-                </ul>
+            <div class="text_area pop_test_content">
+               <ul>
+                   <li>
+                       <h3>Ticket Flow</h3>
+                       <p>The ticket flow</p>
+                   </li>
+                   <li>
+                        <h3>Trip/Schedule Flow</h3>
+                        <p>In trip/schedule </p>
+                   </li>
+               </ul>
             </div>
         </div>
         <div class="mockup" ref="mockup">
             <div class="title_area">
+                <h1>Iterations & Mockup</h1>
+            </div>
+            <div class="text_area">
+                
+            </div>
+
+            <div class="title_area">
+                <h3>Ticket Usage</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area">
+                
+            </div>
+            <div class="title_area">
+                <h3>Ticket purchasement</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area">
+                
+            </div>
+            <div class="title_area">
+                <h3>Trip Planner</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area">
+                
+            </div>
+            <div class="title_area">
+                <h3>Schedule</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area">
+                
+            </div>
+
+            <div class="title_area gapping">
                 <h1>Visual Guide</h1>
             </div>
             <div class="text_area">
 
             </div>
-            <div class="title_area">
-                <h1>Iterations & Mockup</h1>
-            </div>
-            <div class="text_area">
-                <ul>
-                    <li>
-                        <h3>Ticket Usage</h3>
-                    </li>
-                    <li>
-                        <h3>Ticket purchasement</h3>
-                    </li>
-                    <li>
-                        <h3>Trip Planner</h3>
-                    </li>
-                    <li>
-                         <h3>Schedule</h3>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="prototyping" ref="prototyping">
-           <div class="title_area gapping">
+           <div class="title_area">
                <h1>HTML/CSS/JS Prototyping</h1>
-               <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
            </div>
            <div class="text_area">
 
            </div>
            <div class="title_area">
+               <h3>Stimulate more</h3>
+               <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
+           </div>
+           <div class="text_area"></div>
+           <div class="title_area">
+               <h3>Stimulate more</h3>
+               <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
+           </div>
+           <div class="text_area"></div>
+           <div class="title_area gapping final_prototype">
                <h1>Final Prototyping Demo</h1>
            </div>
            <div class="text_area">

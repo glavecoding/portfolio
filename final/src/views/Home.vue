@@ -2,9 +2,9 @@
     <article class="home" v-scrolling="Handle_scroll">
         <section class="sec_home">
             <div></div>
-            <div class="wrapper_heading" :class="Title_position?'stop_fixed':''">
+            <div class="wrapper_heading">
                 <h1 data-text="GLAVE YEN" >GLAVE YEN</h1>
-                    <div class="title-sub" :style="{'opacity':Subtitle_opacity}">
+                    <div class="title-sub">
                         <h4 data-text="[" :class="Glitch_control">[</h4>
                         <div class="flick_right" :class="typing.length != origin.length + origin2.length ? 'flicking':''">
                             <h4 class="title" :class="Glitch_control" :data-text="typing">{{typing}}</h4>
@@ -55,13 +55,13 @@ export default {
     mounted(){
         this.origin = this.origin.split("")
         this.origin2 = this.origin2.split("")
-        this.window2h = window.innerHeight*2
+        // this.window2h = window.innerHeight*2
     },
     data() {
         return {
             Height:0,
-            window2h:0,
-            Scroll_percent:0,
+            // window2h:0,
+            // Scroll_percent:0,
             Glitch:true,
             origin:"Hi, I'm Glave.",
             origin2:" I focus on web development & UI/UX Design.",
@@ -83,12 +83,12 @@ export default {
         Type_change(){
             return typeof origin == String && typeof origin2 == String? false:true
         },
-        Subtitle_opacity(){
-            return this.Scroll_percent>50?(80-this.Scroll_percent)/100:1
-        },
-        Title_position(){
-            return this.Scroll_percent>80?true:false
-        }
+        // Subtitle_opacity(){
+        //     return this.Scroll_percent>50?(80-this.Scroll_percent)/100:1
+        // },
+        // Title_position(){
+        //     return this.Scroll_percent>80?true:false
+        // }
     },
     methods: {
         Go_project(pjt_order,pjt_name){
@@ -104,10 +104,7 @@ export default {
         }
     },
     watch: {
-        Height(){
-            const numStr = (this.Height/this.window2h).toFixed(2)
-            this.Scroll_percent = Number(numStr)*100
-        },
+
         typing:{
             handler(){
                 const Time_out = this.origin.length,

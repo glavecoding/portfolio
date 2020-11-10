@@ -151,6 +151,11 @@ export default {
             goal_time: "./static/images/muni/goal_time.svg",
             goal_ui: "./static/images/muni/goal_ui.svg",
           },
+          optimization:{
+            pop_1:"./static/images/muni/pop_01.png",
+            pop_2:"./static/images/muni/pop_02.png",
+            pop_3:"./static/images/muni/pop_03.png",
+          },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
           },

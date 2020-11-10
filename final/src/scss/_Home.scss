@@ -18,7 +18,7 @@
             align-items: center;
             flex-direction:column;
             top:32%;
-            position: fixed;
+            // position: fixed;
             transition: top 1s ease-in-out;
             h1{
                 width:100%;
@@ -112,15 +112,15 @@
                     }
             }
         }
-        .stop_fixed{
-            top:-100%;
-        }
+        // .stop_fixed{
+        //     top:-100%;
+        // }
     }
     .sec_list{
         display: grid;
         grid-template-columns: 1fr 1000px 1fr;
         padding-top: 80px;
-        margin-top: 120vh;
+        // margin-top: 100vh;
         ul{
             grid-column-start: 2;
             grid-column-end: 3;
