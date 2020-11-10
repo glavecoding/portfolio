@@ -124,7 +124,7 @@ export default {
     },
     Height:{
       handler(){
-        this.Hide_scroll = this.Height> 100 ? false:true
+        this.Hide_scroll = this.Height> window.innerHeight*1.2 ? false:true
       }
     }
   },
