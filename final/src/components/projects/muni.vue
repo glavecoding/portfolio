@@ -208,15 +208,21 @@
             <div class="title_area">
                 <h3>Save <span>53%</span> time to buy & use ticket</h3>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h3>Searching direction & time immediately</h3>
+            <div class="text_area">
+                <img :src="Project.images.optimization.flow_ticket" alt="">
             </div>
-            <div class="text_area"></div>
             <div class="title_area">
-                <h3>More Clear & Affordable Information</h3>
+                <h3>Checking direction & schedule at the <span>same</span> time</h3>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area">
+                <img :src="Project.images.optimization.flow_tt" alt="">
+            </div>
+            <div class="title_area">
+                <h3><span>More Clear</span> & Affordable Information</h3>
+            </div>
+            <div class="text_area">
+                 <img :src="Project.images.optimization.flow_ui" alt="">
+            </div>
             <div class="title_area pop_test gapping">
                 <h1>POP Testing & Findings</h1>
             </div>
@@ -240,90 +246,217 @@
             <div class="text_area pop_test_content">
                <ul>
                    <li>
-                       <h3>Ticket Flow</h3>
+                       <img :src="Project.images.optimization.pop_checkout" alt="">
+                       <h3>Put the "checkout" <br>easy to see & click</h3>
                        <p>The ticket flow</p>
                    </li>
                    <li>
-                        <h3>Trip/Schedule Flow</h3>
+                       <img :src="Project.images.optimization.pop_direction" alt="">
+                        <h3>Spacing the information in <br> route information list</h3>
                         <p>In trip/schedule </p>
                    </li>
                </ul>
             </div>
         </div>
         <div class="mockup" ref="mockup">
-            <div class="title_area">
-                <h1>Iterations & Mockup</h1>
+            <div class="title_area ab_test">
+                <h1>A/B Testing</h1>
+                <h3>Fitting user's request or not?</h3>
+                <p>Before the project process get into the hifidelity step, I did the </p>
             </div>
             <div class="text_area">
                 
+            </div>
+            <div class="title_area visual_title">
+                <h1>Visual Guide</h1>
+            </div>
+            <div class="text_area visual">
+                <img :src="Project.images.mockup.visual" alt="">
+            </div>
+            <div class="title_area iteration">
+                <h1>Iterations & Mockup</h1>
+            </div>
+            <div class="text_area">
+                <p>Say something</p>
             </div>
 
             <div class="title_area">
                 <h3>Ticket Usage</h3>
-                <p>something</p>
+                
             </div>
             <div class="text_area">
-                
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.L1" alt="">
+                        <h4>Draft 01</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.M1" alt="">
+                        <h4>Draft 02</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.H1" alt="">
+                        <h4>Final</h4>
+                    </li>
+                </ul>
             </div>
             <div class="title_area">
-                <h3>Ticket purchasement</h3>
-                <p>something</p>
+                <h3>Ticket Purchasement</h3>
+                
             </div>
             <div class="text_area">
-                
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.L2" alt="">
+                        <h4>Draft 01</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.M2" alt="">
+                        <h4>Draft 02</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.H2" alt="">
+                        <h4>Final</h4>
+                    </li>
+                </ul>
             </div>
             <div class="title_area">
                 <h3>Trip Planner</h3>
-                <p>something</p>
             </div>
             <div class="text_area">
-                
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.L3" alt="">
+                        <h4>Draft 01</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.M3" alt="">
+                        <h4>Draft 02</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.H3" alt="">
+                        <h4>Final</h4>
+                    </li>
+                </ul>
             </div>
             <div class="title_area">
                 <h3>Schedule</h3>
-                <p>something</p>
-            </div>
-            <div class="text_area">
                 
             </div>
-
-            <div class="title_area gapping">
-                <h1>Visual Guide</h1>
-            </div>
             <div class="text_area">
-
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.L4" alt="">
+                        <h4>Draft 01</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    </li>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.M4" alt="">
+                        <h4>Draft 02</h4>
+                    </li>
+                    <li class="link">
+                        <div></div>
+                    <li>
+                        <img :src="Project.images.mockup.iterations.H4" alt="">
+                        <h4>Final</h4>
+                    </li>
+                </ul>
             </div>
+
+            
         </div>
         <div class="prototyping" ref="prototyping">
            <div class="title_area">
                <h1>HTML/CSS/JS Prototyping</h1>
            </div>
            <div class="text_area">
-
+               
            </div>
            <div class="title_area">
-               <h3>Stimulate more</h3>
+               <h3>Real transition & effect</h3>
                <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
            </div>
-           <div class="text_area"></div>
+           <div class="text_area code_prototype">
+               <img :src="Project.images.prototyping.code_transition" alt="">
+               <div>
+                   <div></div>
+               </div>
+               <img :src="Project.images.prototyping.transition_gif" alt="">
+           </div>
            <div class="title_area">
-               <h3>Stimulate more</h3>
+               <h3>Real operation & interaction</h3>
                <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
            </div>
-           <div class="text_area"></div>
+           <div class="text_area code_prototype">
+                <img :src="Project.images.prototyping.code_data" alt="">
+               <div>
+                   <div></div>
+               </div>
+               <img :src="Project.images.prototyping.operation_gif" alt="">
+           </div>
            <div class="title_area gapping final_prototype">
                <h1>Final Prototyping Demo</h1>
            </div>
            <div class="text_area">
-               <video src=""></video>
            </div>
+           <div class="title_area">
+               <h3>Trip Usage</h3>
+           </div>
+           <div class="text_area">
+           </div>
+           <div class="title_area">
+               <h3>Trip Purchasement</h3>
+           </div>
+           <div class="text_area">
+           </div>
+           <div class="title_area">
+               <h3>Trip Planner</h3>
+           </div>
+           <div class="text_area">
+           </div>
+           <div class="title_area">
+               <h3>Schedule</h3>
+           </div>
+           <div class="text_area">
+           </div>
+           
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+                <div class="text_area">
+                    <h2>What did I learn ?</h2>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
             <div class="next">
-                <div class="text_area"><h2>Where can be better?</h2></div>
+                <div class="text_area">
+                    <h2>Where can be better?</h2>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="end">
@@ -351,6 +484,7 @@ export default {
     },
     data() {
         return {
+            video_height:0
         }
     },
     mounted() {
@@ -362,6 +496,7 @@ export default {
             }
         })
         this.$emit('ref_list',ref_arr)
+        this.video_height = (this.$refs.portfolio_video.clientWidth*9)/16
     },
     beforeDestroy(){
         this.$emit('reload','')
