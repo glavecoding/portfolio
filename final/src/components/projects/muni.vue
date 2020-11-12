@@ -207,23 +207,26 @@
             <div class="text_area"></div>
             <div class="title_area">
                 <h3>Save <span>53%</span> time to buy & use ticket</h3>
+                <p>In old flow, user had to takem over 10 steps to get the tickets and use. Now, user can get the ticket then use it by 6 steps.</p>
             </div>
             <div class="text_area">
                 <img :src="Project.images.optimization.flow_ticket" alt="">
             </div>
             <div class="title_area">
                 <h3>Checking direction & schedule at the <span>same</span> time</h3>
+                <p>In the past, user had to switch between trip planner & schedule to get what they need, so I combined and connected two task flow into one. With new all in one function, user can save half of their live and avoid repeating operations.</p>
             </div>
             <div class="text_area">
                 <img :src="Project.images.optimization.flow_tt" alt="">
             </div>
             <div class="title_area">
                 <h3><span>More Clear</span> & Affordable Information</h3>
+                <p>The side bar design and "text only" ticket category showing were the reason why MUNI app was inefficient, so I changed the navigation to bottom way, used icon instead to convey information more clear.</p>
             </div>
             <div class="text_area">
                  <img :src="Project.images.optimization.flow_ui" alt="">
             </div>
-            <div class="title_area pop_test gapping">
+            <div class="title_area pop_test">
                 <h1>POP Testing & Findings</h1>
             </div>
             <div class="title_area pop_wrapper">
@@ -242,18 +245,19 @@
                     </li>
                     <li></li>
                 </ul>
+                <p>Without the color and shape interferred, the really rough paper portotyping help me found the information issues in early stage. </p>
             </div>
             <div class="text_area pop_test_content">
                <ul>
                    <li>
                        <img :src="Project.images.optimization.pop_checkout" alt="">
                        <h3>Put the "checkout" <br>easy to see & click</h3>
-                       <p>The ticket flow</p>
+                       
                    </li>
                    <li>
                        <img :src="Project.images.optimization.pop_direction" alt="">
-                        <h3>Spacing the information in <br> route information list</h3>
-                        <p>In trip/schedule </p>
+                        <h3>Spacing the information in <br> route information</h3>
+                        
                    </li>
                </ul>
             </div>
@@ -264,8 +268,8 @@
                 <h3>Fitting user's request or not?</h3>
                 <p>Before the project process get into the hifidelity step, I did the </p>
             </div>
-            <div class="text_area">
-                
+            <div class="text_area ab_test">
+                <img :src="Project.images.mockup.ab_test" alt="">
             </div>
             <div class="title_area visual_title">
                 <h1>Visual Guide</h1>
@@ -277,12 +281,12 @@
                 <h1>Iterations & Mockup</h1>
             </div>
             <div class="text_area">
-                <p>Say something</p>
+                
             </div>
 
             <div class="title_area">
                 <h3>Ticket Usage</h3>
-                
+                <p>Say something</p>
             </div>
             <div class="text_area">
                 <ul>
@@ -308,7 +312,7 @@
             </div>
             <div class="title_area">
                 <h3>Ticket Purchasement</h3>
-                
+                <p>Based on the user testing, I changed the way to show the different categories of tickets and the position of checkout.</p>
             </div>
             <div class="text_area">
                 <ul>
@@ -334,6 +338,7 @@
             </div>
             <div class="title_area">
                 <h3>Trip Planner</h3>
+                <p>Say something</p>
             </div>
             <div class="text_area">
                 <ul>
@@ -359,7 +364,7 @@
             </div>
             <div class="title_area">
                 <h3>Schedule</h3>
-                
+                <p>Say something</p>
             </div>
             <div class="text_area">
                 <ul>
@@ -394,7 +399,7 @@
            </div>
            <div class="title_area">
                <h3>Real transition & effect</h3>
-               <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
+               <p>Comparing with normal prototyping made by software, coding prototyping can do the real transition, get more closer to real production.</p>
            </div>
            <div class="text_area code_prototype">
                <img :src="Project.images.prototyping.code_transition" alt="">
@@ -404,8 +409,9 @@
                <img :src="Project.images.prototyping.transition_gif" alt="">
            </div>
            <div class="title_area">
-               <h3>Real operation & interaction</h3>
-               <p>Comparing with normal prototyping made by software, coding prototyping can show more.</p>
+               <h3>Real operation & interaction on page</h3>
+               <p>Coding prototyping can make the complex work come true, like click to add number of ticket in the panel.
+               </p>
            </div>
            <div class="text_area code_prototype">
                 <img :src="Project.images.prototyping.code_data" alt="">
@@ -420,41 +426,58 @@
            <div class="text_area">
            </div>
            <div class="title_area">
-               <h3>Trip Usage</h3>
+               <h3>Trip Usage - <br>Trip Purchasement</h3>
            </div>
-           <div class="text_area">
+           <div class="text_area final_demo">
+               <img :src="Project.images.prototyping.final_01" alt="">
            </div>
            <div class="title_area">
                <h3>Trip Purchasement</h3>
            </div>
-           <div class="text_area">
-           </div>
-           <div class="title_area">
-               <h3>Trip Planner</h3>
-           </div>
-           <div class="text_area">
-           </div>
-           <div class="title_area">
-               <h3>Schedule</h3>
-           </div>
-           <div class="text_area">
+           <div class="text_area final_demo">
+               <img :src="Project.images.prototyping.final_02" alt="">
            </div>
            
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
                 <div class="text_area">
-                    <h2>What did I learn ?</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <div>
+                        <h2>What did I learn ?</h2>
+                        <ul>
+                            <li>
+                                <h3>Listening user's voice</h3>
+                                <p>
+                                   After user interviewed and tested, I found that , even the tiny stuff, we supposed to ask user for fitting their mind and request.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Whole design flow challenge</h3>
+                                <p>
+                                    This is the project I ran through the full UX flow firstly, I felt excited that some skills I learned like flow-renew & interviewing, and it could make the better future for user.
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="next">
+            <div class="next" :style="{'backgroundImage':'url('+Project.images.end.future+')'}">
                 <div class="text_area">
                     <h2>Where can be better?</h2>
                     <ul>
-                        <li></li>
+                        <li>
+                            <h3>More transportation info</h3>
+                            <p>
+                                Bay Area has many many chances, if it has the longer time of project, I’d add the more transit way to help MUNI App user to use different tools like other transportation or bike to do the transit.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Not only MUNI,<br>the guider in Bay Area</h3>
+                            <p>
+                                By the interviewing, user'd like to know more about the transportation and the details of city, the more time means I can make the MUNI become a guider, guide user play and go in the Bay Area.
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -484,19 +507,16 @@ export default {
     },
     data() {
         return {
-            video_height:0
         }
     },
     mounted() {
         const ref_arr = this.Structure.map(item=>{
-            console.log(document.querySelector('.'+item).offsetTop)
             return {
                 name:item,
                 height:this.$refs[item].offsetTop
             }
         })
         this.$emit('ref_list',ref_arr)
-        this.video_height = (this.$refs.portfolio_video.clientWidth*9)/16
     },
     beforeDestroy(){
         this.$emit('reload','')

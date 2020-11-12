@@ -51,7 +51,7 @@
             justify-content: flex-start;
             flex-direction: column;
             h2,p{
-                color:  #160C4E;
+                color:  $color-little;
             }
             p{
                 font-size: 14px;
@@ -91,7 +91,7 @@
             .text{
                 width:600px;
                 h2,p{
-                    color:  #160C4E;
+                    color:  $color-little;
                 }
                 h2{
                     margin-bottom: 24px;
@@ -118,7 +118,7 @@
             grid-row-end: 2;
             margin-top: 80px;
             h2{
-                color:#160C4E;
+                color:$color-little;
             }
             ul{
                 margin-top: 24px;
@@ -129,7 +129,7 @@
                 grid-column-gap: 8px;
                 li{
                     height: 100%;
-                    background-color: rgba($color: #160C4E, $alpha: 0.8);
+                    background-color: rgba($color: $color-little, $alpha: 0.8);
                     box-shadow: 0px 0px 4px 1px rgba($color:$color-pink, $alpha: 1.0);
                     display: flex;
                     justify-content: space-between;
@@ -175,7 +175,7 @@
                         }
                     }
                     &:hover{
-                        background-color: rgba($color: #160C4E, $alpha: 1);
+                        background-color: rgba($color: $color-little, $alpha: 1);
                         box-shadow: 0px 0px 8px 2px rgba($color:$color-pink, $alpha: 1.0);
                         &::before{
                         top:-100%;
@@ -244,7 +244,7 @@
                                 width:208px;
                                 margin-left: 16px;
                                 margin-top: 16px;
-                                color:#160C4E;
+                                color:$color-little;
                             }
                         }
 
@@ -323,11 +323,11 @@
             grid-row-start: 2;
             grid-row-end: 3;
             h2{
-                color:  #160C4E;
+                color:  $color-little;
                 margin-bottom: 16px;
             }
             p{
-                color:#160C4E;
+                color:$color-little;
                 margin-bottom: 32px;
                 height: 80px;
                 width:440px;
@@ -420,7 +420,7 @@
                             text-orientation: mixed;
                         writing-mode: vertical-rl;
                         margin:16px 0;
-                        color: #160C4E;
+                        color: $color-little;
                         transition: 0.4s ease-in-out;
                         }
                         &:hover{
@@ -439,7 +439,7 @@
             h2{
                 margin-top: 80px;
                 margin-bottom: 24px;
-                color:#160C4E;
+                color:$color-little;
             }
             .show_case{
                 
@@ -1079,7 +1079,7 @@
                 margin-bottom: 16px;
             }
             p{
-                color:#160C4E;
+                color:$color-little;
                 margin-bottom: 60px;
                 width:400px;
             }
@@ -1091,7 +1091,7 @@
                     margin-bottom: 24px;
                 }
                 p{
-                    color:#160C4E;
+                    color:$color-little;
                     width: 300px;
                 }
             }
@@ -1116,7 +1116,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        color:#160C4E;
+        color:$color-little;
         .go-to{
             display: flex;
             margin-left: 40px;
@@ -1126,7 +1126,7 @@
                 .icon_wrapper{
                     div{
                         &:nth-child(odd){
-                            background-color: #160C4E!important;
+                            background-color: $color-little!important;
                             animation:scrollDown 0.8s steps(8) infinite;
                         }
                     }
@@ -1134,12 +1134,12 @@
             }
             h4{
                 margin-top: 5px;
-                color:#160C4E;
+                color:$color-little;
             }
         }
         .go-to-project{
             margin-left: 80px;
-            h4{color:#160C4E;}
+            h4{color:$color-little;}
         }
     }
 }

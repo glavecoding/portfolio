@@ -177,12 +177,19 @@ export default {
               H3: "./static/images/muni/mockup/H-03.png",
               H4: "./static/images/muni/mockup/H-04.png",
             },
+            ab_test: "./static/images/muni/ab_testing.svg",
           },
           prototyping: {
             code_transition: "./static/images/muni/code_transition.svg",
             code_data: "./static/images/muni/code_data.svg",
             transition_gif: "./static/images/muni/transition_GIF.gif",
             operation_gif: "./static/images/muni/operation_GIF.gif",
+            final_01: "./static/images/muni/final_01.gif",
+            final_02: "./static/images/muni/final_02.gif",
+          },
+          end: {
+            process: "./static/images/muni/end_process.jpg",
+            future: "./static/images/muni/future_bg.png",
           },
         },
         next: {
@@ -223,7 +230,7 @@ export default {
           "ideations",
           "mockup",
           "prototyping",
-          "trade Show",
+          "tradeshow",
           "reflection",
         ],
         list_image: "./static/images/soonport/info_case.png",
@@ -233,7 +240,11 @@ export default {
             logo: "./static/images/subaru/icon_subaruxaau.svg",
           },
           overview: {
-            logo: "./static/images/soonport/logo.png",
+            logo: "./static/images/subaru/icon_subaruxaau_deep.svg",
+            team: "./static/images/subaru/team.png",
+          },
+          research: {
+            branding: "./static/images/subaru/subaru_branding_analysis.svg",
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
