@@ -245,6 +245,11 @@ export default {
           },
           research: {
             branding: "./static/images/subaru/subaru_branding_analysis.svg",
+            user_want: "./static/images/subaru/car_want copy.jpg",
+          },
+          users: {
+            persona: "./static/images/subaru/persona.png",
+            persona_info: "./static/images/subaru/persona_info.svg",
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",

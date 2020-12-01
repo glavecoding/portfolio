@@ -99,21 +99,38 @@
             <div class="title_area">
                 <h1>What people want in the 2030 ?</h1>
             </div>
+            <div class="text_area">
+                <img :src="Project.images.research.car_want" alt="">
+            </div>
         </div>
         
         <div class="users" ref="users">
-            <div class="title_a">
+            <div class="text_area user_info">
                 <h1>SUBARU User in 2030</h1>
-            </div>
-            <div class="text_area">
                 <ul>
                     <li></li>
                 </ul>
             </div>
-            <div class="title_area">
-                <h1>Touch points</h1>
+            <div class="text_area touch_point">
+                <h1>Touch Point</h1>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area persona">
+                <div class="left">
+                    <img :src="Project.images.users.persona" alt="">
+                    <ul>
+                        <li class="story">
+                            <p>Suzi is designer working from home or anywhere she likes. She’d like to find the new place to go and explore the inspiration for her work. Also, she loves to play the game and watch the gaming stream on her device in the free time. In these days, she’s considering to try the more extreme activity, but she feels a bit fear and confused...</p>
+                        </li>
+                        <li class="title">
+                            <h3>Suzi</h3>
+                            <p>"I'd like to try something more exciting, but I feel a bit scary"</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                     <img :src="Project.images.users.persona_info" alt="">
+                </div>
+            </div>
         </div>
           <div class="explore" ref="explore">
             <h1>How to make the Website fit user's needs more ?</h1>

@@ -44,7 +44,7 @@
                 width:60%;
                 margin-top: 20px;
                 font-size: 14px;
-                line-height: 18px;
+                line-height: 22px;
                 }
             }
             .contact{
@@ -104,7 +104,7 @@
             grid-row-end: 2;
             grid-column-start: 2;
             grid-column-end: 3;
-            background: linear-gradient(150deg,$color-pink,$color-purple);
+            // background: transparent;
             background-size: 100% 200%;
             background-position: bottom center;
             opacity: 0.4;
@@ -113,30 +113,30 @@
             transform: translate(-24px,-24px);
             filter: blur(2px);
             animation:fade_in 0.3s ease-out forwards;
-            &:hover{
-                animation: scan_anim2 2s ease alternate infinite;
-            }
-            @keyframes scan_anim2 {
-                            0%{
-                                background-position:0% 0%;
-                            }
-                            30%{
-                                background-position:0% 200%;
-                            }
-                            50%{
-                                background-position:0% 120%;}
-                            60%{
-                                background-position:0% 200%;
-                            }
-                            70%{
-                                background-position:0% 0%;}
-                            90%{
-                                background-position:0% 200%;}
-                            100%{
+            // &:hover{
+            //     animation: scan_anim2 2s ease alternate infinite;
+            // }
+            // @keyframes scan_anim2 {
+            //                 0%{
+            //                     background-position:0% 0%;
+            //                 }
+            //                 30%{
+            //                     background-position:0% 200%;
+            //                 }
+            //                 50%{
+            //                     background-position:0% 120%;}
+            //                 60%{
+            //                     background-position:0% 200%;
+            //                 }
+            //                 70%{
+            //                     background-position:0% 0%;}
+            //                 90%{
+            //                     background-position:0% 200%;}
+            //                 100%{
                                 
-                                background-position:0% 0%;
-                            }
-            }
+            //                     background-position:0% 0%;
+            //                 }
+            // }
             @keyframes fade_in{
                 from{
                     opacity:0;
