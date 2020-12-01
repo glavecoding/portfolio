@@ -7,11 +7,9 @@
     }
 }
 .panel{
-    // top:16px;
-    bottom:0px;
+    top:10px;
     left:10px;
     width:140px;
-    // height: 24px;
     z-index: 999;
     .panel_control{
         display: flex;
@@ -22,6 +20,8 @@
             margin-left: 16px;
             font-size: 11px;
             margin-top: 2px;
+            white-space: nowrap;
+            // color:white!important;
         }
         .icon_animation_panel{
             .icon_wrapper{
@@ -139,6 +139,13 @@
     align-items: center;
     h4{
         font-size: 11px;
+        color:rgba(255,255,255,0.4)!important;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover{
+        h4{
+            color:rgba(255,255,255,1)!important;
+        }
     }
     .icon_animation_about{
         margin-left: 12px;
@@ -342,15 +349,25 @@
                 width:16px;
                 opacity:0.2;
             }
+            h4{
+                line-height: 24px;
+                text-align: center;
+                transform:translateY(2px);
+                opacity: 0.4;
+            }
             &:hover{
                 background-color: rgba($color: $color-pink, $alpha: 0.8);
                 box-shadow: 0px 0px 4px 2px rgba($color: $color-pink, $alpha: 1);
                 margin: 8px 0px;
+                transform: scale(1.05);
                 img{
                 opacity:1;
                 }
-                
+                h4{
+                opacity: 1;
             }
+            }
+            
         }
     }
     .icon_animation_arrow_up{

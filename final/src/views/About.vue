@@ -12,6 +12,9 @@
       <div class="contact" v-if="typing.length == origin.length">
         <ul>
           <li>
+            <h2>CV</h2>
+          </li>
+          <li>
             <img :src="images.about.linkedin" alt="">
           </li>
           <li>

@@ -20,7 +20,7 @@
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
     <Go_back
-      v-if="Side_show_rule == 'Project' || Side_show_rule == 'About'"
+      v-if="Side_show_rule == 'About'"
     />
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
