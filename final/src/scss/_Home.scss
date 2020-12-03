@@ -5,6 +5,7 @@
 
 .home{
     width:100%;
+    position: relative;
     .sec_home{
         width:100%;
         height: 100vh;
@@ -16,46 +17,47 @@
             justify-content: center;
             align-items: center;
             flex-direction:column;
-            // margin-top: 160px;
+            top:32%;
+            // position: fixed;
+            transition: top 1s ease-in-out;
             h1{
                 width:100%;
                 text-align: center;
                 font-size: 100px;
-                margin-bottom: 16px;
+                margin-bottom: 8px;
                 color:transparent;
                 position: relative;
                 font-family: orbitron;
                 font-weight: bolder;
                 animation: glitch-skew 1.5s infinite steps(20) alternate-reverse;
-                // text-shadow:-0.5px 0.5px white;
                 &::before{
                     @include glitchCopy;
                     left: 1px;
-                    text-shadow: -2px 1px #ff00c1;
+                    text-shadow: -2px 1px 4px rgba($color:#ff00c1 ,$alpha: 0.5);
                     clip: rect(44px, 450px, 56px, 0);
                     animation: glitch-anim 3s infinite linear alternate-reverse;
                 }
                 &::after {
                     @include glitchCopy;
                     left: -1px;
-                    text-shadow: -2px 1px #00fff9, 1px 1px #ff00c1;
+                    text-shadow: -2px 1px 4px rgba($color: #00fff9  ,$alpha: 0.8), 1px 1px 4px rgba($color:#ff00c1 ,$alpha: 0.6);
                     animation: glitch-anim2 1.5s infinite linear alternate-reverse;
                 }
                 @keyframes glitch-anim {
                     $steps: 20;
                     @for $i from 0 through $steps {
                         #{percentage($i*(1/$steps))} {
-                        clip: rect(random(100)+px, random(120) + px, (100 - random(200))+px, random(120) + px);
+                        clip: rect(random(100)+px, random(200) + px, (100 - random(200))+px, random(120) + px);
                                 transform: skew((random(360) - 180) + deg);
                         }
                     }
                     }
 
                     @keyframes glitch-anim2 {
-                    $steps: 20;
+                    $steps: 10;
                     @for $i from 0 through $steps {
                         #{percentage($i*(1/$steps))} {
-                        clip: rect(random(100)+px, random(120) + px, (100 - random(1200))+px, random(120) + px);
+                        clip: rect(random(100)+px, random(200) + px, (100 - random(1200))+px, random(120) + px);
                                 transform: skew((180 - random(200)) + deg);
                         }
                     }
@@ -77,27 +79,48 @@
                 h4{
                 text-align: center;
                 white-space: nowrap;
+                
                 &:nth-child(odd){
                     line-height: 32px;
                     filter:blur(1px);
+                    font-size: 16px;
                     font-family: TextFont;
                 }
             }
-                .title{
+                div.flick_right{
                     margin:0 32px;
-                    width:90%;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color:rgba($color: $color-pink, $alpha: 0.9);
-                    filter:blur(1px);
+                    .title{
+                        width:90%;
+                        font-size: 22px;
+                        line-height: 24px;
+                        filter:blur(0px);
+                        color:rgba($color: $color-pink, $alpha: 1);
+                    }
                 }
+                .flicking{
+                        animation:flick_right 0.35s infinite;
+                        height: 24px;
+                        padding:2px;
+                    }
+                    @keyframes flick_right {
+                        from{
+                            border-right:2px solid white;
+                        }
+                        to{
+                            border-right:2px solid transparent;
+                        }
+                    }
             }
         }
+        // .stop_fixed{
+        //     top:-100%;
+        // }
     }
     .sec_list{
         display: grid;
         grid-template-columns: 1fr 1000px 1fr;
         padding-top: 80px;
+        // margin-top: 100vh;
         ul{
             grid-column-start: 2;
             grid-column-end: 3;
@@ -122,11 +145,16 @@
                     }
                 }
                 .project_image{
-                    width:240px;
+                    width:320px;
                     height: 400px;
                     position: relative;
                     background-size: cover;
                     z-index: 1;
+                    overflow: hidden;
+                    img{
+                        height:100%;
+                        width:auto;
+                    }
                     @mixin img_temp {
                         content:'';
                         position: absolute;
@@ -138,22 +166,25 @@
                     &::before{
                         @include img_temp;
                         z-index: 0;
-                        background-image: linear-gradient(90deg,rgba($color: $color-pink, $alpha: 0.6),rgba($color: $color-purple, $alpha: 0.6));
+                        background-image: linear-gradient(90deg,rgba($color: $color-pink, $alpha: 0.15),rgba($color: $color-purple, $alpha: 0.15));
                         background-position: 0% 0%;
                         box-shadow: 0px 0px 0px 0px rgba($color: $color-pink, $alpha: 1);
                     }
                     &::after{
                         @include img_temp;
                         z-index: 99;
-                        background: linear-gradient(90deg,rgba($color: $color-pink, $alpha: 0.2),rgba($color: $color-purple, $alpha: 0.4));
+                        background: linear-gradient(90deg,rgba($color: $color-pink, $alpha: 0.15),rgba($color: $color-purple, $alpha: 0.15));
                         background-size: 300% 100%;
                         background-position: 0% 0%;
+                        transition:0.4s;
                     }
                 }
                 &:hover{
                     .project_image{
                         &::after{
                             animation: scan_anim 2s ease alternate infinite;
+                            backdrop-filter: brightness(1.1);
+                            box-shadow: 0px 0px 8px #ff00c1;
                         }
                         @keyframes scan_anim {
                             0%{
@@ -176,6 +207,7 @@
                                 background-position: 0% 0%;
                             }
                         }
+                       
                     }
                 }
                 .wrapper_project_info{
@@ -220,6 +252,7 @@
                             width:auto;
                             background-color: rgba($color: $color-purple, $alpha: 0.4);
                             transition: 0.3s ease;
+                            transition-delay: 0.2s;
                             h4{
                                 white-space: nowrap;
                                 padding:6px 10px;
@@ -233,16 +266,13 @@
                         justify-content: flex-start;
                         align-items: center;
                         transition: 0.3s ease-in-out;
+                        transition-delay: 0.1s;
+                        transform-origin:  bottom left;
                         .icon_animation_arrow_down{
                             transform: rotate(-90deg);
                             margin-left: 16px;
                         }
-                        &:hover{
-                            transform: scale(1.1)translateX(6px);
-                            h4{
-                                text-shadow: 0px 0px 3px white;
-                            }
-                        }
+                        
                     }
                 }
                 &:hover{
@@ -256,11 +286,15 @@
                         }
                         ul{
                             li{
-                                background-color: rgba($color: $color-purple, $alpha: 1);
-                                box-shadow: 0px 0px 8px 3px rgba($color: $color-purple, $alpha: 1.0);
+                                background-color: rgba($color: $color-purple, $alpha: 0.7);
+                                box-shadow: 0px 0px 8px 3px rgba($color: $color-purple, $alpha: 0.8);
                             }
                         }
                         .see_more{
+                            transform: scale(1.8);
+                            h4{
+                                text-shadow: 0px 0px 3px white;
+                            }
                             .icon_animation_arrow_down{
                                 .icon_wrapper{
                                     div{

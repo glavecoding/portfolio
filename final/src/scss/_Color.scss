@@ -2,6 +2,8 @@ $color-pink:#e601a2;
 $color-purple:#5400d5;
 $dark-gradient:150deg,#26086C,#001421,#3E0A33;
 $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
+$small-title:#ff7729;
+$color-little:#160C4E;
 // dark mode
 .dark_mode{
     h1,h2,h3,h4,h5,p{
@@ -138,23 +140,3 @@ $light-gradient:150deg,#26086c1c,#ffffff,#3e0a332d;
     }
 }
 // light mode
-.light_mode{
-    h1,h2,h3,h4,h5,p{
-        color:black;
-    }
-    .bg{
-        transition:0.5s ease;
-        background: linear-gradient($light-gradient);
-        .strip_line_D{
-            fill: rgba($color: $color-purple, $alpha: 0.05);
-        }
-        .strip_line_L{
-            fill: rgba($color: #ff008c, $alpha: 0.05);
-        }
-    }
-    .scan{
-        &::after{
-            background: linear-gradient(rgba(255, 170, 203, 0.2) 50%, rgba(255, 255, 255, 0.2) 50%), linear-gradient(90deg, rgba(245, 180, 180, 0.1), rgba(133, 252, 133, 0.2), rgba(122, 122, 255, 0.1));
-        }
-    }
-}

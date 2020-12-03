@@ -2,6 +2,9 @@
     <aside class="fixed_home side_right">
             <ul>
                 <li>
+                    <h4>CV</h4>
+                </li>
+                <li>
                     <img :src="images.home.linkedin" alt="">
                 </li>
                 <li>

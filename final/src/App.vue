@@ -9,7 +9,7 @@
 
       </div>
 
-    <transition enter-active-class="animate__animated animate__fadeIn animate__faster" leave-active-class="animate__animated animate__fadeOut animate__faster">
+    <transition enter-active-class="animate__animated animate__fadeIn animate__faster" :leave-active-class="$route.path == '/'?'animate__animated animate__fadeOutDown animate__fast':'animate__animated animate__fadeOut animate__faster'">
       <router-view>
       </router-view>
     </transition>
@@ -20,7 +20,7 @@
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInDown animate__faster" leave-active-class="animate__animated animate__fadeOutUp animate__faster">
     <Go_back
-      v-if="Side_show_rule == 'Project' || Side_show_rule == 'About'"
+      v-if="Side_show_rule == 'About'"
     />
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
@@ -124,7 +124,7 @@ export default {
     },
     Height:{
       handler(){
-        this.Hide_scroll = this.Height> 100 ? false:true
+        this.Hide_scroll = this.Height> window.innerHeight*1.2 ? false:true
       }
     }
   },
