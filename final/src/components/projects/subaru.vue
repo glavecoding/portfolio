@@ -10,6 +10,9 @@
                         <li v-for="tag in Project.tags"><h4>{{tag}}</h4></li>
                     </ul>
                 </div>
+                 <div class="slide_case">
+                    <img :src="Project.images.info.info_case" alt="">
+                </div>
         </div>
         <div class="info">
                 <ul>
@@ -157,7 +160,7 @@
             </div>
         </div>
         <div class="end">
-            <div class="go-to">
+            <div class="go-to" @click="Go_project({...Next})">
                 <h4>Go to next project</h4>
                 <icon_arrow_down/>
             </div>
@@ -191,6 +194,11 @@ export default {
             }
         })
         this.$emit('ref_list',ref_arr)
+    },
+    methods: {
+        Go_project(next){
+            this.$router.push({path:`/project/${next.order}/${next.name}`})
+        }
     },
 }
 </script>

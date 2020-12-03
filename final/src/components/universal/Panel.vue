@@ -1,8 +1,10 @@
 <template>
-    <aside class="fixed_home panel">
+    <aside class="fixed_home panel" @mouseleave="Show_panel(false)">
         <div
             class="panel_control"
             @click="Show?Show_panel(false):Show_panel(true)"
+            @mouseenter="Hover_icon"
+            @mouseleave="Hover_icon"
             :class="Show?'Open':''"
         >
             <icon_panel
@@ -78,6 +80,7 @@ export default {
             this.$emit('Switch_language',this.Panel.Language)
         },
         Go_project(pjt_order,pjt_name){
+            // this.Show = false
             this.$router.push({path:`/project/${pjt_order}/${pjt_name}`})
         },
         Go_home(){
