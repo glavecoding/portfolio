@@ -226,7 +226,6 @@ export default {
           "overview",
           "research",
           "users",
-          "explore",
           "ideations",
           "mockup",
           "prototyping",
@@ -246,6 +245,9 @@ export default {
           research: {
             branding: "./static/images/subaru/subaru_branding_analysis.svg",
             user_want: "./static/images/subaru/car_want copy.jpg",
+            interview01: "./static/images/subaru/interview_01.png",
+            interview02: "./static/images/subaru/interview_02.png",
+            interview03: "./static/images/subaru/interview_03.png",
           },
           users: {
             persona: "./static/images/subaru/persona.png",
