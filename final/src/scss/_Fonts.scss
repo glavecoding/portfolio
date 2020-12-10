@@ -34,6 +34,12 @@
         url('./fonts/Orbitron-Medium.otf')format('OpenType');
 }
 
+@font-face{
+    font-family: 'nerko';
+    src:url('./fonts/NerkoOne-Regular.ttf')format('TrueType'),
+        url('./fonts/NerkoOne-Regular.otf')format('OpenType');
+}
+
 h1,h2,h3,h4,h5,h6{
      font-family: HeadFont;
 }

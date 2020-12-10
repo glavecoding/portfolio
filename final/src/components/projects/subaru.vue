@@ -78,7 +78,7 @@
                 <h1>Analysis & Interview</h1>
             </div>
             <div class="text_area"></div>
-            <div class="title_area branding">
+            <div class="title_area  branding">
                 <img :src="Project.images.research.branding" alt="">
                 <h3>Branding Analysis</h3>
             </div>
@@ -94,16 +94,23 @@
                     <li><h3>Need cooler style and shape on car or service</h3></li>
                 </ul>
             </div>
-             <div class="title_area">
-                 <img src="" alt="">
-                <h3>Interviewing</h3>
+             <div class="title_area gapping interview">
+                <h3>WHY/HOW people drive SUBARU?</h3>
+                <p>Via interviewing and survey, we found the reason why/how people love SUBARU, we will keep the advantage going and optimizing.</p>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h1>What people want in the 2030 ?</h1>
-            </div>
-            <div class="text_area">
-                <img :src="Project.images.research.car_want" alt="">
+            <div class="text_area interview">
+                <ul>
+                    <li :style="{'backgroundImage':`url(${Project.images.research.interview01})`}">
+                        <h4>"Tons of <span>people belong SUBARU</span> will help you to go out and have fun in your car"</h4>
+                    </li>
+                    <li :style="{'backgroundImage':`url(${Project.images.research.interview02})`}">
+                        <h4>"It's a <span>life style</span>, if you're not a part of this then you're missing out big time."</h4>
+                    </li>
+                    <li :style="{'backgroundImage':`url(${Project.images.research.interview03})`}">
+                        
+                        <h4>"It's <span>fun</span>, like to have a toy that is <span>very useful</span>,too. Other car is just a car for move, but the SUBARU got me from point A to Z."</h4>
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -111,11 +118,24 @@
             <div class="text_area user_info">
                 <h1>SUBARU User in 2030</h1>
                 <ul>
-                    <li></li>
+                    <li>
+                        <h3>Age 22-32</h3>
+                    </li>
+                    <li>
+                        <h3>Flexible working time & space</h3>
+                    </li>
+                    <li>
+                        <h3>Active & adventurous life style</h3>
+                    </li>
+                    <li>
+                        <h3>Less cars on the road is better</h3>
+                    </li>
+
                 </ul>
             </div>
             <div class="text_area touch_point">
                 <h1>Touch Point</h1>
+                <p></p>
             </div>
             <div class="text_area persona">
                 <div class="left">
@@ -135,21 +155,56 @@
                 </div>
             </div>
         </div>
-          <div class="explore" ref="explore">
-            <h1>How to make the Website fit user's needs more ?</h1>
-        </div>
-        <div class="ideation" ref="ideations">
-            <h1>How to make the Website fit user's needs more ?</h1>
+        <div class="ideations" ref="ideations">
+            <div class="title_area gapping">
+                <h1>What/How the SUBARU will be in 2030?</h1>
+                
+            </div>
+            <div class="text_area">
+                <h3>something</h3>
+                <img src="" alt="">
+            </div>
+            
+            <div class="title_area gapping">
+                <h1>2030 SUBARU Features</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Explore</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Explore</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Style Exploring</h3>
+                <p>something</p>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area gapping explore">
+                <h1>Style & Motion Exploring</h1>
+                <p>To explore the cooler operation and style in 2030, we did</p>
+            </div>
+            <div class="text_area"></div>
         </div>
         <div class="mockup" ref="mockup">
             <h1>Mockup</h1>
         </div>
         
         <div class="prototyping" ref="prototyping">
-           <h1>Prototyping</h1>
+           <div class="title_area">
+               <h1>Prototyping</h1>
+           </div>
+           <div class="text_area"></div>
         </div>
         <div class="tradeshow" ref="tradeshow">
-            <h1>About Trade Show</h1>
+            <div class="title_area gapping">
+                <h1>AAU Spring Trade Show</h1>
+            </div>
+            <div class="text_area"></div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
