@@ -39,49 +39,199 @@
                 </ul>
         </div>
         <div class="overview" ref="overview">
+            <div class="iframe_box">
+                <div class="phone_case">
+                    <iframe src="https://glaveyen.com/foodie" frameborder="0" width="375" height="670"></iframe>
+                </div>
+                <img :src="Project.images.overview.frame" alt="">
+                <h4 @click="open_foodie">Try above or click to go to service</h4>
+            </div>
             <div class="text_area">
-                <h2>About Project...</h2>
-                <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
+                <p>Yelp is good service to find the good restaurant while we have no idea what to eat, but does it have the way to filter a great and closer restaurant much faster ? Let's find the way to go in 3 days challenge, to make the "FOODIE"!</p>
+            </div>
+            <div class="img_area">
                 <img :src="Project.images.overview.logo" alt="">
+                <h1>x</h1>
+                <img :src="Project.images.overview.yelp" alt="">
+            </div>
+        </div>
+       
+        <div class="ideations" ref="ideations">
+            <div class="title_area gapping">
+                <h1>Ideations & Problems</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Problems of Yelp</h3>
             </div>
             <div class="text_area">
-                <h2>User's Problems...</h2>
-                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
-                    <br><br>—By Client’s Opinion & SOONPORT</p>
+                <ul>
+                    <li>
+                        <img class="yelp_logo" :src="Project.images.overview.yelp" alt="">
+                        <p>Yelp is a good service to find the good restaurants, it's full functional and it has many other contents on the service, but for a big foodie, I only want a good restaurant right now...</p>
+                        <h4 class="yelp_issue">1. Too many other informations for a foodie</h4>
+                        <h4 class="yelp_issue">2. Need the restaurant suggestions near lazy user</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Ieations of service</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <div class="ideation_sfs_img">
+                            <img :src="Project.images.ideations.icon_search" alt="">
+                            <img :src="Project.images.ideations.icon_filter" alt="">
+                            <img :src="Project.images.ideations.icon_sort" alt="">
+                        </div>
+                        <h3>Quick search, filter, and sorting</h3>
+                        <p>To satisify my request, I only left search, filter and sorting to rise the efficiency of finding restaurants.</p>
+                    </li>
+                    <li>
+                        <div class="ideation_sfs_img">
+                            <img :src="Project.images.ideations.icon_walk" alt="">
+                            <img :src="Project.images.ideations.icon_drive" alt="">
+                        </div>
+                        <h3>How to go to restaurant</h3>
+                        <p>I'm lazy, so I need not only position of me and restaurant, to show the route for worker or driving car is essential.</p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="problem" ref="problem">
-            <h1>About the problems...</h1>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class="users" ref="users">
-            <h1>Target Users & SOONPORT Staff</h1>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class="ideation" ref="ideation">
-            <h1>How to make the Website fit user's needs more ?</h1>
-        </div>
+        <div class="design" ref="design">
+                <div class="title_area gapping">
+                  <h1>Wireframes & Assets</h1>
+                </div>
+                <div class="text_area"></div>
+                <div class="title_area">
+                    <h3>Wireframe</h3>
+                </div>
+                <div class="text_area">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="title_area">
+                    <h3>Graphic Assets</h3>
+                </div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <img :src="Project.images.design.logo" alt="">
+                            <h4>Foodie Logo</h4>
+                        </li>
+                        <li>
+                            <img :src="Project.images.design.empty" alt="">
+                            <h4>Empty Status Graphic</h4>
+                        </li>
+                        <li>
+                            <Loading
+                                :image_link="Project.images.design.loading"
+                            />
+                            <h4>Loading Animation</h4>
+                        </li>
+                        <li>
+                            <h4>Button & Icon</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         <div class="development" ref="development">
             <div class="text_area">
                 <div class="text">
-                    <h2>Website Development</h2>
+                    <h2>Service Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nostrum iusto quibusdam saepe. Eum quaerat maxime tempora repudiandae tenetur impedit ab deserunt dolorum eveniet facere, quibusdam porro doloremque culpa fugit?</p>
                 </div>
-                <img :src="Project.images.development.graphic" alt="">
+                <div class="img_area">
+                <img :src="Project.images.overview.logo" alt="">
+                <h1>x</h1>
+                <img :src="Project.images.overview.yelp" alt="">
+                <h1>x</h1>
+            </div>
             </div>
         </div>
+        <div class="techniques" ref="techniques">
+            <div class="title_area gapping">
+                <h1>Techniques</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                  <h3>Search Setting</h3>
+                  <p>User can adjust the search range and amount of result to update the search result anytime to get the latest result.</p>
+            </div>
+            <div class="text_area">
+               <div class="demo_box"></div>
+            </div>
+            <div class="title_area">
+                  <h3>JS Animation</h3>
+                  <p>
+                      For optimizing the performance, I used javascript with css to make the loading animation.
+                  </p>
+            </div>
+            <div class="text_area">
+               <div class="demo_box"></div>
+            </div>
+            <div class="title_area">
+                  <h3>Sort & Debounce</h3>
+                  <p>
+                      Via the help from BootStrap - Vue, I can do the quick sorting the result by price, rate and distance.
+                  </p>
+            </div>
+            <div class="text_area">
+               <div class="demo_box"></div>
+            </div>
+           
+        </div>
         <div class="issue" ref="issue">
-            <h1>Issue</h1>
+            <div class="title_area gapping">
+                <h1>Issue & Fixed</h1>
+            </div>
+             <div class="text_area"></div>
+            <div class="title_area">
+              <h3>Cross Origin x<br>Proxy Setting</h3>
+            </div>
+            <div class="text_area">
+
+            </div>
+            <div class="title_area">
+              <h3>Real Time Search x <br>Debounce</h3>
+            </div>
+            <div class="text_area">
+                
+            </div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+                <div class="title_area">
+                    <h2>What did I learn ?</h2>
+                </div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>Compromise</h3>
+                        </li>
+                        <li>
+                            <h3>Less is more</h3>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="next">
-                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
+            <div class="learn">
+                <div class="title_area">
+                    <h2>Where can be better?</h2>
+                </div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>Pair with other service</h3>
+                        </li>
+                        <li>
+                            
+                            <h3>To be a real product</h3>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="end">
@@ -97,15 +247,17 @@
 </template>
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
+import Loading from '../projects/foodie_loading'
 export default {
-    name:'soonport',
+    name:'foodie',
     props:{
         Structure:Array,
         Next:Object,
         Project:Object
     },
     components:{
-        icon_arrow_down
+        icon_arrow_down,
+        Loading
     },
     data() {
         return {
@@ -123,6 +275,9 @@ export default {
     methods: {
         Go_project(next){
             this.$router.push({path:`/project/${next.order}/${next.name}`})
+        },
+        open_foodie(){
+            window.open("https://www.glaveyen.com/foodie","_blank")
         }
     },
 }

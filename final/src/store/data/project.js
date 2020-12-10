@@ -264,7 +264,7 @@ export default {
       },
       {
         order: "04",
-        tags: ["Programming", "UX Design", "UI Design"],
+        tags: ["Programming", "UX Design", "UI Design", "Side-project"],
         name: "Metrix - collect data with figma",
         banner: "./static/images/metrix/metrix_bg.png",
         info: {
@@ -310,7 +310,7 @@ export default {
       },
       {
         order: "05",
-        tags: ["Programming", "UI"],
+        tags: ["Programming", "UI", "Side-project"],
         name: "Foodie - Find restaurant with Yelp & Google",
         banner: "./static/images/foodie/_banner.png",
         info: {
@@ -329,10 +329,10 @@ export default {
         content: "foodie",
         structure: [
           "overview",
-          "problem",
-          "users",
-          "ideation",
+          "ideations",
+          "design",
           "development",
+          "techniques",
           "issue",
           "reflection",
         ],
@@ -343,24 +343,41 @@ export default {
           },
           overview: {
             logo: "./static/images/foodie/Foodie_logo.svg",
+            frame: "./static/images/foodie/frame.png",
+            yelp: "./static/images/foodie/yelp-logo-e1569950418653.png",
+          },
+          ideations: {
+            icon_search: "./static/images/foodie/icon_search-24px.svg",
+            icon_sort: "./static/images/foodie/icon_sort-24px.svg",
+            icon_filter: "./static/images/foodie/icon_filter_alt-24px.svg",
+            icon_walk: "./static/images/foodie/icon_walk.svg",
+            icon_drive: "./static/images/foodie/icon_car.svg",
+          },
+          design: {
+            empty: "./static/images/foodie/Foodie_empty.png",
+            logo: "./static/images/foodie/Foodie_logo.svg",
+            loading:"./static/images/foodie/Foodie_loading.svg"
           },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
           },
+          techniques: {
+            IA: "./static/images/foodie/IA.svg",
+          },
         },
         next: {
           order: "06",
-          name: "DRIP - New coffee making experience",
+          name: "Lit it - Fight the fake news",
         },
       },
       {
         order: "06",
         tags: ["UI/UX Design", "Visual Strategy"],
-        name: "DRIP - New coffee making experience",
+        name: "Lit it - Fight the fake news",
         banner: "./static/images/drip/_banner.png",
         info: {
           role: ["UI/UX & Visual Designer"],
-          time: ["4 Months", "Sep, 2019 - Dec, 2019"],
+          time: ["2 Months", "Sep, 2019 - Oct, 2019"],
           skills: [
             "UX Research",
             "Adobe Xd",
