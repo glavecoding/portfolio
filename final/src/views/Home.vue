@@ -118,7 +118,7 @@ export default {
                         this.timer = setInterval(()=>{
                             this.typing += this.origin2[this.target]
                             this.target += 1
-                        },Math.random(1)*100 + 40)
+                        },Math.random(1)*50 + 40)
                     },500)
                 }else if(this.typing.length == Time_out2){
                     clearInterval(this.timer)
@@ -143,7 +143,7 @@ export default {
                         this.timer = setInterval(()=>{
                             this.typing += this.origin[this.target]
                             this.target += 1
-                        },Math.random(1)*100 + 40)
+                        },Math.random(1)*50 + 40)
                     },1200)
                 }
             }
