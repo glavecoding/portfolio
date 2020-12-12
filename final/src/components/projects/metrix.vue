@@ -145,18 +145,17 @@
             </div>
         </div>
         <div class="users" ref="users">
-            <div class="title_area user_info">
-                <h2>Who's METRIX focusing?</h2>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
             <div class="title_area persona_title">
-                <h2>Persona</h2>
+                <h2>Who's METRIX focusing?</h2>
             </div>
             <div class="title_area persona_content">
-                <div class="left"></div>
-                <div class="right"></div>
+                <div class="left">
+                    <img src="" alt="">
+                    <div class="text"></div>
+                </div>
+                <div class="right">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
         <div class="process" ref="process">
@@ -251,26 +250,36 @@
             <div class="text_area">
                 <ul>
                     <li>
-                        <img :src="Project.images.design.sitemap" alt="">
+                        <img :src="Project.images.process.sitemap" alt="">
                     </li>
                 </ul>
             </div>
             <div class="title_area">
                 <h3>Task flow - <br>Project Management</h3>
+                <p></p>
             </div>
             <div class="text_area">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img :src="Project.images.process.task_project" alt="">
+                    </li>
+                    <li>
+                        <h3></h3>
+                    </li>
                 </ul>
             </div>
             <div class="title_area">
                 <h3>Task flow - <br>Testing Management</h3>
+                <p></p>
             </div>
             <div class="text_area">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img :src="Project.images.process.task_test" alt="">
+                    </li>
+                    <li>
+                        <h3></h3>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -279,7 +288,28 @@
                 <h2>Style Referance</h2>
             </div>
             <div class="text_area referance">
-                
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <p>Logo</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Icons</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Status Graphic</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Other Assets</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Font</p>
+                    </li>
+                </ul>
             </div>
             <div class="title_area">
                 <h2>Primary pages in METRIX</h2>
@@ -290,8 +320,8 @@
                         <div>
                             <h4><span>Projects</span> - <br>Manage project and prototype with Figma</h4>
                         </div>
-                        <div>
-
+                        <div class="page_frame">
+                            <img src="" alt="">
                         </div>
                     </li>
                     <li>
@@ -299,24 +329,24 @@
                             <h4><span>Analystics</span> - <br>Manage & Show testing results by heatmap & chart</h4>
                         </div>
                         
-                        <div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h4><span>Analystics</span> - <br>Collecting user's behaviors and data</h4>
-                        </div>
-                        <div>
-
+                        <div class="page_frame">
+                            <img src="" alt="">
                         </div>
                     </li>
                     <li>
                        <div>
                             <h4><span>Comparison</span> - <br>A/B projects comparison</h4>
                        </div>
+                        <div class="page_frame">
+                            <img src="" alt="">
+                        </div>
+                    </li>
+                    <li>
                         <div>
-
+                            <h4><span>Testing Case</span> - <br>Collecting user's behaviors and data</h4>
+                        </div>
+                        <div class="page_frame">
+                            <img src="" alt="">
                         </div>
                     </li>
                 </ul>
@@ -331,11 +361,11 @@
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
-        <div class="conflict" ref="conflict">
+        <div class="conflict" ref="techniques">
             <div class="title_area">
                 <h1>Techniques</h1>
             </div>
-            <div class="text_area">
+            <div class="text_area techniques">
                 <div>
                      <h4>METRIX Management</h4>
                 </div>
@@ -357,8 +387,23 @@
                     <li>
                         <p>HTML/SCSS</p>
                         <p>Vue.js</p>
+                    </li>
+                    <li>
                         <p>Figma API</p>
                         <p>Firebase API</p>
+                    </li>
+                </ul>
+                 <div>
+                     <h4>METRIX Concept Demo</h4>
+                </div>
+                <ul>
+                    <li>
+                       <p>Vue.js</p>
+                       <p>HTML/SCSS/JS</p>
+                    </li>
+                    <li>
+                        <p>Google Apps Script</p>
+                        <p>Google Sheet</p>
                     </li>
                 </ul>
             </div>
@@ -371,20 +416,26 @@
             <div class="title_area">
                 <h3>Technical Features</h3>
             </div>
-            <div class="text_area">
+            <div class="text_area tech_features">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <h3><span>Heatmap</span> - Show user's behabior intuitively</h3>
+                    </li>
+                    <li>
+                        <h3><span>Chart</span> - Visualize the testing result real time</h3>
+                    </li>
+                    <li>
+                        <h3><span>Project & Pages Comparison</span> - Evaluting design with user testing</h3>
+                    </li>
                 </ul>
             </div>
             <div class="title_area">
                 <h3>Design vs Programming</h3>
             </div>
-            <div class="text_area">
+            <div class="text_area conflicts">
                 <ul>
-                    <li>Style limitations</li>
-                    <li>Focus differ</li>
+                    <li><h3>Style limitations</h3></li>
+                    <li><h3>Focus differ</h3></li>
                 </ul>
             </div>
         </div>
@@ -392,17 +443,45 @@
             <div class="title_area">
                 <h1>Service Demo</h1>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area">
+                <ul>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
                 <div class="title_area">
                     <h2>What did I learn ?</h2>
                 </div>
+                <div class="text_area">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
             <div class="learn">
                 <div class="title_area">
                     <h2>Next</h2>
+                </div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3></h3>
+                        </li>
+                        <li>
+                            <h3></h3>
+                        </li>
+                        <li>
+                            <h3></h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

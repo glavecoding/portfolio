@@ -169,6 +169,7 @@
         
     }
     .users{
+        height:600px;
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
         grid-template-rows:auto auto auto;
@@ -186,7 +187,7 @@
             ul{
                 margin-top: 24px;
                 width:100%;
-                height: 320px;
+                height: 200px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-column-gap: 8px;
@@ -265,6 +266,7 @@
         grid-template-columns: 1fr 840px 1fr;
         grid-template-rows: auto;
         padding:80px 0;
+        height:2400px;
         .title_area,.text_area{
             grid-column-start: 2;
             grid-column-end: 3;
@@ -286,14 +288,16 @@
             margin-bottom: 80px;
         }
         .referance{
-            height:320px;
             position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 120px;
             &::before,&::after{
                 content:'';
                 position: absolute;
                 border-top:2px solid $color-little;
                 border-bottom:2px solid $color-little;
-                height:90%;
+                height:95%;
                 width:8px;
             }
             &::before{
@@ -304,17 +308,37 @@
                 border-right: 2px solid $color-little;
                 right:-8px;
             }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 24px;
+                width:100%;
+                li{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height:240px;
+                    p{
+                        position: absolute;
+                        bottom:-16px;
+                        color:$color-little;
+                    }
+                }
+            }
         }
         .pages{
             ul{
                 li{
                     margin-bottom: 80px;
-                    display: flex;
-                    justify-content: space-between;
+                    display:grid;
+                    grid-template-columns: 320px 1fr;
+                    justify-items:left;
                     h4{
                         line-height: 18px;
                         color:$color-little;
-                        width:320px;
+                        grid-column-start:1;
+                        grid-column-end: 2;
                     }
                     span{
                         font-size: 16px;
@@ -325,8 +349,39 @@
                         margin-top: 16px;
                         color:$color-little;
                     }
-                    div{
-
+                    .page_frame{
+                        justify-self: center;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        position: relative;
+                        &::before,&::after{
+                            position: absolute;
+                            border-top: 1px solid $color-little;
+                            border-bottom: 1px solid $color-little;
+                            width:8px;
+                            height:80%;
+                            content:'';
+                        }
+                        &::before{
+                            border-left: 1px solid $color-little;
+                            left:-32px;
+                        }
+                        &::after{
+                            border-right: 1px solid $color-little;
+                            right:-32px;
+                        }
+                        img{
+                            width:400px;
+                            height:225px;
+                        }
+                    }
+                    &:last-child{
+                        .page_frame{
+                            img{
+                                width:200px;
+                                height:400px;
+                            }
+                        }
                     }
                 }
             }
@@ -372,6 +427,7 @@
         }
     }
     .research{
+        height: 2200px;
         .title_area{
             h3{
                 margin-bottom: 16px;
@@ -545,6 +601,7 @@
         }
     }
     .process{
+        height:4600px;
         .title_area{
             h3{
                 margin-bottom: 16px;
@@ -691,8 +748,52 @@
             }
         }
     }
+    .techniques{
+        div{
+            h4{
+                position: relative;
+                color:$color-pink;
+                &::before{
+                    position: absolute;
+                    top:-2px;
+                    content:'';
+                    left:-16px;
+                    width:4px;
+                    height:16px;
+                    background-color: $color-purple;
+                }
+            }
+        }
+        ul{
+            margin-top: 24px;
+            display: flex;
+            li{
+                width:200px;
+                margin-right: 24px;
+                p{
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
     .conflict{
-        // height:600px;
+        .text_area{
+            h3{
+                color:white;
+                line-height: 24px;
+            }
+            span{
+                color:$color-pink;
+            }
+            ul{
+                li{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .tech_features{
+
+        }
     }
     .demo{
         height:600px;
