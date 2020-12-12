@@ -290,29 +290,25 @@
             <div class="text_area referance">
                 <ul>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.design.assets_logo" alt="">
                         <p>Logo</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.design.assets_icon" alt="">
                         <p>Icons</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img :src="Project.images.design.assets_graphic" alt="">
                         <p>Status Graphic</p>
                     </li>
-                    <li>
+                    <!-- <li>
                         <img src="" alt="">
                         <p>Other Assets</p>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <p>Font</p>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="title_area">
-                <h2>Primary pages in METRIX</h2>
+                <h2>Style referance for pages</h2>
             </div>
             <div class="text_area pages">
                 <ul>
@@ -321,16 +317,16 @@
                             <h4><span>Projects</span> - <br>Manage project and prototype with Figma</h4>
                         </div>
                         <div class="page_frame">
-                            <img src="" alt="">
+                            <img :src="Project.images.design.ref_project" alt="">
                         </div>
                     </li>
                     <li>
                         <div>
-                            <h4><span>Analystics</span> - <br>Manage & Show testing results by heatmap & chart</h4>
+                            <h4><span>Analystics & Comparison</span> - <br>Manage & Show testing results by heatmap & chart</h4>
                         </div>
                         
                         <div class="page_frame">
-                            <img src="" alt="">
+                            <img :src="Project.images.design.ref_analystic" alt="">
                         </div>
                     </li>
                     <li>
@@ -338,15 +334,7 @@
                             <h4><span>Comparison</span> - <br>A/B projects comparison</h4>
                        </div>
                         <div class="page_frame">
-                            <img src="" alt="">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h4><span>Testing Case</span> - <br>Collecting user's behaviors and data</h4>
-                        </div>
-                        <div class="page_frame">
-                            <img src="" alt="">
+                            <img :src="Project.images.design.ref_compare" alt="">
                         </div>
                     </li>
                 </ul>
@@ -419,12 +407,15 @@
             <div class="text_area tech_features">
                 <ul>
                     <li>
+                        <img :src="Project.images.development.heatmap" alt="">
                         <h3><span>Heatmap</span> - Show user's behabior intuitively</h3>
                     </li>
                     <li>
+                        <img :src="Project.images.development.chart" alt="">
                         <h3><span>Chart</span> - Visualize the testing result real time</h3>
                     </li>
                     <li>
+                        <img :src="Project.images.development.comparison" alt="">
                         <h3><span>Project & Pages Comparison</span> - Evaluting design with user testing</h3>
                     </li>
                 </ul>
@@ -432,22 +423,34 @@
             <div class="title_area">
                 <h3>Design vs Programming</h3>
             </div>
-            <div class="text_area conflicts">
+            <div class="text_area conflict_dnd">
                 <ul>
-                    <li><h3>Style limitations</h3></li>
-                    <li><h3>Focus differ</h3></li>
+                    <li>
+                        <div>
+                            <img :src="Project.images.development.limit_design" alt="">
+                            <img :src="Project.images.development.limit_arrow" alt="">
+                            <img :src="Project.images.development.limit_actual" alt="">
+                        </div>
+                        <h3>Style limitations</h3>
+                        </li>
+                    
+                    <li>
+                        <div class="dnd">
+                            <img :src="Project.images.development.focus_style" alt="">
+                            <img :src="Project.images.development.focus_arrow" alt="">
+                            <img :src="Project.images.development.focus_structure" alt="">
+                        </div>
+                        <h3>Focus differ</h3>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="demo" ref="demo">
-            <div class="title_area">
+            <div class="title_area service_demo_title">
                 <h1>Service Demo</h1>
             </div>
-            <div class="text_area">
+            <div class="text_area service_demo">
                 <ul>
-                    <li>
-
-                    </li>
                     <li>
 
                     </li>
@@ -461,27 +464,36 @@
                 </div>
                 <div class="text_area">
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>
+                             <h3>More Figma surport</h3>
+                            <p> The component format in Figma files isn't yet fully supported during the import process in the current implementation stage. </p>
+                        </li>
+                        <li>
+                            <h3>Track & show user's footage</h3>
+                            <p>For designers to better understand users' needs in complex task flows, we developed "route map" feature (front-end) that has its visual presentation currently under construction.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="learn">
                 <div class="title_area">
-                    <h2>Next</h2>
+                    <h2>Right Next</h2>
                 </div>
                 <div class="text_area">
                     <ul>
                         <li>
-                            <h3></h3>
+                            <h3>More Figma surport</h3>
+                            <p> The component format in Figma files isn't yet fully supported during the import process in the current implementation stage. </p>
                         </li>
                         <li>
-                            <h3></h3>
-                        </li>
-                        <li>
-                            <h3></h3>
+                            <h3>Track & show user's footage</h3>
+                            <p>For designers to better understand users' needs in complex task flows, we developed "route map" feature (front-end) that has its visual presentation currently under construction.</p>
                         </li>
                     </ul>
+                   
+
+
+
                 </div>
             </div>
         </div>
