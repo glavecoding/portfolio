@@ -151,9 +151,11 @@
                     background-size: cover;
                     z-index: 1;
                     overflow: hidden;
+                    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
                     img{
                         height:100%;
                         width:auto;
+                        
                     }
                     @mixin img_temp {
                         content:'';

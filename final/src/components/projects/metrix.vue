@@ -39,49 +39,371 @@
                 </ul>
         </div>
         <div class="overview" ref="overview">
-            <div class="text_area">
-                <h2>About Project...</h2>
-                <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
+            <div class="overview_area">
                 <img :src="Project.images.overview.logo" alt="">
+                <h3>METRIX System can help UX designers <span>build & manage testing</span> prototyping and collect real quantative testing result from bigger tester group, then compare the data between different test cases. </h3>
+                
             </div>
-            <div class="text_area">
-                <h2>User's Problems...</h2>
-                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
-                    <br><br>—By Client’s Opinion & SOONPORT</p>
+            <img :src="Project.images.overview.show_case" alt="">
+            <div class="team_area">
+                <div>
+                    <img :src="Project.images.overview.team" alt="">
+                     <h2>About Team</h2>
+                    <p>In this project, I worked with a UI/UX designer Zee Liu to make the job went faster. Primarily, I <span>developed the webview system and the testing case</span> part and gave the team opinions about UI/UX and technical estimations.</p>
+                </div>
+            </div>
+            <div class="problem_area">
+                <h1>Issues</h1>
+                <h3>Besides user task observations, how can UX designers implement testing for <span>bigger tester groups</span> with the <span>quantitative testing result</span> that supports our design decisions?</h3>
             </div>
         </div>
-        <div class="problem" ref="problem">
-            <h1>About the problems...</h1>
-            <ul>
-                <li></li>
-            </ul>
+        <div class="research" ref="research">
+            <div class="title_area gapping">
+                <h1>Idea, MVP, Survey</h1>
+            </div>
+            <div class="text_area">
+
+            </div>
+            <div class="title_area">
+                <h3>Ideas</h3>
+                <p>In the early stage, we found that </p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Concept Demo - Minimum model</h3>
+                <p>To verify the concept idea, I made the quick development model and used google sheet as database to test the concept.</p>
+            </div>
+            <div class="text_area kickoff">
+                <ul>
+                    <li class="concept">
+                        <img :src="Project.images.research.concept" alt="">
+                        <h4>Quick minimum<br>web-app</h4>
+                    </li>
+                    <li class="link"></li>
+                    <li class="gsheet">
+                        <div class="image_box">
+                            <img :src="Project.images.research.gas_logo" alt="">
+                            <img :src="Project.images.research.gsheet" alt="">
+                        </div>
+                        <h4>Quick Database - GAS + Google Sheet</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Survey & Interview</h3>
+                <p>To know that what the actual function and sort of testing result will designer want, we did the interview and quick interview.</p>
+            </div>
+            <div class="text_area survey">
+                <ul>
+                    <li>
+                        <img :src="Project.images.research.low_testing" alt="">
+                        <h4>User testing with low-fidelity paper prototype</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img :src="Project.images.research.survey_01" alt="">
+                        <!-- <h4>What's the proper way to show data</h4> -->
+                    </li>
+                    <li>
+                        <img :src="Project.images.research.survey_02" alt="">
+                        <h4 class="survey_text">Survey what function and testing data will designers want</h4>
+                    </li>
+                    <li>
+                        <img :src="Project.images.research.survey_03" alt="">
+                        <!-- <h4>What type of data do designers care</h4> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h1>Key Findings</h1>
+            </div>
+            <div class="text_area findings">
+                <ul>
+                    <li>
+                        <img :src="Project.images.process.icon_group" alt="">
+                        <h3>Designers'd like to <span>test more testers</span> as they can</h3>
+                    </li>
+                    <li>
+                        <img :src="Project.images.process.icon_analystic" alt="">
+                        <h3>If there's the <span>easy</span> way to go, <span>collecting the quantative testing data</span> is better.</h3>
+                    </li>
+                    <li>
+                        <h3>The data which designers are <span>interested</span> in more</h3>
+                        <div class="data_list">
+                            <p>Finished rate of task</p>
+                            <p>Clicks and positions on screen</p>
+                            <p>How long does a user stay on each screen</p>
+                            <p>User's comment</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="users" ref="users">
-            <h1>Target Users & SOONPORT Staff</h1>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="title_area user_info">
+                <h2>Who's METRIX focusing?</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area persona_title">
+                <h2>Persona</h2>
+            </div>
+            <div class="title_area persona_content">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
         </div>
-        <div class="ideation" ref="ideation">
-            <h1>How to make the Website fit user's needs more ?</h1>
+        <div class="process" ref="process">
+            <div class="title_area  gapping">
+                <h1>Goal of METRIX</h1>
+            </div>
+            <div class="text_area goal">
+                <h3>Provide designers intuitive prototype usability validation by collecting and analyzing variables representing testers' interactive behaviors.</h3>
+                <img :src="Project.images.process.logo" alt="">
+            </div>
+            <div class="title_area gapping">
+                <h1>Process</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h3>Design & Development Sprint</h3>
+                <p>We made the sprint in project flow to verify the idea to production smoothly and fastly.</p>
+            </div>
+            <div class="text_area">
+                <img :src="Project.images.process.sprint" alt="">
+            </div>
+            <div class="title_area dilemma_title">
+                <img :src="Project.images.process.icon_dilemma" alt="">
+                <h3>Dilemma</h3>
+                <p>We started this project envisioning a prototype editor web app that helps designers collecting and organizing testing data. With this initiative, we ran into a cluster of problems...</p>
+            </div>
+            <div class="text_area dilemma">
+                <ul>
+                    <li>
+                        <img :src="Project.images.process.toomany" alt="">
+                        <h3>The implementation of the process of prototyping and hotspot editing is <span>not easy for beginners</span></h3>
+                    </li>
+                    <li>
+                        <img :src="Project.images.process.techissue" alt="">
+                        <h3>To support user scenarios that demand multiple hotspots, backtracking, and complex task flows, <span>we have to address numerous technical issues</span></h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area decision_title">
+                <img :src="Project.images.process.icon_decision" alt="">
+                <h3>Decisions</h3>
+                <p> </p>
+            </div>
+            <div class="text_area decision">
+                <ul>
+                    <li>
+                        <div>
+                            <img :src="Project.images.process.figma_logo" alt="">
+                            <h2>X</h2>
+                            <img :src="Project.images.process.logo" alt="">
+                        </div>
+                        <h3>Instead of implementing prototyping functions, we found out Figma, and its developer-friendly API is the most efficient and assuring solution to the problem. Why?</h3>
+                        
+                    </li>
+                    <li>
+                        <h4>The using flow in service is <span>more friendly for beginners</span></h4>
+                        <h4>More and more designers are <span>utilizing Figma as their primary prototyping tool</span></h4>
+                        <h4>The Figma developer-friendly API dramatically <span>increases the productivity and quality</span> of the development of this project</h4>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="title_area">
+                <h1>Features</h1>
+            </div>
+            <div class="text_area features">
+                <ul>
+                    <li>
+                        <div><img :src="Project.images.process.icon_figma" alt=""><img :src="Project.images.process.icon_manage" alt=""></div>
+                        <h3>Build and manage the testing prototype with Figma</h3>
+                    </li>
+                    <li>
+                        <div><img :src="Project.images.process.icon_analystic" alt=""><img :src="Project.images.process.icon_comment" alt=""></div>
+                        <h3>Collecting quantative user testing data and user's comments</h3>
+                    </li>
+                    <li>
+                        <div><img :src="Project.images.process.icon_anb" alt=""></div>
+                        <h3>Visualizing & comparing user testing result</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area gapping">
+                <h1>System Structure</h1>
+            </div>
+            <div class="text_area">
+               
+            </div>
+            <div class="title_area">
+                <h3>Sitemap of service</h3>
+                <p></p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <img :src="Project.images.design.sitemap" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Task flow - <br>Project Management</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Task flow - <br>Testing Management</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="design" ref="design">
+            <div class="title_area">
+                <h2>Style Referance</h2>
+            </div>
+            <div class="text_area referance">
+                
+            </div>
+            <div class="title_area">
+                <h2>Primary pages in METRIX</h2>
+            </div>
+            <div class="text_area pages">
+                <ul>
+                    <li>
+                        <div>
+                            <h4><span>Projects</span> - <br>Manage project and prototype with Figma</h4>
+                        </div>
+                        <div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4><span>Analystics</span> - <br>Manage & Show testing results by heatmap & chart</h4>
+                        </div>
+                        
+                        <div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4><span>Analystics</span> - <br>Collecting user's behaviors and data</h4>
+                        </div>
+                        <div>
+
+                        </div>
+                    </li>
+                    <li>
+                       <div>
+                            <h4><span>Comparison</span> - <br>A/B projects comparison</h4>
+                       </div>
+                        <div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="development" ref="development">
             <div class="text_area">
                 <div class="text">
-                    <h2>Website Development</h2>
+                    <h2>METRIX Service Development</h2>
+                    <p>To develop functions of prototyping management and testing result showcase, I used Vue.js to connect the Figma API and Firebase database, let user manage the user testing intuitively and easily.</p>
                 </div>
                 <img :src="Project.images.development.graphic" alt="">
             </div>
         </div>
-        <div class="issue" ref="issue">
-            <h1>Issue</h1>
+        <div class="conflict" ref="conflict">
+            <div class="title_area">
+                <h1>Techniques</h1>
+            </div>
+            <div class="text_area">
+                <div>
+                     <h4>METRIX Management</h4>
+                </div>
+                <ul>
+                    <li>
+                       <p>Vue.js</p>
+                       <p>HTML/SCSS/JS</p>
+                    </li>
+                    <li>
+                        <p>Chart.js</p>
+                        <p>Figma API</p>
+                        <p>Firebase API</p>
+                    </li>
+                </ul>
+                <div>
+                    <h4>METRIX Testing Case</h4>
+                </div>
+                <ul>
+                    <li>
+                        <p>HTML/SCSS</p>
+                        <p>Vue.js</p>
+                        <p>Figma API</p>
+                        <p>Firebase API</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area gapping">
+                <h1>Features & Issue</h1>
+            </div>
+            <div class="text_area">
+
+            </div>
+            <div class="title_area">
+                <h3>Technical Features</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h3>Design vs Programming</h3>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>Style limitations</li>
+                    <li>Focus differ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="demo" ref="demo">
+            <div class="title_area">
+                <h1>Service Demo</h1>
+            </div>
+            <div class="text_area"></div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+                <div class="title_area">
+                    <h2>What did I learn ?</h2>
+                </div>
             </div>
-            <div class="next">
-                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
+            <div class="learn">
+                <div class="title_area">
+                    <h2>Next</h2>
+                </div>
             </div>
         </div>
         <div class="end">
@@ -97,6 +419,7 @@
 </template>
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
+
 export default {
     name:'soonport',
     props:{
