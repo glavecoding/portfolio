@@ -457,7 +457,7 @@
             <div class="text_area service_demo">
                 <ul>
                     <li>
-                        <video controls autoplay loop :src="Project.images.development.demo_video"></video>
+                        <video controls playsinline autoplay loop :src="Project.images.development.demo_video"></video>
                         <h3 @click="Go_demo">Click to go to METRIX Service</h3>
                     </li>
                 </ul>

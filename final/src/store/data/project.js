@@ -456,11 +456,42 @@ export default {
             info_case: "./static/images/drip/info_case.png",
           },
           overview: {
-            logo: "./static/images/soonport/logo.png",
+            logo: "./static/images/drip/logo_GIF.gif",
           },
-          development: {
-            graphic: "./static/images/soonport/graphic_production.png",
+          problem: {
+            issue: "./static/images/drip/issue_fake.jpg",
+            severe_01: "./static/images/drip/severe-01.svg",
+            severe_02: "./static/images/drip/severe-02.svg",
           },
+          users: {
+            persona_01: "./static/images/drip/persona_01.png",
+            persona_02: "./static/images/drip/persona_02.png",
+            persona_info_01: "./static/images/drip/persona_info_01.svg",
+            persona_info_02: "./static/images/drip/persona_info_02.svg",
+          },
+          ideation: {
+            logo_w: "./static/images/drip/logo_w.gif",
+            icon_ngo: "./static/images/drip/icon_ngo.svg",
+            icon_service_01: "./static/images/drip/icon_service_01.svg",
+            icon_service_02: "./static/images/drip/icon_service_02.svg",
+            task_flow: "./static/images/drip/task_flow.svg",
+          },
+          mockup: {
+            moodboard: "./static/images/drip/moodboard.png",
+            brand_size: "./static/images/drip/branding_size.svg",
+            brand_space: "./static/images/drip/branding_space.svg",
+            brand_color: "./static/images/drip/branding_color.svg",
+            brand_text: "./static/images/drip/branding_text.svg",
+            brand_grid: "./static/images/drip/branding_grid.svg",
+            brand_icon: "./static/images/drip/branding_icon.png",
+            brand_miss: "./static/images/drip/branding_miss.svg",
+            layout_wireframe: "./static/images/drip/layout_wireframe.png",
+            layout_mockup_01: "./static/images/drip/layout_mockup_01.png",
+            layout_mockup_02: "./static/images/drip/layout_mockup_02.png",
+          },
+          demo:{
+            video:"./static/images/drip/demo.mp4"
+          }
         },
         next: {
           order: "01",

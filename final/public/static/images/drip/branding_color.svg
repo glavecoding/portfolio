@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="946px" height="533px" viewBox="0 0 946 533" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="18_Logo_color" transform="translate(-130.000000, -117.000000)">
+            <g id="Group" transform="translate(130.000000, 117.000000)">
+                <rect id="Rectangle" fill="#26140F" fill-rule="nonzero" x="0" y="0" width="139" height="140"></rect>
+                <g id="Group-4" transform="translate(47.000000, 44.000000)">
+                    <polygon id="Fill-8-Copy" fill="#EC4723" points="15.9852483 13.3023276 28.9983635 13.3023276 28.9983635 0.241861964 15.9852483 0.241861964"></polygon>
+                    <polygon id="Fill-9-Copy" fill="#FFFFFF" points="15.9852483 52.0000036 28.9983635 52.0000036 28.9983635 16.2046533 15.9852483 16.2046533"></polygon>
+                    <path d="M44.7164911,6.92482524 L44.7164911,1.40507736 C44.7164911,0.762691659 44.2002212,0.241861964 43.5634594,0.241861964 L31.8901669,0.241861964 L31.8901669,52.0000036 L44.3786528,39.4012176 C44.5951345,39.1831147 44.7164911,38.8873672 44.7164911,38.5788243 L44.7164911,19.8644333 L47.6059884,19.8644333 C48.2427501,19.8644333 48.7590201,19.3436036 48.7590201,18.7012179 L48.7590201,8.08804063 C48.7590201,7.44565493 48.2427501,6.92482524 47.6059884,6.92482524 L44.7164911,6.92482524 Z" id="Fill-10-Copy" fill="#FFFFFF"></path>
+                    <path d="M1.25015299,0.241861964 C0.60411803,0.241861964 0.0803296117,0.762688733 0.0803296117,1.40507083 L0.0803296117,38.5786089 C0.0803296117,38.88715 0.203453522,39.1831867 0.422795406,39.4012884 L13.0934449,52.0000036 L13.0934449,0.241861964 L1.25015299,0.241861964 Z" id="Fill-12-Copy" fill="#FFFFFF"></path>
+                </g>
+                <rect id="Rectangle-Copy-3" fill="#64AD45" fill-rule="nonzero" x="455" y="0" width="153" height="52"></rect>
+                <rect id="Rectangle-Copy-6" fill="#B63025" fill-rule="nonzero" x="455" y="190" width="153" height="52"></rect>
+                <rect id="Rectangle-Copy-8" fill="#F68E2A" fill-rule="nonzero" x="793" y="190" width="153" height="52"></rect>
+                <rect id="Rectangle-Copy-9" fill="#928D94" fill-rule="nonzero" x="455" y="380" width="153" height="52"></rect>
+                <text id="Black" font-family="Saira-Regular, Saira" font-size="24" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="27">Black</tspan>
+                </text>
+                <text id="Green" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="82">Green</tspan>
+                </text>
+                <text id="Warning-Red" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="272">Warning Red</tspan>
+                </text>
+                <text id="Grey" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="462">Grey</tspan>
+                </text>
+                <text id="Light-green" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="624" y="82">Light green</tspan>
+                </text>
+                <text id="Orange" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="624" y="272">Orange</tspan>
+                </text>
+                <text id="Yellow" font-family="Saira-Regular, Saira" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="793" y="272">Yellow</tspan>
+                </text>
+                <text id="Orange" font-family="Saira-Regular, Saira" font-size="24" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="184">Orange</tspan>
+                </text>
+                <text id="White" font-family="Saira-Regular, Saira" font-size="24" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="347">White</tspan>
+                </text>
+                <text id="CMYK-0-,-47-,-61-,-8" font-family="Saira-Regular, Saira" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="59">CMYK   0 , 47 , 61 , 85 </tspan>
+                    <tspan x="158" y="81">RGB  38 , 20 , 15</tspan>
+                    <tspan x="158" y="103">HEX  #26140F </tspan>
+                </text>
+                <text id="CMYK-42-,-0-,-60-,-3" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="114">CMYK   42 , 0 , 60 , 32 </tspan>
+                    <tspan x="455" y="133">RGB  39 , 68 , 27</tspan>
+                    <tspan x="455" y="152">HEX  #64AD45</tspan>
+                </text>
+                <text id="CMYK-0-,-47-,-61-,-8-Copy-5" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="304">CMYK   0 , 47 , 61 , 85 </tspan>
+                    <tspan x="455" y="323">RGB  38 , 20 , 15</tspan>
+                    <tspan x="455" y="342">HEX  #26140F </tspan>
+                </text>
+                <text id="CMYK-1-,-5-,-0-,-42" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="455" y="494">CMYK   1 , 5 , 0 , 42 </tspan>
+                    <tspan x="455" y="513">RGB  57 , 55 , 58</tspan>
+                    <tspan x="455" y="532">HEX  #928D94</tspan>
+                </text>
+                <text id="CMYK-8-,-0-,-69-,-22" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="624" y="114">CMYK   8 , 0 , 69 , 22 </tspan>
+                    <tspan x="624" y="133">RGB  73 , 78 , 24</tspan>
+                    <tspan x="624" y="152">HEX  #B9C83E</tspan>
+                </text>
+                <text id="CMYK-0-,-84-,-85-,-7" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="624" y="304">CMYK   0 , 84 , 85 , 7 </tspan>
+                    <tspan x="624" y="323">RGB  93 , 15 , 14</tspan>
+                    <tspan x="624" y="342">HEX  #EC4723 </tspan>
+                </text>
+                <text id="CMYK-0-,-42-,-83-,-4" font-family="Saira-Regular, Saira" font-size="12" font-weight="normal" fill="#000000">
+                    <tspan x="793" y="304">CMYK   0 , 42 , 83 , 4 </tspan>
+                    <tspan x="793" y="323">RGB  96 , 56 , 16</tspan>
+                    <tspan x="793" y="342">HEX  #F68E2A </tspan>
+                </text>
+                <text id="CMYK-0-,-84-,-85-,-7" font-family="Saira-Regular, Saira" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="216">CMYK   0 , 84 , 85 , 7 </tspan>
+                    <tspan x="158" y="238">RGB  93 , 15 , 14</tspan>
+                    <tspan x="158" y="260">HEX  #EC4723 </tspan>
+                </text>
+                <text id="CMYK-0-,-0-,-0-,-0-R" font-family="Saira-Regular, Saira" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="158" y="379">CMYK   0 , 0 , 0 , 0 </tspan>
+                    <tspan x="158" y="401">RGB  255 , 255 , 255</tspan>
+                    <tspan x="158" y="423">HEX  #FFFFFF</tspan>
+                </text>
+                <rect id="Rectangle-Copy-7" fill="#EC4723" fill-rule="nonzero" x="624" y="190" width="153" height="52"></rect>
+                <rect id="Rectangle-Copy-5" fill="#B9C83E" fill-rule="nonzero" x="624" y="0" width="153" height="52"></rect>
+                <rect id="Rectangle-Copy" stroke="#979797" stroke-width="0.799999952" fill="#FEFDFD" fill-rule="nonzero" x="0.399999976" y="320.4" width="138.2" height="139.2"></rect>
+                <g id="Group-4" transform="translate(47.000000, 364.000000)">
+                    <polygon id="Fill-8-Copy" fill="#EC4723" points="15.9852483 13.3023276 28.9983635 13.3023276 28.9983635 0.241861964 15.9852483 0.241861964"></polygon>
+                    <polygon id="Fill-9-Copy" fill="#26140F" points="15.9852483 52.0000036 28.9983635 52.0000036 28.9983635 16.2046533 15.9852483 16.2046533"></polygon>
+                    <path d="M44.7164911,6.92482524 L44.7164911,1.40507736 C44.7164911,0.762691659 44.2002212,0.241861964 43.5634594,0.241861964 L31.8901669,0.241861964 L31.8901669,52.0000036 L44.3786528,39.4012176 C44.5951345,39.1831147 44.7164911,38.8873672 44.7164911,38.5788243 L44.7164911,19.8644333 L47.6059884,19.8644333 C48.2427501,19.8644333 48.7590201,19.3436036 48.7590201,18.7012179 L48.7590201,8.08804063 C48.7590201,7.44565493 48.2427501,6.92482524 47.6059884,6.92482524 L44.7164911,6.92482524 Z" id="Fill-10-Copy" fill="#26140F"></path>
+                    <path d="M1.25015299,0.241861964 C0.60411803,0.241861964 0.0803296117,0.762688733 0.0803296117,1.40507083 L0.0803296117,38.5786089 C0.0803296117,38.88715 0.203453522,39.1831867 0.422795406,39.4012884 L13.0934449,52.0000036 L13.0934449,0.241861964 L1.25015299,0.241861964 Z" id="Fill-12-Copy" fill="#26140F"></path>
+                </g>
+                <rect id="Rectangle-Copy-2" fill="#EC4723" fill-rule="nonzero" x="0" y="160" width="139" height="140"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

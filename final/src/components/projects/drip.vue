@@ -40,43 +40,239 @@
         </div>
         <div class="overview" ref="overview">
             <div class="text_area">
-                <h2>About Project...</h2>
-                <p>SOONPORT is a big screw, nail, steel wires producer & provider exports productions to EU or US. In 2019, they decided to <strong>re-new the old website</strong>, for manage content by themselves and get some other way to touch customer and show products.</p>
-                <img :src="Project.images.overview.logo" alt="">
-            </div>
-            <div class="text_area">
-                <h2>User's Problems...</h2>
-                <p>“Clients said that they <strong>find the specific product hardly on official</strong>, and they’d like to know the manufacturing.”
-                    <br><br>—By Client’s Opinion & SOONPORT</p>
+                <h3>The Non-profit organization branding & service proposal, to solve the fake news issue for elder and young generations, including branding guideline, service demo and research.</h3>
+                 <img :src="Project.images.overview.logo" alt="">
             </div>
         </div>
         <div class="problem" ref="problem">
-            <h1>About the problems...</h1>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="title_area gapping">
+                <h1>Issue of Fake News</h1>
+                <p>“Fake News” is not the fresh headline now, Since 1970’s, people suffered from fake news already. In modern society now, the fake fact is hurting people more and more...</p>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <img :src="Project.images.problem.issue" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area gapping">
+                <h1>How severe<br>it is?</h1>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <img :src="Project.images.problem.severe_01" alt="">
+                        <h3>Most of people think that they <span>have ability to recognize the fake news</span>, but in fact...</h3>
+                    </li>
+                    <li>
+                        <img :src="Project.images.problem.severe_02" alt="">
+                        <h3>Fake news is spreading through many ways in our society still, and the situation becomes more severe via social media.</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area gapping">
+                <h1>Who spreads<br>fake news?</h1>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <h3>Baby boomer generations share and spread fake news than young generations <br><br>for More <span class="more">7.2</span> times</h3>
+                    </li>
+                </ul>
+            </div>
         </div>
+        </div>
+        
         <div class="users" ref="users">
-            <h1>Target Users & SOONPORT Staff</h1>
-            <ul>
-                <li></li>
-            </ul>
+           <div class="title_area">
+                <h2>Who's Lit it for?</h2>
+                <ul>
+                    <li v-for="(p,key) in persona_array" :class="persona_active == key?'active':''" @click="Switch_persona(key)"><h4>{{p.sort}}</h4></li>
+                </ul>
+           </div>
+            <div class="text_area persona_content"
+                v-for="(p,key) in persona_array"
+                v-if="persona_active==key">
+                <div class="left">
+                    <img :src="Project.images.users[p.persona]" alt="">
+                    <ul>
+                        <li class="story">
+                            <p>{{p.story}}</p>
+                        </li>
+                        <li class="title">
+                            <h3>{{p.name}}</h3>
+                            <p>“{{p.title}}”</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img :src="Project.images.users[p.persona_info]" alt="">
+                </div>
+            </div>
         </div>
         <div class="ideation" ref="ideation">
-            <h1>How to make the Website fit user's needs more ?</h1>
+            <div class="title_area">
+                <h1>Goal</h1>
+            </div>
+            <div class="text_area goal">
+                <img :src="Project.images.ideation.logo_w" alt="">
+                <h3>While we’d like to find something to eat, we will open the Yelp and check it out. It’s good, but the Yelp is a big service including many stuffs now, sometimes we just want the good restaurant only at the moment...</h3>
+            </div>
+            <div class="title_area">
+                <h1>How can we help?</h1>
+            </div>
+            <div class="text_area ideas">
+                <ul>
+                    <li>
+                        <img :src="Project.images.ideation.icon_ngo" alt="">
+                        <h3>Non-Profit Organization Branding</h3>
+                        <p>Via the branding and the art help, call people's attention, help people avoiding the hurt from fake news.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img :src="Project.images.ideation.icon_service_01" alt="">
+                            <img :src="Project.images.ideation.icon_service_02" alt="">
+                        </div>
+                        <h3>Services - Web app, browser extensions</h3>
+                        <p>By technologies help, we can recognize the fake news and tell people.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h1>Task Flow</h1>
+            </div>
+            <div class="text_area">
+                <img :src="Project.images.ideation.task_flow" alt="">
+            </div>
         </div>
         <div class="mockup" ref="mockup">
-            <h1>How to make the Website fit user's needs more ?</h1>
+            <div class="title_area">
+                <h2>Moodboard</h2>
+            </div>
+            <div class="text_area branding_mood">
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.moodboard" alt="">
+                    </li>
+                </ul>
+            </div>
+             <div class="title_area">
+                <h2>Branding</h2>
+            </div>
+            <div class="text_area branding_case">
+                 <ul>
+                    <li>
+                        <img :src="Project.images.mockup.brand_grid" alt="">
+                        <h3>Sketching & Griding Design</h3>
+                    </li>
+                </ul>
+                 <ul>
+                    <li>
+                        <img :src="Project.images.mockup.brand_text" alt="">
+                        <h3>Logo font usage</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.brand_space" alt="">
+                        <h3>Logo safe-spacing</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.brand_size" alt="">
+                        <h3>Logo sizing usage</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                         <img :src="Project.images.mockup.brand_color" alt="">
+                        <h3>Branding color usage</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                         <img :src="Project.images.mockup.brand_icon" alt="">
+                        <h3>Branding App icon & icon usage</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                         <img :src="Project.images.mockup.brand_miss" alt="">
+                        <h3>Branding miss usage</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_area">
+                <h2>Services Design</h2>
+            </div>
+            <div class="text_area service_mockup">
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.layout_wireframe" alt="" class="wireframe">
+                        <h3>Website wireframe</h3>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="text_area service_mockup">
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.layout_mockup_01" alt="">
+                        <h3>Website mockup</h3>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="text_area service_mockup">
+                <ul>
+                    <li>
+                        <img :src="Project.images.mockup.layout_mockup_02" alt="">
+                        <h3>Browser extension mockup</h3>
+                    </li>
+                    
+                </ul>
+            </div>
+            
         </div>
         <div class="prototyping" ref="prototyping">
-            <h1>How to make the Website fit user's needs more ?</h1>
+            <div class="title_area">
+                <h1>Service prototyping</h1>
+            </div>
+            <div class="text_area">
+                <ul>
+                    <li>
+                        <video autoplay loop controls playsinline :src="Project.images.demo.video" muted></video>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+                <div class="title_area"><h2>What did I learn ?</h2></div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>Design can help</h3>
+                            <p>Good branding design can help and call people's attention to solve the issues.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="next">
-                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
+            <div class="learn next">
+                <div class="title_area"><h2>Where can be better?</h2></div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>The real service</h3>
+                            <p>If I have more time to go, I will try to develop the service, the browser extension or the website.</p>
+                        </li>
+                        <li><h3>Clear statement</h3>
+                            <p>The branding statement and description can be more clear and simpler to spread, if I have more time to do, I will simplize the copy text for elder to understand.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="end">
@@ -104,6 +300,22 @@ export default {
     },
     data() {
         return {
+            persona_array:[{
+                sort:'Baby Boomer',
+                name:'Henry',
+                title:'I worried my granddaughter will touch fake news, so I checked it and share',
+                story:'Henry is a generous and nice guy, but he’s a bit conservative. He retired from his job 2 years ago. Kids and his wife are working so far from home, so he lives with his granddaughter. He often watch TV and try some fresh topic on SMS. Sometimes, as he found the interesting topic, he shared the news with his granddaughter, but she seems didn’t like it.',
+                persona:'persona_01',
+                persona_info:'persona_info_01'
+            },{
+                sort:'Young Generation',
+                name:'Tyla',
+                title:'Grandpa often send me the fake news, how should I do?',
+                story:'Tyla is a dynamic and confident girl. When she gets a news, she will do critic thinking and check it’s real or not. She lives in information flood world. She likes to share her life on Instagram, and often follow the information from her SNS group and twitter.',
+                persona:'persona_02',
+                persona_info:'persona_info_02'
+            }],
+            persona_active:0
         }
     },
     mounted() {
@@ -118,6 +330,9 @@ export default {
     methods: {
         Go_project(next){
             this.$router.push({path:`/project/${next.order}/${next.name}`})
+        },
+        Switch_persona(n){
+            this.persona_active = n
         }
     },
 }
