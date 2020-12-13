@@ -169,7 +169,7 @@
         
     }
     .users{
-        height:600px;
+        // height:600px;
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
         grid-template-rows:auto auto auto;
@@ -259,6 +259,61 @@
         }
         .persona_content{
             display: flex;
+            .left{
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                img{
+                    height: 500px;
+                    width:auto;
+                }
+                ul{
+                    position: absolute;
+                    bottom:24px;
+                    left:160px;
+                    width:320px;
+                    li{
+                        width:320px;
+                        padding:20px;
+                    }
+                    .story{
+                        height:200px;
+                        margin-bottom: 8px;
+                        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+                        background-color: rgba($color: white, $alpha: 0.3);
+                        backdrop-filter: blur(10px);
+                        p{
+                            color:$color-little;
+                        }
+                    }
+                    .title{
+                        background-color: rgba($color: $color-purple, $alpha: 0.72);
+                        backdrop-filter: blur(10px);
+                        &::before{
+                            content:'';
+                            width:4px;
+                            height: 50px;
+                            background-color: $color-pink;
+                            top:0;
+                            left:-10px;
+                            position: absolute;
+                        }
+                        h3{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .right{
+                width:540px;
+                display: flex;
+                justify-content:flex-end;
+                align-items: flex-end;
+                img{
+                    height:auto;
+                    width:300px;
+                }
+            }
         }
     }
     .design{
@@ -266,7 +321,7 @@
         grid-template-columns: 1fr 840px 1fr;
         grid-template-rows: auto;
         padding:80px 0;
-        height:2300px;
+        height:2100px;
         .title_area,.text_area{
             grid-column-start: 2;
             grid-column-end: 3;
@@ -828,7 +883,7 @@
     }
     .demo{
         height:600px;
-        grid-template-rows: 120px auto;
+        grid-template-rows: 80px auto;
         .title_area{
             h3{
                 color:$color-pink;
@@ -836,7 +891,7 @@
         }
         .text_area{
             margin-bottom: 0;
-            height:120px;
+            height:80px;
         }
         .text_area{
             ul{
@@ -849,7 +904,7 @@
             }
         }
         .service_demo_title{
-            // height:120px;
+            
         }
         .service_demo{
             grid-column-start: 1;
@@ -859,6 +914,7 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
+               
                 &::before,&::after{
                     content:'';
                     position: absolute;
@@ -871,6 +927,7 @@
                     background-color: $color-pink;
                     width:6px;
                     height:100px;
+                    box-shadow: 0px 0px 8px $color-pink;
                 }
                 &::before{
                     left:-24px;
@@ -881,7 +938,13 @@
                 li{
                     width:820px;
                     height:100%;
+                    margin-bottom: 0;
+                    video{
+                        width:100%;
+                    }
                     &::before,&::after{
+                        content:'';
+                        position: absolute;
                         width:4px;
                         position: absolute;
                         height:100%;
@@ -891,10 +954,18 @@
                     &::before{
                         border-left: 1px solid $color-purple;
                          left:-24px;
+                         box-shadow: -4px 0px 8px rgba($color: $color-purple, $alpha: 0.4);
                     }
                     &::after{
                         border-right: 1px solid $color-purple;
                          right:-24px;
+                         box-shadow: 4px 0px 8px rgba($color: $color-purple, $alpha: 0.4);
+                    }
+                    h3{
+                        position: absolute;
+                        bottom:-100px;
+                        cursor:cell;
+                        text-decoration: underline;
                     }
                 }
             }

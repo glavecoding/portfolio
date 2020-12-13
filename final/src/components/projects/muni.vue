@@ -166,7 +166,7 @@
                         </li>
                         <li class="title">
                             <h3>Johnna</h3>
-                            <p>“I want to know information about train more quickly as I need.”</p>
+                            <p>““I want to get more quantitive data from user in testing easily””</p>
                         </li>
                     </ul>
                 </div>

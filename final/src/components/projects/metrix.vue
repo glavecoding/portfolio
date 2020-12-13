@@ -150,11 +150,19 @@
             </div>
             <div class="title_area persona_content">
                 <div class="left">
-                    <img src="" alt="">
-                    <div class="text"></div>
+                    <img :src="Project.images.users.persona" alt="">
+                    <ul>
+                        <li class="story">
+                            <p>Emily is a junior UX designer, she’d like to know more about user’s reaction and behaviors during user testing, but the only she can do is do the observation, see where did user click on and ask them some question. Sometimes, she minds that maybe there is a tool to do it all easily...</p>
+                        </li>
+                        <li class="title">
+                            <h3>Emily</h3>
+                            <p>“I want to know information about train more quickly as I need.”</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="right">
-                    <img src="" alt="">
+                    <img :src="Project.images.users.persona_info" alt="">
                 </div>
             </div>
         </div>
@@ -301,10 +309,7 @@
                         <img :src="Project.images.design.assets_graphic" alt="">
                         <p>Status Graphic</p>
                     </li>
-                    <!-- <li>
-                        <img src="" alt="">
-                        <p>Other Assets</p>
-                    </li> -->
+
                 </ul>
             </div>
             <div class="title_area">
@@ -452,7 +457,8 @@
             <div class="text_area service_demo">
                 <ul>
                     <li>
-
+                        <video controls autoplay loop :src="Project.images.development.demo_video"></video>
+                        <h3 @click="Go_demo">Click to go to METRIX Service</h3>
                     </li>
                 </ul>
             </div>
@@ -465,11 +471,11 @@
                 <div class="text_area">
                     <ul>
                         <li>
-                             <h3>More Figma surport</h3>
+                             <h3>Talk with designer</h3>
                             <p> The component format in Figma files isn't yet fully supported during the import process in the current implementation stage. </p>
                         </li>
                         <li>
-                            <h3>Track & show user's footage</h3>
+                            <h3>Technical plan first</h3>
                             <p>For designers to better understand users' needs in complex task flows, we developed "route map" feature (front-end) that has its visual presentation currently under construction.</p>
                         </li>
                     </ul>
@@ -490,10 +496,6 @@
                             <p>For designers to better understand users' needs in complex task flows, we developed "route map" feature (front-end) that has its visual presentation currently under construction.</p>
                         </li>
                     </ul>
-                   
-
-
-
                 </div>
             </div>
         </div>
@@ -537,6 +539,9 @@ export default {
     methods: {
         Go_project(next){
             this.$router.push({path:`/project/${next.order}/${next.name}`})
+        },
+        Go_demo(){
+            window.open('https://www.glaveyen.com/METRIX_demo','_blank')
         }
     },
 }

@@ -313,7 +313,10 @@ export default {
             survey_03: "./static/images/metrix/icon_survey_3.png",
             low_testing: "./static/images/metrix/low_testing.jpg",
           },
-          user: {},
+          users: {
+            persona: "./static/images/metrix/persona.png",
+            persona_info: "./static/images/metrix/persona_info.svg",
+          },
           process: {
             sprint: "./static/images/metrix/sprint.svg",
             logo: "./static/images/metrix/logo_text_w.svg",
@@ -351,6 +354,7 @@ export default {
             limit_design: "./static/images/metrix/limitation_design.png",
             limit_arrow: "./static/images/metrix/limitation_arrow.svg",
             limit_actual: "./static/images/metrix/limitation_actual.png",
+            demo_video: "./static/images/metrix/metrix_demo.mp4",
           },
         },
         next: {
