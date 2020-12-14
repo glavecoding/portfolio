@@ -253,9 +253,20 @@ export default {
             persona: "./static/images/subaru/persona.png",
             persona_info: "./static/images/subaru/persona_info.svg",
           },
+          ideation: {
+            goal_01: "./static/images/subaru/goal-01.svg",
+            goal_02: "./static/images/subaru/goal-02.png",
+            features_01: "./static/images/subaru/features_customization.gif",
+            features_02: "./static/images/subaru/rental_platform.png",
+            features_03: "./static/images/subaru/community.png",
+            explore_01: "./static/images/subaru/explore_gear.gif",
+            explore_02: "./static/images/subaru/explore_meter.gif",
+            explore_03: "./static/images/subaru/explore_operation.gif",
+          },
           development: {
             graphic: "./static/images/soonport/graphic_production.png",
           },
+          tradeshow: {},
         },
         next: {
           order: "04",
@@ -489,9 +500,9 @@ export default {
             layout_mockup_01: "./static/images/drip/layout_mockup_01.png",
             layout_mockup_02: "./static/images/drip/layout_mockup_02.png",
           },
-          demo:{
-            video:"./static/images/drip/demo.mp4"
-          }
+          demo: {
+            video: "./static/images/drip/demo.mp4",
+          },
         },
         next: {
           order: "01",

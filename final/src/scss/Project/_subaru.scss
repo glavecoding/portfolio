@@ -513,6 +513,126 @@
                 }
             }
         }
+        .goal{
+            position: relative;
+            height:320px;
+            img{
+                height:320px;
+                position: absolute;
+            }
+        }
+        .exploring{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                position: relative;
+                &::before,&::after{
+                    content:'';
+                    position: absolute;
+                    width:4px;
+                    height:80px;
+                    background-color: $color-pink;
+                }
+                &::before{
+                     left:-32px;
+                }
+                &::after{
+                    right:-32px;
+                }
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 0;
+                    position: relative;
+                    box-shadow: 0px 0px 8px $color-pink;
+                    &::before,&::after{
+                        content:'';
+                        position: absolute;
+                        width:12px;
+                        height:80%;
+                        border-top: 1px solid $color-purple;
+                        border-bottom: 1px solid $color-purple;
+                    }
+                    &::before{
+                         border-left: 1px solid $color-purple;
+                         left:-16px;
+                    }
+                    &::after{
+                         border-right: 1px solid $color-purple;
+                         right:-16px;
+                    }
+                    img{
+                        width: 240px;
+                        height:auto;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .feature_customize,.feature_gaming{
+            margin-bottom: 100px;
+            ul{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+                &::before,&::after{
+                    position: absolute;
+                    width:7px;
+                    height:100px;
+                    background-color: $color-pink;
+                    content:'';
+                }
+                 &::before{
+                    left:-14px;
+                    }
+                &::after{
+                    right:-14px;
+                }
+                li{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0;
+                    &::before,&::after{
+                        position: absolute;
+                        width:10px;
+                        height:calc(100% + 16px);
+                        content:'';
+                         border-top: 1px solid $color-pink;
+                         border-bottom: 1px solid $color-pink;
+                    }
+                    &::before{
+                        left:-6px;
+                        top:-6px;
+                        border-left: 1px solid $color-pink;
+                       
+                    }
+                    &::after{
+                        right:-8px;
+                        border-right: 1px solid $color-pink;
+                        
+                    }
+                    
+                    img{
+                        width:100%;
+                        height:auto;
+                        margin-bottom: 0;
+                    }
+
+                }
+            }
+            h3{
+                margin-bottom: 16px;
+            }
+        }
     }
    
     .prototyping{
@@ -634,7 +754,7 @@
             grid-template-columns: 60px 1fr 60px;
             grid-template-rows: 60px 1fr 60px;
             width: 100%;
-            // height: 400px;
+            height: 400px;
             margin-bottom: 10px;
             background-color: rgba($color: white, $alpha: 0.8);
             p{

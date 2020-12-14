@@ -158,40 +158,77 @@
         <div class="ideations" ref="ideations">
             <div class="title_area gapping">
                 <h1>What/How the SUBARU will be in 2030?</h1>
-                
             </div>
-            <div class="text_area">
-                <h3>something</h3>
-                <img src="" alt="">
+            <div class="text_area goal">
+                <img :src="Project.images.ideation.goal_02" alt="">
+                <img :src="Project.images.ideation.goal_01" alt="">
             </div>
             
-            <div class="title_area gapping">
+            <div class="title_area">
                 <h1>2030 SUBARU Features</h1>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h3>Explore</h3>
-                <p>something</p>
+            <div class="text_area feature_customize">
+                <ul>
+                    <li>
+                        <img :src="Project.images.ideation.features_01" alt="">
+                    </li>
+                </ul>
+                 <h3>Car customization</h3>
+                <p>Optimizing SUBARU car to fit more request and experience, it makes the car usage more flexibly yet has persoanl style
+
+</p>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h3>Explore</h3>
-                <p>something</p>
+            <div class="text_area feature_customize">
+                <ul>
+                    <li>
+                        <img :src="Project.images.ideation.features_02" alt="">
+                    </li>
+                </ul>
+                 <h3>Platform for rental</h3>
+                <p>As user’s request in 2030, it will reduce amount of car yet offer user unique driving experience to enjoy everytime
+</p>
             </div>
-            <div class="text_area"></div>
-            <div class="title_area">
-                <h3>Style Exploring</h3>
-                <p>something</p>
+            <div class="text_area feature_customize">
+                <ul>
+                    <li>
+                        <img :src="Project.images.ideation.features_03" alt="">
+                    </li>
+                </ul>
+                <h3>Access with SUBARU community & family</h3>
+                <p>Connect with the SUBARU strong and active community, keep user exploring the friends and the family with car and family
+</p>
             </div>
-            <div class="text_area"></div>
             <div class="title_area gapping explore">
                 <h1>Style & Motion Exploring</h1>
                 <p>To explore the cooler operation and style in 2030, we did</p>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area exploring">
+                <ul>
+                    <li>
+                        <img :src="Project.images.ideation.explore_01" alt="">
+                        <img :src="Project.images.ideation.explore_02" alt="">
+                        <img :src="Project.images.ideation.explore_03" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="mockup" ref="mockup">
-            <h1>Mockup</h1>
+            <div class="title_area">
+                <h1>Wireframe</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h1>Moodboard</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h1>Style Guide</h1>
+            </div>
+            <div class="text_area"></div>
+            <div class="title_area">
+                <h1>Mockup</h1>
+            </div>
+            <div class="text_area"></div>
         </div>
         
         <div class="prototyping" ref="prototyping">
@@ -204,14 +241,19 @@
             <div class="title_area gapping">
                 <h1>AAU Spring Trade Show</h1>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div class="reflection" ref="reflection">
             <div class="learn">
                 <div class="text_area"><h2>What did I learn ?</h2></div>
             </div>
-            <div class="next">
-                <div class="text_area"><h2>Keep optimizing & being better</h2></div>
+            <div class="learn">
+                <div class="text_area"><h2>Where can be better?</h2></div>
             </div>
         </div>
         <div class="end">
