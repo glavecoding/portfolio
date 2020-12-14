@@ -249,6 +249,10 @@
             </div>
         </div>
         <div class="reflection" ref="reflection">
+             <GoLink
+        :google="'https://docs.google.com/presentation/d/1Hc2iLQYH83LOC1xlE5QbPduLCmF3Y_wGRnp0mQi2ONs/edit#slide=id.gaf0084b23e_0_28'"
+        :PDF="'https://www.glaveyen.com/portfolio_pdf/Chin%20Hsien%20Yen%20Portfolio%20Book_%2004799684_WNM_6_litit.pdf'"
+      />
             <div class="learn">
                 <div class="title_area"><h2>What did I learn ?</h2></div>
                 <div class="text_area">
@@ -288,6 +292,7 @@
 </template>
 <script>
 import icon_arrow_down from '../icons/icon_arrow_down'
+import GoLink from "./gopresentation"
 export default {
     name:'soonport',
     props:{
@@ -296,7 +301,8 @@ export default {
         Project:Object
     },
     components:{
-        icon_arrow_down
+        icon_arrow_down,
+        GoLink
     },
     data() {
         return {

@@ -538,6 +538,14 @@
             </div>
             <h3>Focus differ</h3>
           </li>
+          <li>
+            <div class="dnd">
+              <img :src="Project.images.development.focus_style" alt="" />
+              <img :src="Project.images.development.focus_arrow" alt="" />
+              <img :src="Project.images.development.focus_structure" alt="" />
+            </div>
+            <h3>API & Life-Cycle</h3>
+          </li>
         </ul>
       </div>
     </div>
@@ -561,6 +569,10 @@
       </div>
     </div>
     <div class="reflection" ref="reflection">
+       <GoLink
+        :google="'https://docs.google.com/presentation/d/1Hc2iLQYH83LOC1xlE5QbPduLCmF3Y_wGRnp0mQi2ONs/edit#slide=id.gaf0084b23e_0_53'"
+        :PDF="'https://www.glaveyen.com/portfolio_pdf/Chin%20Hsien%20Yen%20Portfolio%20Book_%2004799684_WNM_4_metrix.pdf'"
+      />
       <div class="learn">
         <div class="title_area">
           <h2>What did I learn ?</h2>
@@ -623,7 +635,7 @@
 </template>
 <script>
 import icon_arrow_down from "../icons/icon_arrow_down";
-
+import GoLink from "./gopresentation"
 export default {
   name: "soonport",
   props: {
@@ -633,6 +645,7 @@ export default {
   },
   components: {
     icon_arrow_down,
+    GoLink
   },
   data() {
     return {};

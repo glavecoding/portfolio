@@ -498,6 +498,20 @@
       </div>
     </div>
     <div class="reflection" ref="reflection">
+      <!-- <div class="link">
+        <ul>
+          <li>
+            <h4>Go to Research Google Slide</h4>
+          </li>
+          <li>
+            <h4>Download Research PDF</h4>
+          </li>
+        </ul>
+      </div> -->
+      <GoLink
+        :google="'https://docs.google.com/presentation/d/1Hc2iLQYH83LOC1xlE5QbPduLCmF3Y_wGRnp0mQi2ONs/edit#slide=id.g9c46ae414e_0_199'"
+        :PDF="'https://www.glaveyen.com/portfolio_pdf/Chin%20Hsien%20Yen%20Portfolio%20Book_%2004799684_WNM_1_soonport.pdf'"
+      />
       <div class="learn">
         <div class="title_area"><h2>What did I learn ?</h2></div>
         <div class="text_area">
@@ -524,6 +538,7 @@
           <img :src="Project.images.end.future" alt="" />
         </div>
       </div>
+      
     </div>
     <div class="end">
       <div class="go-to" @click="Go_project({ ...Next })">
@@ -541,6 +556,7 @@ import icon_arrow_down from "../icons/icon_arrow_down";
 import show_case from "../projects/soonport_showcase";
 import slider from "../projects/slider";
 import search_bar from "../universal/searching_anim";
+import GoLink from "./gopresentation"
 export default {
   name: "soonport",
   props: {
@@ -549,6 +565,7 @@ export default {
     Project: Object,
   },
   components: {
+    GoLink,
     icon_arrow_down,
     show_case,
     slider,

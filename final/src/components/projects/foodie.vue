@@ -216,6 +216,10 @@
     </div>
 
     <div class="reflection" ref="reflection">
+       <GoLink
+        :google="'https://docs.google.com/presentation/d/1Hc2iLQYH83LOC1xlE5QbPduLCmF3Y_wGRnp0mQi2ONs/edit#slide=id.gaf0084b23e_0_0'"
+        :PDF="'https://www.glaveyen.com/portfolio_pdf/Chin%20Hsien%20Yen%20Portfolio%20Book_%2004799684_WNM_5_foodie.pdf'"
+      />
       <div class="learn">
         <div class="title_area">
           <h2>What did I learn ?</h2>
@@ -280,6 +284,7 @@
 <script>
 import icon_arrow_down from "../icons/icon_arrow_down";
 import Loading from "../projects/foodie_loading";
+import GoLink from "./gopresentation"
 export default {
   name: "foodie",
   props: {
@@ -290,6 +295,7 @@ export default {
   components: {
     icon_arrow_down,
     Loading,
+    GoLink
   },
   data() {
     return {};
