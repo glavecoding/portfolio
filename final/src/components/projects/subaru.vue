@@ -133,10 +133,7 @@
 
                 </ul>
             </div>
-            <div class="text_area touch_point">
-                <h1>Touch Point</h1>
-                <p></p>
-            </div>
+            
             <div class="text_area persona">
                 <div class="left">
                     <img :src="Project.images.users.persona" alt="">
@@ -212,48 +209,110 @@
                 </ul>
             </div>
         </div>
-        <div class="mockup" ref="mockup">
+        <div class="mockup" ref="design">
             <div class="title_area">
-                <h1>Wireframe</h1>
+                <h2>Wireframe & Explore</h2>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area wireframe">
+                <ul>
+                    <li class="first after">
+                        <img :src="Project.images.design.wireframe" alt="">
+                    </li>
+                </ul>
+            </div>
             <div class="title_area">
-                <h1>Moodboard</h1>
+                <h2>Mockup</h2>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area mockup_design">
+                 <ul v-for="(fl,key) in Array(3)">
+                    <li :class="key==0?'first':key==2?'after':''">
+                        <img :src="Project.images.design['final_'+(key+1)]" alt="">
+                    </li>
+                </ul>
+            </div>
             <div class="title_area">
-                <h1>Style Guide</h1>
+                <h2>Prototyping</h2>
             </div>
-            <div class="text_area"></div>
+            <div class="text_area prototype_design">
+                 <ul>
+                    <li class="first after">
+                        <video autoplay controls muted playsinline loop :src="Project.images.design.demo"></video>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="first after">
+                        <video autoplay controls muted playsinline loop :src="Project.images.design.demo_steer"></video>
+                    </li>
+                </ul>
+            </div>
             <div class="title_area">
-                <h1>Mockup</h1>
+                <h2>Style Guide</h2>
             </div>
-            <div class="text_area"></div>
-        </div>
-        
-        <div class="prototyping" ref="prototyping">
-           <div class="title_area">
-               <h1>Prototyping</h1>
-           </div>
-           <div class="text_area"></div>
+            <div class="text_area styleguide">
+                 <ul v-for="(sg,key) in Array(7)">
+                    <li :class="key==0?'first':key==6?'after':''">
+                        <img :src="Project.images.design['sg_'+key]" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="tradeshow" ref="tradeshow">
-            <div class="title_area gapping">
+            <div class="title_area">
                 <h1>AAU Spring Trade Show</h1>
             </div>
             <div class="text_area">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li class="trade_consistency">
+                        <img :src="Project.images.tradeshow.t_help" alt="">
+                        <h3>Solution for consistensy issue</h3>
+                        <p>Before the tradeshow, we got the consistency issue because each team used different prototyping software to demo. To fix the issue, I made a web-base showcase for every team to demo the prototyping.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="image_box">
+                            <img :src="Project.images.tradeshow['t_'+(key+1)]" alt="" v-for="(t,key) in Array(3)">
+                        </div>
+                        <h3>Trade Show</h3>
+                        <p>In spring show, we presented our service, car and whole concept to visitors who were interested in our project.</p>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="reflection" ref="reflection">
-            <div class="learn">
-                <div class="text_area"><h2>What did I learn ?</h2></div>
+            <div class="learn next">
+                <div class="title_area"><h2>What did I learn ?</h2></div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>Real business</h3>
+                            <p>In this project, from client, design flow, to the tradeshow, all of above are about business, we couldn't make the decision without business side consideration.</p>
+                        </li>
+                        <li>
+                            <h3>Tell Story</h3>
+                            <p>To sell the concept to non-exist customers(they are in 2030), we have to tell the story passionately, no matter the function and the shape, everything should be amazing and pretty.</p>
+                        </li>
+                        <li>
+                            <h3>Team work</h3>
+                            <p>Team work is amazing! I learned that communication is the bigger issue in the team, if everyone in the team can talk, it's easy to solve the bigger and bigger problem.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="learn">
-                <div class="text_area"><h2>Where can be better?</h2></div>
+                <div class="title_area"><h2>Where can be better?</h2></div>
+                <div class="text_area">
+                    <ul>
+                        <li>
+                            <h3>Solid user research</h3>
+                            <p>If there’s more time for doing project, we would do more user research and interview to make car dashboard and App service fit user’s request more.</p>
+                        </li>
+                        <li>
+                            <h3>More gaming experience</h3>
+                            <p>Our car driving and app using experience is the gaming style already, but we can give more contest or real gaming experience like driving leader board or exploration goal</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="end">

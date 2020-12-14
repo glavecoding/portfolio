@@ -101,17 +101,17 @@
         </div>
         <div class="design" ref="design">
                 <div class="title_area gapping">
-                  <h1>Wireframes & Assets</h1>
+                  <h1>Design Assets</h1>
                 </div>
                 <div class="text_area"></div>
-                <div class="title_area">
+                <!-- <div class="title_area">
                     <h3>Wireframe</h3>
-                </div>
-                <div class="text_area">
+                </div> -->
+                <!-- <div class="text_area">
                     <ul>
                         <li></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="title_area">
                     <h3>Graphic Assets</h3>
                 </div>
@@ -161,7 +161,9 @@
                   <p>User can adjust the search range and amount of result to update the search result anytime to get the latest result.</p>
             </div>
             <div class="text_area">
-               <div class="demo_box"></div>
+               <div class="demo_box">
+                   <img :src="Project.images.techniques.tech_setting" alt="">
+               </div>
             </div>
             <div class="title_area">
                   <h3>JS Animation</h3>
@@ -170,7 +172,9 @@
                   </p>
             </div>
             <div class="text_area">
-               <div class="demo_box"></div>
+               <div class="demo_box">
+                   <img :src="Project.images.techniques.tech_loading" alt="">
+               </div>
             </div>
             <div class="title_area">
                   <h3>Sort & Debounce</h3>
@@ -179,28 +183,13 @@
                   </p>
             </div>
             <div class="text_area">
-               <div class="demo_box"></div>
+               <div class="demo_box">
+                   <img :src="Project.images.techniques.tech_sort" alt="">
+               </div>
             </div>
            
         </div>
-        <div class="issue" ref="issue">
-            <div class="title_area gapping">
-                <h1>Issue & Fixed</h1>
-            </div>
-             <div class="text_area"></div>
-            <div class="title_area">
-              <h3>Cross Origin x<br>Proxy Setting</h3>
-            </div>
-            <div class="text_area">
-
-            </div>
-            <div class="title_area">
-              <h3>Real Time Search x <br>Debounce</h3>
-            </div>
-            <div class="text_area">
-                
-            </div>
-        </div>
+        
         <div class="reflection" ref="reflection">
             <div class="learn">
                 <div class="title_area">
@@ -210,9 +199,11 @@
                     <ul>
                         <li>
                             <h3>Compromise</h3>
+                            <p>In quick coding challenge, I learned that how to leave some idea behind the back because of the limit time, and I tried to arrange the priority of the work to make the development go smoothly.</p>
                         </li>
                         <li>
                             <h3>Less is more</h3>
+                            <p>In the small service, doing less is more important than do more, the little and shining dagger can be and faster and better.</p>
                         </li>
                     </ul>
                 </div>
@@ -225,10 +216,12 @@
                     <ul>
                         <li>
                             <h3>Pair with other service</h3>
+                            <p>If there's more time to go, I'd like to link the service to other delivery service, so user can do the next step after found the restaurant but could not go.</p>
                         </li>
                         <li>
                             
                             <h3>To be a real product</h3>
+                            <p>I want to do the pack of the HTML5 into the real app in the future, the "Foodie" is the good start to go.</p>
                         </li>
                     </ul>
                 </div>

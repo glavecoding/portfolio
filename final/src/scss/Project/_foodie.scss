@@ -465,6 +465,36 @@
                                 }
                             }
                         }
+                    
+                }
+            }
+            .demo_box{
+                position: relative;
+                margin-left: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::before,&::after{
+                    position: absolute;
+                    content:'';
+                    width:8px;
+                    height:200px;
+                    border-top: 1px solid $color-pink;
+                    border-bottom: 1px solid $color-pink;
+                }
+                &::before{
+                    left:40px;
+                    border-left:1px solid $color-pink;
+                }
+                &::after{
+                    right:40px;
+                    border-right:1px solid $color-pink;
+                }
+                img{
+                    
+                    height:420px;
+                    border-radius: 30px;
+                    
                 }
             }
         }
