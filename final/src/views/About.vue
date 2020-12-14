@@ -5,7 +5,7 @@
       <div class="text">
         <h1 v-html="typing" :class="typing.length != origin.length?'flicking':''"></h1>
         <transition enter-active-class="animate__animated animate__fadeInUp animate__fast">
-          <p v-if="typing.length == origin.length">As a UI/UX engineer, I passionate about bridging design, engineer, and user’s need, Solving the human centered problem and actulizing the design in the real world.</p>
+          <p v-if="typing.length == origin.length">As a UI/UX engineer, I passionate about bridging design, engineer, and user’s needs, Solving the human-centered problem, and actualizing the design in the real world.</p>
         </transition>
       </div>
       <transition enter-active-class="animate__animated animate__fadeInUp animate__fast">

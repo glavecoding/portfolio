@@ -1,6 +1,6 @@
 <template>
     <aside class="fixed_home about_control"  @click="Go_about">
-        <h4>About</h4>
+        <h4>About Me</h4>
         <icon_about/>
     </aside>
 </template>
