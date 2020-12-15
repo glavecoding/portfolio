@@ -141,12 +141,12 @@
                 }
             }
         }
-        .touch_point{
+        // .touch_point{
 
-        }
-        .want{
+        // }
+        // .want{
 
-        }
+        // }
         .persona{
             display: flex;
             .left{
@@ -209,7 +209,7 @@
     .mockup{
         display: grid;
         grid-template-columns: 1fr 840px 1fr;
-        // height:3000px;
+        height:7200px;
         padding:80px 0;
         .title_area,.text_area{
             grid-column-start: 2;
@@ -477,6 +477,7 @@
         }
     }
     .ideations{
+        height:3000px;
         .title_area{
             h3{
                 margin-bottom: 16px;
