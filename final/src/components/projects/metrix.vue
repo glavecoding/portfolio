@@ -83,20 +83,20 @@
         <h1>Idea, MVP, Survey</h1>
       </div>
       <div class="text_area"></div>
-      <div class="title_area">
+      <!-- <div class="title_area">
         <h3>Ideas</h3>
         <p>In the early stage, we found that</p>
-      </div>
-      <div class="text_area">
+      </div> -->
+      <!-- <div class="text_area">
         <ul>
           <li></li>
         </ul>
-      </div>
+      </div> -->
       <div class="title_area">
-        <h3>Concept Demo - Minimum model</h3>
+        <h3>Idea & Concept Demo - Minimum model</h3>
         <p>
           To verify the concept idea, I made the quick development model and
-          used google sheet as the database to test the concept
+          used google sheet as the database to test the concept, and it helped us to explain the idea to others
         </p>
       </div>
       <div class="text_area kickoff">
@@ -411,7 +411,7 @@
           <li>
             <div>
               <h4>
-                <span>Analystics & Comparison</span> - <br />Manage & Show
+                <span>Analytic & Comparison</span> - <br />Manage & Show
                 testing results by heatmap & chart
               </h4>
             </div>
@@ -528,6 +528,7 @@
               <img :src="Project.images.development.limit_actual" alt="" />
             </div>
             <h3>Style limitations</h3>
+            <p>The tech support has limitation. I found that I cannot make all the assets designed by designer 100%. After the communication, I followed the most part of design and added some attributions like animation or transition to finish the job.</p>
           </li>
 
           <li>
@@ -537,6 +538,7 @@
               <img :src="Project.images.development.focus_structure" alt="" />
             </div>
             <h3>Focus differ</h3>
+            <p>The designer and me focus on different side in some thing, so we had some talking miss in the process. While I talked about the data structure, designer focused on the art part or user's part only, ignored the technical, so I need to talk on the other hand to let the communication go smoothly.</p>
           </li>
           <li>
             <div class="dnd">

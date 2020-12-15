@@ -333,6 +333,10 @@
     right:12px;
     bottom: 12px;
     width:24px;
+    @include phone{
+        bottom: 24px;
+        right:20px;
+    }
     ul{
         li{
             width:24px;

@@ -11,18 +11,19 @@
       <transition enter-active-class="animate__animated animate__fadeInUp animate__fast">
       <div class="contact" v-if="typing.length == origin.length">
         <ul>
-          <li>
+          <li @click="Go_link('./static/resume/Resume_CV.pdf')">
             <h2>CV</h2>
           </li>
-          <li>
+          <li @click="Go_link('https://www.linkedin.com/in/glavedesign')">
             <img :src="images.about.linkedin" alt="">
           </li>
-          <li>
+          <li @click="Go_link('https://medium.com/@glavecoding')">
             <img :src="images.about.medium" alt="">
           </li>
-          <li>
+          <li @click="Go_link('https://github.com/glavecoding')">
             <img :src="images.about.github" alt="">
           </li>
+          
         </ul>
         <icon_arrow_down
           :Auto="true"
@@ -75,7 +76,9 @@ export default {
     ])
   },
   methods: {
-    
+    Go_link(Link){
+      window.open(Link,'_blank')
+    }
   },
   watch:{
     origin:{
