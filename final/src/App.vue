@@ -48,7 +48,7 @@
     </transition>
     <transition enter-active-class="animate__animated animate__fadeInUp animate__faster" leave-active-class="animate__animated animate__fadeOutDown animate__faster">
       <Bottom_scroll
-        v-if="Side_show_rule == 'Home' && Hide_scroll"
+        v-if="Side_show_rule == 'Home' && Hide_scroll && window_size>500"
       />
     </transition>
 
@@ -86,11 +86,13 @@ export default {
       Panel:{
         Mode:false,
         Language:false
-      }
+      },
+      window_size:window.innerWidth
     }
   },
   mounted() {
     this.Body_height = document.body.scrollHeight
+    
   },
   computed: {
     Side_show_rule(){
