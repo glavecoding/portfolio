@@ -85,7 +85,7 @@ body{
             animation: lottie_anim 0.4s steps(8) forwards;
             // animation-delay: .5s;
             @include phone{
-                width:100px;
+                width:300px;
             }
             svg{
                 animation:floating 5s ease-in-out infinite alternate;

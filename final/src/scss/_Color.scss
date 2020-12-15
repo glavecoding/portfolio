@@ -142,7 +142,7 @@ $color-little:#160C4E;
 // light mode
 
 // respoinsive mixin
-$phone-width:420px;
+$phone-width:500px;
 $gridtempcolumn-phone:1fr 355px 1fr;
 	@mixin phone {
 		@media screen and (max-width:$phone-width){

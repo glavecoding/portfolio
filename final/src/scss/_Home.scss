@@ -85,10 +85,15 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
+
                 h4{
                 text-align: center;
                 white-space: nowrap;
-                
+                @include phone{
+                    white-space:wrap;
+                    width:80%;
+                }
+
                 &:nth-child(odd){
                     line-height: 32px;
                     filter:blur(1px);
